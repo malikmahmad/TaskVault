@@ -1,0 +1,13 @@
+.dart_tool/
+.packages
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+pubspec.lock
+*.iml
+.idea/
+android/local.properties
+ios/Flutter/Generated.xcconfig
+ios/Pods/
