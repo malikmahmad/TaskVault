@@ -1,0 +1,12 @@
+analyzer:
+  exclude:
+    - build/**
+    - windows/**
+    - android/**
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    prefer_const_constructors: true
+    prefer_final_locals: true
+    avoid_print: true
