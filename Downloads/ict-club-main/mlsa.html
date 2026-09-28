@@ -1,0 +1,3880 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MSA Program - ICT Club MNS UET</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Microsoft Learn Student Ambassador Program at ICT Club MNS UET Multan" name="description">
+    <meta content="MLSA, Microsoft Learn Student Ambassador, ICT Club, MNS UET" name="keywords">
+
+    <!-- Favicons -->
+    <link href="icon1111.png" rel="icon">
+    <link href="icon1111.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Font Awesome (latest CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ========== ADVANCED PREMIUM NAVIGATION BAR ========== -->
+    <style>
+        /* Fix Mobile Alignment Issues */
+        
+        html,
+        body {
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+            overflow-x: hidden !important;
+            box-sizing: border-box !important;
+        }
+        
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box !important;
+        }
+        /* Ensure all sections are full width on mobile */
+        
+        @media (max-width: 992px) {
+            .container,
+            .container-fluid,
+            section,
+            main {
+                max-width: 100% !important;
+                padding-left: 15px !important;
+                padding-right: 15px !important;
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+            }
+            .row {
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+            }
+            [class*="col-"] {
+                padding-left: 15px !important;
+                padding-right: 15px !important;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container,
+            .container-fluid,
+            section,
+            main {
+                padding-left: 12px !important;
+                padding-right: 12px !important;
+            }
+            [class*="col-"] {
+                padding-left: 12px !important;
+                padding-right: 12px !important;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container,
+            .container-fluid,
+            section,
+            main {
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+            }
+            [class*="col-"] {
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+            }
+        }
+        /* Navigation Bar Premium Styles */
+        
+        #advanced-navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 9999;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border-bottom: 1px solid rgba(0, 120, 215, 0.1);
+        }
+        
+        #advanced-navbar.scrolled {
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.12);
+            padding: 0;
+        }
+        
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+            transition: height 0.3s ease;
+            flex-wrap: nowrap;
+        }
+        
+        #advanced-navbar.scrolled .nav-container {
+            height: 70px;
+        }
+        /* Logo Styling with Image */
+        
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+            flex-shrink: 0;
+        }
+        
+        .nav-logo:hover {
+            transform: scale(1.03);
+        }
+        
+        .logo-image {
+            width: 55px;
+            height: 55px;
+            object-fit: contain;
+            transition: all 0.4s ease;
+            filter: drop-shadow(0 2px 8px rgba(0, 120, 215, 0.2));
+            flex-shrink: 0;
+        }
+        
+        #advanced-navbar.scrolled .logo-image {
+            width: 48px;
+            height: 48px;
+        }
+        
+        .nav-logo:hover .logo-image {
+            transform: rotate(360deg);
+            filter: drop-shadow(0 4px 12px rgba(0, 120, 215, 0.4));
+        }
+        
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+            white-space: nowrap;
+        }
+        
+        .logo-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: #0078D7;
+            letter-spacing: -0.5px;
+        }
+        
+        .logo-subtitle {
+            font-size: 11px;
+            color: #666;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        /* Desktop Navigation */
+        
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            flex-shrink: 0;
+        }
+        
+        .nav-menu>li {
+            position: relative;
+        }
+        
+        .nav-menu>li>a {
+            display: flex;
+            align-items: center;
+            padding: 10px 18px;
+            color: #2c3e50;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        
+        .nav-menu>li>a::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #0078D7, #00BCF2);
+            transform: translateX(-50%);
+            transition: width 0.3s ease;
+            border-radius: 3px 3px 0 0;
+        }
+        
+        .nav-menu>li>a:hover,
+        .nav-menu>li.active>a {
+            color: #0078D7;
+            background: transparent;
+        }
+        
+        .nav-menu>li>a:hover::before,
+        .nav-menu>li.active>a::before {
+            width: 80%;
+        }
+        
+        .nav-menu>li>a i {
+            margin-left: 5px;
+            font-size: 11px;
+            transition: transform 0.3s ease;
+        }
+        /* Dropdown on hover AND click */
+        
+        .nav-menu>li.dropdown:hover>a i,
+        .nav-menu>li.dropdown.active>a i {
+            transform: rotate(180deg);
+        }
+        /* Dropdown Mega Menu - WORKING VERSION */
+        
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+            padding: 15px;
+            min-width: 280px;
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease, max-height 0.4s ease;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            z-index: 10000;
+            margin-top: 10px;
+            display: block !important;
+            pointer-events: none;
+        }
+        /* Show dropdown on hover OR when active class */
+        
+        .nav-menu>li.dropdown:hover .dropdown-menu,
+        .nav-menu>li.dropdown.active .dropdown-menu {
+            opacity: 1 !important;
+            visibility: visible !important;
+            max-height: 600px !important;
+            pointer-events: auto !important;
+        }
+        
+        .dropdown-menu li {
+            list-style: none;
+        }
+        
+        .dropdown-menu a {
+            display: flex;
+            align-items: center;
+            padding: 12px 15px;
+            color: #2c3e50;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            gap: 12px;
+        }
+        
+        .dropdown-menu a i {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f0f7ff;
+            border-radius: 8px;
+            color: #0078D7;
+            font-size: 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .dropdown-menu a:hover {
+            background: rgba(0, 120, 215, 0.06);
+            transform: translateX(3px);
+        }
+        
+        .dropdown-menu a:hover i {
+            background: #0078D7;
+            color: white;
+        }
+        /* Mobile Menu Toggle - VISIBLE BLUE BUTTON */
+        
+        .mobile-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: #0078D7;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            z-index: 10001;
+            width: 45px;
+            height: 40px;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .mobile-toggle:hover {
+            background: #005A9E;
+        }
+        
+        .mobile-toggle span {
+            width: 25px;
+            height: 3px;
+            background: white;
+            border-radius: 3px;
+            transition: all 0.3s ease;
+            display: block;
+        }
+        
+        .mobile-toggle.active span:nth-child(1) {
+            transform: rotate(45deg) translate(7px, 7px);
+        }
+        
+        .mobile-toggle.active span:nth-child(2) {
+            opacity: 0;
+            transform: translateX(20px);
+        }
+        
+        .mobile-toggle.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -7px);
+        }
+        /* Mobile Menu - FULLY WORKING */
+        
+        .mobile-menu {
+            position: fixed;
+            top: 80px;
+            left: 0;
+            width: 100%;
+            height: calc(100vh - 80px);
+            background: white;
+            transform: translateX(100%);
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow-y: auto;
+            overflow-x: hidden;
+            z-index: 10000;
+            padding: 20px;
+            box-shadow: -5px 0 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .mobile-menu.active {
+            transform: translateX(0) !important;
+        }
+        /* Mobile Menu Backdrop */
+        
+        .mobile-menu::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: -1;
+        }
+        
+        .mobile-menu.active::before {
+            opacity: 1;
+            visibility: visible;
+        }
+        /* Mobile Menu Header */
+        
+        .mobile-menu-header {
+            background: linear-gradient(135deg, #0078D7 0%, #005A9E 100%);
+            color: white;
+            padding: 20px;
+            margin: -20px -20px 20px -20px;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .mobile-menu-header h3 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .mobile-menu-header h3 i {
+            font-size: 24px;
+        }
+        
+        .mobile-menu-header p {
+            margin: 8px 0 0 0;
+            font-size: 13px;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+        
+        .mobile-menu>ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .mobile-menu>ul>li {
+            margin-bottom: 8px;
+            clear: both;
+            width: 100%;
+            display: block;
+        }
+        
+        .mobile-menu>ul>li>a {
+            display: flex;
+            align-items: center;
+            padding: 16px 20px;
+            color: #2c3e50;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            gap: 15px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        
+        .mobile-menu>ul>li>a i {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #0078D7;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        
+        .mobile-menu>ul>li>a:hover,
+        .mobile-menu>ul>li.active>a {
+            background: linear-gradient(135deg, #0078D7 0%, #005A9E 100%);
+            color: white;
+            transform: translateX(5px);
+            box-shadow: 0 4px 15px rgba(0, 120, 215, 0.3);
+        }
+        
+        .mobile-menu>ul>li>a:hover i,
+        .mobile-menu>ul>li.active>a i {
+            color: white;
+            transform: scale(1.1);
+        }
+        /* Mobile Dropdown Styling */
+        
+        .mobile-menu .mobile-dropdown {
+            clear: both;
+            width: 100%;
+            display: block;
+        }
+        
+        .mobile-menu .mobile-dropdown>a {
+            position: relative;
+            padding-right: 50px;
+        }
+        
+        .mobile-menu .mobile-dropdown>a i.fa-chevron-down {
+            position: absolute;
+            right: 20px;
+            width: auto;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        
+        .mobile-menu .dropdown-menu {
+            position: static;
+            opacity: 1;
+            visibility: visible;
+            transform: none;
+            box-shadow: none;
+            padding: 12px 0 0 20px;
+            margin-top: 12px;
+            margin-bottom: 12px;
+            pointer-events: auto;
+            border: none;
+            border-left: 4px solid #0078D7;
+            display: none !important;
+            background: rgba(0, 120, 215, 0.03);
+            max-height: none !important;
+            overflow: visible !important;
+            border-radius: 0 12px 12px 0;
+            width: 100%;
+            clear: both;
+        }
+        
+        .mobile-menu .dropdown-menu.active {
+            display: block !important;
+            animation: slideDown 0.3s ease;
+        }
+        
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .mobile-menu .dropdown-menu::before {
+            display: none;
+        }
+        
+        .mobile-menu .dropdown-menu a {
+            display: flex;
+            align-items: center;
+            padding: 14px 18px;
+            margin-bottom: 8px;
+            margin-right: 10px;
+            background: white;
+            border-radius: 10px;
+            color: #2c3e50;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+            gap: 12px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+        }
+        
+        .mobile-menu .dropdown-menu a i {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #0078D7;
+            font-size: 14px;
+        }
+        
+        .mobile-menu .dropdown-menu a:hover {
+            background: #0078D7;
+            color: white;
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(0, 120, 215, 0.25);
+        }
+        
+        .mobile-menu .dropdown-menu a:hover i {
+            color: white;
+        }
+        
+        .mobile-cta {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 2px solid #e9ecef;
+        }
+        /* Responsive Design */
+        
+        @media (max-width: 1440px) {
+            .nav-menu {
+                gap: 8px;
+            }
+            .nav-menu>li>a {
+                padding: 10px 14px;
+                font-size: 13.5px;
+            }
+            .logo-title {
+                font-size: 20px;
+            }
+            .logo-subtitle {
+                font-size: 10px;
+            }
+        }
+        
+        @media (max-width: 1366px) {
+            .nav-menu {
+                gap: 5px;
+            }
+            .nav-menu>li>a {
+                padding: 10px 12px;
+                font-size: 13px;
+            }
+        }
+        
+        @media (max-width: 1280px) {
+            .nav-menu {
+                gap: 3px;
+            }
+            .nav-menu>li>a {
+                padding: 10px 10px;
+                font-size: 12.5px;
+            }
+        }
+        
+        @media (max-width: 1200px) {
+            .nav-menu {
+                gap: 2px;
+            }
+            .nav-menu>li>a {
+                padding: 10px 8px;
+                font-size: 12px;
+            }
+        }
+        
+        @media (max-width: 1100px) {
+            .nav-menu>li>a {
+                padding: 8px 6px;
+                font-size: 11.5px;
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .nav-menu {
+                display: none !important;
+            }
+            .mobile-toggle {
+                display: flex !important;
+            }
+            .nav-container {
+                padding: 0 20px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-container {
+                height: 70px;
+                padding: 0 15px;
+            }
+            .logo-image {
+                width: 48px;
+                height: 48px;
+            }
+            .logo-title {
+                font-size: 18px;
+            }
+            .logo-subtitle {
+                font-size: 10px;
+            }
+            .mobile-menu {
+                top: 70px;
+                height: calc(100vh - 70px);
+                padding: 15px;
+            }
+            .mobile-menu>ul>li {
+                margin-bottom: 6px;
+            }
+            .mobile-menu>ul>li>a {
+                padding: 14px 16px;
+                font-size: 15px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .nav-container {
+                height: 65px;
+                padding: 0 12px;
+            }
+            .logo-image {
+                width: 42px;
+                height: 42px;
+            }
+            .logo-title {
+                font-size: 16px;
+            }
+            .logo-subtitle {
+                font-size: 9px;
+            }
+            .mobile-menu {
+                top: 65px;
+                height: calc(100vh - 65px);
+                padding: 12px;
+            }
+            .mobile-menu>ul>li>a {
+                padding: 12px 14px;
+                font-size: 14px;
+                gap: 12px;
+            }
+            .mobile-toggle {
+                width: 42px;
+                height: 38px;
+            }
+        }
+        /* Smooth Scroll Padding */
+        
+        html {
+            scroll-padding-top: 85px;
+        }
+        /* Loading Animation */
+        
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        #advanced-navbar {
+            animation: fadeInDown 0.6s ease;
+        }
+    </style>
+
+    <nav id="advanced-navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <a href="index.html" class="nav-logo">
+                <img src="ICT Club Official Logo without Background.png" alt="ICT Club Logo" class="logo-image">
+                <div class="logo-text">
+                    <span class="logo-title">ICT Club</span>
+                    <span class="logo-subtitle">MNS UET Multan</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about" class="scrollto">Purpose</a></li>
+                <li><a href="index.html#objectives" class="scrollto">Objectives</a></li>
+                <li><a href="index.html#vision" class="scrollto">Vision</a></li>
+                <li><a href="index.html#activities" class="scrollto">Activities</a></li>
+                <li class="dropdown">
+                    <a href="#">Explore <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="ictcluballiances.html"><i class="fas fa-handshake"></i> Alliances</a></li>
+                        <li><a href="verified.html"><i class="fas fa-certificate"></i> Certificate Verification</a></li>
+                        <li><a href="https://mnsuet.edu.pk/" target="_blank"><i class="fas fa-university"></i> MNS UET Multan</a></li>
+                        <li><a href="policy.html"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
+                        <li><a href="policy.html#terms"><i class="fas fa-file-contract"></i> Terms & Conditions</a></li>
+                    </ul>
+                </li>
+                <li><a href="team.html">Our Team</a></li>
+                <li class="active"><a href="mlsa.html">MSA</a></li>
+            </ul>
+
+            <!-- Mobile Toggle Button -->
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-header">
+                <h3><i class="fas fa-bars"></i> Navigation Menu</h3>
+                <p>ICT Club MNS UET Multan</p>
+            </div>
+            <ul>
+                <li><a href="index.html" class="mobile-link"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="index.html#about" class="mobile-link scrollto"><i class="fas fa-info-circle"></i> Purpose</a></li>
+                <li><a href="index.html#objectives" class="mobile-link scrollto"><i class="fas fa-bullseye"></i> Objectives</a></li>
+                <li><a href="index.html#vision" class="mobile-link scrollto"><i class="fas fa-eye"></i> Vision</a></li>
+                <li><a href="index.html#activities" class="mobile-link scrollto"><i class="fas fa-calendar-check"></i> Activities</a></li>
+                <li class="mobile-dropdown">
+                    <a href="#" id="mobileDropdownToggle">
+                        <i class="fas fa-compass"></i>
+                        <span>Explore</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu" id="mobileDropdownMenu">
+                        <li><a href="ictcluballiances.html" class="mobile-link"><i class="fas fa-handshake"></i> Alliances</a></li>
+                        <li><a href="verified.html" class="mobile-link"><i class="fas fa-certificate"></i> Certificate Verification</a></li>
+                        <li><a href="https://mnsuet.edu.pk/" target="_blank" class="mobile-link"><i class="fas fa-university"></i> MNS UET Multan</a></li>
+                        <li><a href="policy.html" class="mobile-link"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
+                        <li><a href="policy.html#terms" class="mobile-link"><i class="fas fa-file-contract"></i> Terms & Conditions</a></li>
+                    </ul>
+                </li>
+                <li><a href="team.html" class="mobile-link"><i class="fas fa-users"></i> Our Team</a></li>
+                <li class="active"><a href="mlsa.html" class="mobile-link"><i class="fas fa-user-graduate"></i> MSA</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <script>
+        // Advanced Navigation JavaScript
+        (function() {
+            const navbar = document.getElementById('advanced-navbar');
+            const mobileToggle = document.getElementById('mobileToggle');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const mobileDropdownToggle = document.getElementById('mobileDropdownToggle');
+            const mobileDropdownMenu = document.getElementById('mobileDropdownMenu');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+            const desktopDropdown = document.querySelector('.nav-menu .dropdown');
+
+            // Scroll Effect
+            window.addEventListener('scroll', () => {
+                const currentScroll = window.pageYOffset;
+
+                if (currentScroll > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+
+            // Desktop Dropdown Click Toggle
+            if (desktopDropdown) {
+                const dropdownLink = desktopDropdown.querySelector('a');
+                if (dropdownLink) {
+                    dropdownLink.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        desktopDropdown.classList.toggle('active');
+                    });
+                }
+
+                // Close dropdown when clicking outside
+                document.addEventListener('click', (e) => {
+                    if (!desktopDropdown.contains(e.target)) {
+                        desktopDropdown.classList.remove('active');
+                    }
+                });
+            }
+
+            // Mobile Toggle
+            if (mobileToggle && mobileMenu) {
+                mobileToggle.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    mobileToggle.classList.toggle('active');
+                    mobileMenu.classList.toggle('active');
+
+                    // Prevent body scroll when menu is open
+                    if (mobileMenu.classList.contains('active')) {
+                        document.body.style.overflow = 'hidden';
+                    } else {
+                        document.body.style.overflow = '';
+                    }
+                });
+            }
+
+            // Mobile Dropdown Toggle
+            if (mobileDropdownToggle && mobileDropdownMenu) {
+                mobileDropdownToggle.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    mobileDropdownMenu.classList.toggle('active');
+
+                    const icon = mobileDropdownToggle.querySelector('.fa-chevron-down');
+                    if (icon) {
+                        icon.style.transform = mobileDropdownMenu.classList.contains('active') ? 'rotate(180deg)' : 'rotate(0)';
+                        icon.style.transition = 'transform 0.3s ease';
+                    }
+                });
+            }
+
+            // Close mobile menu when any link is clicked
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (mobileToggle) mobileToggle.classList.remove('active');
+                    if (mobileMenu) mobileMenu.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            });
+
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', (e) => {
+                if (mobileMenu && mobileMenu.classList.contains('active')) {
+                    if (!mobileMenu.contains(e.target) && mobileToggle && !mobileToggle.contains(e.target)) {
+                        mobileToggle.classList.remove('active');
+                        mobileMenu.classList.remove('active');
+                        document.body.style.overflow = '';
+                    }
+                }
+            });
+        })();
+    </script>
+    <!-- ========== END ADVANCED NAVIGATION ========== -->
+
+    <style>
+            /* Main content area spacing */
+        
+        main {
+            margin-top: 80px;
+            min-height: calc(100vh - 80px);
+        }
+        /* MSA Hero Section - Advanced Styling */
+        
+        .msa-hero-section {
+            position: relative;
+            background: linear-gradient(135deg, #2b2a95 0%, #1e3a8a 50%, #0078D7 100%);
+            padding: 100px 0 80px 0;
+            overflow: hidden;
+            color: white;
+        }
+        /* Animated Background Particles */
+        
+        .msa-hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(0, 188, 242, 0.15) 0%, transparent 50%), radial-gradient(circle at 40% 20%, rgba(255, 255, 255, 0.08) 0%, transparent 50%);
+            animation: backgroundShift 15s ease-in-out infinite;
+        }
+        
+        @keyframes backgroundShift {
+            0%,
+            100% {
+                transform: translate(0, 0) scale(1);
+            }
+            50% {
+                transform: translate(-20px, 20px) scale(1.05);
+            }
+        }
+        
+        .msa-hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 30px;
+            position: relative;
+            z-index: 1;
+        }
+        /* Logo Container with Advanced Animation */
+        
+        .msa-logo-container {
+            text-align: center;
+            margin-bottom: 50px;
+            animation: fadeInScale 1s ease-out;
+        }
+        
+        @keyframes fadeInScale {
+            0% {
+                opacity: 0;
+                transform: scale(0.8) translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+        
+        .msa-logo-wrapper {
+            display: inline-block;
+            position: relative;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 30px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .msa-logo-wrapper:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
+            background: rgba(255, 255, 255, 0.15);
+        }
+        
+        .msa-logo-wrapper::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, #00BCF2, #0078D7, #2b2a95, #00BCF2);
+            border-radius: 30px;
+            z-index: -1;
+            background-size: 300% 300%;
+            animation: gradientRotate 6s ease infinite;
+        }
+        
+        @keyframes gradientRotate {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
+        .msa-logo {
+            width: 180px;
+            height: 180px;
+            display: block;
+            filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3));
+            animation: logoFloat 4s ease-in-out infinite;
+        }
+        
+        @keyframes logoFloat {
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+        /* Content Section */
+        
+        .msa-content {
+            animation: fadeInUp 1s ease-out 0.3s both;
+        }
+        
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .msa-title {
+            font-size: 48px;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #ffffff 0%, #00BCF2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -1px;
+            line-height: 1.2;
+        }
+        
+        .msa-subtitle {
+            font-size: 24px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 30px;
+            color: rgba(255, 255, 255, 0.95);
+            letter-spacing: 0.5px;
+        }
+        
+        .msa-rebranding-notice {
+            background: rgba(255, 255, 255, 0.15);
+            border-left: 4px solid #00BCF2;
+            padding: 20px 30px;
+            border-radius: 12px;
+            margin: 30px auto;
+            max-width: 900px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            animation: slideInLeft 1s ease-out 0.5s both;
+        }
+        
+        @keyframes slideInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .msa-rebranding-notice h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #00BCF2;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .msa-rebranding-notice h3 i {
+            font-size: 24px;
+        }
+        
+        .msa-rebranding-notice p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.9);
+            margin: 0;
+            text-align: justify;
+        }
+        /* About MSA Section */
+        
+        .about-msa-section {
+            padding: 80px 0;
+            background: #ffffff;
+        }
+        
+        .about-msa-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-header h2 {
+            font-size: 42px;
+            font-weight: 800;
+            background: linear-gradient(135deg, #2b2a95, #1e3a8a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -0.5px;
+        }
+        
+        .section-header .underline {
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #2b2a95, #00BCF2);
+            margin: 0 auto 20px;
+            border-radius: 2px;
+        }
+        
+        .section-header p {
+            font-size: 18px;
+            color: #6c757d;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+        /* Content Grid */
+        
+        .msa-content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+        
+        .content-text {
+            animation: fadeInLeft 1s ease-out;
+        }
+        
+        @keyframes fadeInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-40px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .content-text h3 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #2b2a95;
+            margin-bottom: 20px;
+        }
+        
+        .content-text p {
+            font-size: 16px;
+            line-height: 1.9;
+            color: #495057;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+        
+        .content-image {
+            position: relative;
+            animation: fadeInRight 1s ease-out;
+        }
+        
+        @keyframes fadeInRight {
+            0% {
+                opacity: 0;
+                transform: translateX(40px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .feature-box {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 30px;
+            border-radius: 20px;
+            border: 2px solid #dee2e6;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s ease;
+        }
+        
+        .feature-box:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(43, 42, 149, 0.2);
+            border-color: #2b2a95;
+        }
+        
+        .feature-box h4 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #2b2a95;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .feature-box h4 i {
+            font-size: 28px;
+            color: #00BCF2;
+        }
+        
+        .feature-box p {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #495057;
+            margin: 0;
+            text-align: justify;
+        }
+        /* MNS UET Chapter Highlight */
+        
+        .chapter-highlight {
+            background: linear-gradient(135deg, #2b2a95 0%, #1e3a8a 100%);
+            padding: 60px;
+            border-radius: 30px;
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(43, 42, 149, 0.3);
+            margin-top: 40px;
+        }
+        
+        .chapter-highlight::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+        }
+        
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        .chapter-highlight-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .chapter-highlight h3 {
+            font-size: 36px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .chapter-highlight p {
+            font-size: 18px;
+            line-height: 1.8;
+            max-width: 900px;
+            margin: 0 auto 30px;
+            color: rgba(255, 255, 255, 0.95);
+            text-align: justify;
+        }
+        
+        .chapter-stats {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 48px;
+            font-weight: 800;
+            color: #00BCF2;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .stat-label {
+            font-size: 16px;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.9);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        /* Responsive Design */
+        
+        @media (max-width: 992px) {
+            .msa-content-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            .msa-title {
+                font-size: 38px;
+            }
+            .msa-subtitle {
+                font-size: 20px;
+            }
+            .chapter-highlight {
+                padding: 40px 30px;
+            }
+            .chapter-stats {
+                gap: 40px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .msa-hero-section {
+                padding: 80px 0 60px 0;
+            }
+            .msa-logo {
+                width: 140px;
+                height: 140px;
+            }
+            .msa-title {
+                font-size: 32px;
+            }
+            .msa-subtitle {
+                font-size: 18px;
+            }
+            .section-header h2 {
+                font-size: 32px;
+            }
+            .content-text h3 {
+                font-size: 26px;
+            }
+            .chapter-highlight h3 {
+                font-size: 28px;
+            }
+            .chapter-stats {
+                gap: 30px;
+            }
+            .stat-number {
+                font-size: 36px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .msa-hero-section {
+                padding: 60px 0 40px 0;
+            }
+            .msa-hero-container,
+            .about-msa-container {
+                padding: 0 15px;
+            }
+            .msa-logo {
+                width: 120px;
+                height: 120px;
+            }
+            .msa-title {
+                font-size: 26px;
+            }
+            .msa-subtitle {
+                font-size: 16px;
+            }
+            .msa-rebranding-notice {
+                padding: 15px 20px;
+            }
+            .section-header h2 {
+                font-size: 28px;
+            }
+            .content-text h3 {
+                font-size: 22px;
+            }
+            .feature-box {
+                padding: 20px;
+            }
+            .chapter-highlight {
+                padding: 30px 20px;
+            }
+            .chapter-highlight h3 {
+                font-size: 24px;
+            }
+            .chapter-highlight p {
+                font-size: 15px;
+            }
+            .stat-number {
+                font-size: 32px;
+            }
+            .stat-label {
+                font-size: 13px;
+            }
+        }
+        /* MSA Leaders Section */
+        
+        .msa-leaders-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+        }
+        
+        .leaders-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+        
+        .leaders-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 50px;
+            margin-top: 60px;
+        }
+        
+        .leader-card {
+            background: white;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 15px 50px rgba(43, 42, 149, 0.15);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            border: 2px solid transparent;
+        }
+        
+        .leader-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 25px 70px rgba(43, 42, 149, 0.25);
+            border-color: #2b2a95;
+        }
+        
+        .leader-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, #2b2a95, #00BCF2);
+            border-radius: 25px 25px 0 0;
+        }
+        
+        .leader-header {
+            background: linear-gradient(135deg, #2b2a95 0%, #1e3a8a 100%);
+            padding: 40px 30px 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .leader-header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+            animation: rotate 15s linear infinite;
+        }
+        
+        .leader-avatar {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            margin: 0 auto 20px;
+            background: linear-gradient(135deg, #00BCF2, #0078D7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            font-weight: 800;
+            color: white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            position: relative;
+            z-index: 1;
+            transition: all 0.4s ease;
+            overflow: hidden;
+        }
+        
+        .leader-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        
+        .leader-card:hover .leader-avatar {
+            transform: scale(1.1) rotate(5deg);
+            border-color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .leader-name {
+            font-size: 28px;
+            font-weight: 800;
+            color: white;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .leader-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #00BCF2;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .beta-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #FFB900, #F25022);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 5px 15px rgba(242, 80, 34, 0.4);
+            position: relative;
+            z-index: 1;
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%,
+            100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+        
+        .region-tag {
+            display: inline-block;
+            margin-top: 10px;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 14px;
+            font-weight: 600;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .region-tag i {
+            color: #00BCF2;
+            margin-right: 5px;
+        }
+        
+        .leader-body {
+            padding: 30px;
+        }
+        
+        .leader-description {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #495057;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        
+        .leader-achievements {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 25px;
+        }
+        
+        .achievement-badge {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border: 2px solid #dee2e6;
+            padding: 8px 16px;
+            border-radius: 15px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #2b2a95;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .achievement-badge:hover {
+            border-color: #2b2a95;
+            background: linear-gradient(135deg, #f0f0ff, #ffffff);
+            transform: translateY(-2px);
+        }
+        
+        .achievement-badge i {
+            color: #00BCF2;
+            font-size: 14px;
+        }
+        
+        .mvp-button {
+            display: block;
+            width: 100%;
+            background: linear-gradient(135deg, #2b2a95 0%, #1e3a8a 100%);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 15px;
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            box-shadow: 0 8px 25px rgba(43, 42, 149, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .mvp-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+        
+        .mvp-button:hover::before {
+            left: 100%;
+        }
+        
+        .mvp-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(43, 42, 149, 0.4);
+            background: linear-gradient(135deg, #1e3a8a 0%, #2b2a95 100%);
+        }
+        
+        .mvp-button i {
+            margin-right: 10px;
+            font-size: 18px;
+        }
+        /* Responsive Design for Leaders */
+        
+        @media (max-width: 992px) {
+            .leaders-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+        /* YouTube Video Section */
+        
+        .msa-video-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+        }
+        
+        .video-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+        
+        .video-wrapper {
+            position: relative;
+            background: white;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(43, 42, 149, 0.2);
+            transition: all 0.4s ease;
+            border: 3px solid transparent;
+        }
+        
+        .video-wrapper:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 80px rgba(43, 42, 149, 0.3);
+            border-color: #00BCF2;
+        }
+        
+        .video-wrapper::before {
+            content: '';
+            position: absolute;
+            top: -3px;
+            left: -3px;
+            right: -3px;
+            bottom: -3px;
+            background: linear-gradient(45deg, #2b2a95, #00BCF2, #0078D7, #FFB900);
+            background-size: 300% 300%;
+            border-radius: 25px;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            animation: gradientShift 3s ease infinite;
+        }
+        
+        .video-wrapper:hover::before {
+            opacity: 1;
+        }
+        
+        .video-thumbnail {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            /* 16:9 aspect ratio */
+            background: linear-gradient(135deg, #2b2a95, #1e3a8a);
+            cursor: pointer;
+        }
+        
+        .video-thumbnail img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .play-button-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, rgba(43, 42, 149, 0.95), rgba(0, 120, 215, 0.95));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.4s ease;
+            cursor: pointer;
+            z-index: 2;
+            border: 5px solid rgba(255, 255, 255, 0.9);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+        }
+        
+        .play-button-overlay:hover {
+            transform: translate(-50%, -50%) scale(1.15);
+            background: linear-gradient(135deg, rgba(0, 188, 242, 0.95), rgba(43, 42, 149, 0.95));
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.5);
+        }
+        
+        .play-button-overlay::after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: 25px solid white;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            margin-left: 8px;
+        }
+        
+        @media (max-width: 768px) {
+            .msa-video-section {
+                padding: 60px 0;
+            }
+            .video-container {
+                padding: 0 20px;
+            }
+            .play-button-overlay {
+                width: 80px;
+                height: 80px;
+            }
+            .play-button-overlay::after {
+                border-left: 20px solid white;
+                border-top: 12px solid transparent;
+                border-bottom: 12px solid transparent;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .msa-video-section {
+                padding: 50px 0;
+            }
+            .video-container {
+                padding: 0 15px;
+            }
+            .play-button-overlay {
+                width: 70px;
+                height: 70px;
+            }
+            .play-button-overlay::after {
+                border-left: 18px solid white;
+                border-top: 10px solid transparent;
+                border-bottom: 10px solid transparent;
+            }
+        }
+        /* MSA Ambassadors Grid Section */
+        
+        .msa-ambassadors-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+        
+        .ambassadors-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+        
+        .ambassadors-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 30px;
+            margin-top: 60px;
+        }
+        
+        .ambassador-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(43, 42, 149, 0.1);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            border: 2px solid transparent;
+        }
+        
+        .ambassador-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 25px 60px rgba(43, 42, 149, 0.25);
+            border-color: #00BCF2;
+        }
+        
+        .ambassador-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(43, 42, 149, 0.05), rgba(0, 188, 242, 0.05));
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            border-radius: 20px;
+            z-index: 1;
+        }
+        
+        .ambassador-card:hover::before {
+            opacity: 1;
+        }
+        
+        .ambassador-card::after {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, #2b2a95, #00BCF2, #0078D7, #FFB900);
+            background-size: 300% 300%;
+            border-radius: 20px;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            animation: gradientShift 3s ease infinite;
+        }
+        
+        .ambassador-card:hover::after {
+            opacity: 1;
+        }
+        
+        @keyframes gradientShift {
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+        
+        .ambassador-photo {
+            width: 100%;
+            height: 250px;
+            background: linear-gradient(135deg, #2b2a95 0%, #1e3a8a 50%, #00BCF2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            font-weight: 800;
+            color: #adb5bd;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .ambassador-photo::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+        }
+        
+        .ambassador-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .ambassador-photo::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 60%;
+            background: linear-gradient(to top, rgba(43, 42, 149, 0.8), transparent);
+            z-index: 1;
+        }
+        
+        .coming-soon-badge {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-5deg);
+            background: linear-gradient(135deg, rgba(43, 42, 149, 0.98), rgba(0, 120, 215, 0.98));
+            color: white;
+            padding: 15px 30px;
+            border-radius: 15px;
+            font-size: 15px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            z-index: 2;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            animation: floatBadge 3s ease-in-out infinite;
+        }
+        
+        @keyframes floatBadge {
+            0%,
+            100% {
+                transform: translate(-50%, -50%) rotate(-5deg) translateY(0);
+            }
+            50% {
+                transform: translate(-50%, -50%) rotate(-5deg) translateY(-10px);
+            }
+        }
+        
+        .ambassador-info {
+            padding: 25px 20px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            background: white;
+        }
+        
+        .ambassador-name {
+            font-size: 18px;
+            font-weight: 800;
+            background: linear-gradient(135deg, #2b2a95, #00BCF2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+            line-height: 1.3;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .ambassador-dept {
+            font-size: 13px;
+            color: #6c757d;
+            margin-bottom: 12px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+        
+        .ambassador-tenure {
+            display: inline-block;
+            background: linear-gradient(135deg, #2b2a95, #1e3a8a);
+            color: white;
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            box-shadow: 0 5px 15px rgba(43, 42, 149, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .ambassador-card:hover .ambassador-tenure {
+            transform: scale(1.1);
+            box-shadow: 0 8px 25px rgba(43, 42, 149, 0.5);
+        }
+        /* Ambassadors Responsive */
+        
+        @media (max-width: 1400px) {
+            .ambassadors-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+        
+        @media (max-width: 1100px) {
+            .ambassadors-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .msa-ambassadors-section {
+                padding: 60px 0;
+            }
+            .ambassadors-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+            .ambassador-photo {
+                height: 200px;
+            }
+            .ambassador-name {
+                font-size: 16px;
+            }
+            .coming-soon-badge {
+                font-size: 13px;
+                padding: 12px 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .ambassadors-grid {
+                grid-template-columns: 1fr;
+            }
+            .ambassador-photo {
+                height: 250px;
+            }
+        }
+        /* Responsive Design for Leaders */
+        
+        @media (max-width: 992px) {
+            .leaders-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .msa-leaders-section {
+                padding: 60px 0;
+            }
+            .leader-header {
+                padding: 30px 20px 20px;
+            }
+            .leader-avatar {
+                width: 170px;
+                height: 170px;
+                font-size: 50px;
+            }
+            .leader-name {
+                font-size: 24px;
+            }
+            .leader-title {
+                font-size: 14px;
+            }
+            .leader-body {
+                padding: 25px 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+                .msa-leaders-section {
+                    padding: 50px 0;
+                }
+                .leaders-container {
+                    padding: 0 15px;
+                }
+                .leader-avatar {
+                    width: 140px;
+                    height: 140px;
+                    font-size: 40px;
+                }
+                .leader-name {
+                    font-size: 22px;
+                }
+                .leader-title {
+                    font-size: 13px;
+                }
+                .beta-badge {
+                    font-size: 11px;
+                    padding: 6px 15px;
+                }
+                .leader-body {
+                    padding: 20px 15px;
+                }
+                .mvp-button {
+                    padding: 12px 20px;
+                    font-size: 14px;
+                }
+            }
+
+        /* ========== MICROSOFT TEAMS MEMBERS SECTION ========== */
+        .microsoft-team-section {
+            padding: 120px 0;
+            background: #f5f7fa;
+            position: relative;
+        }
+
+        .team-container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 0 40px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .team-header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .team-main-title {
+            font-size: 52px;
+            font-weight: 900;
+            color: #1a1a2e;
+            margin-bottom: 15px;
+            letter-spacing: -1.5px;
+            line-height: 1.2;
+        }
+
+        .title-underline {
+            width: 120px;
+            height: 6px;
+            background: linear-gradient(90deg, #2b2a95, #00BCF2);
+            margin: 0 auto 30px;
+            border-radius: 3px;
+        }
+
+        .team-description {
+            font-size: 19px;
+            color: #555555;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.7;
+            font-weight: 500;
+            letter-spacing: 0.2px;
+        }
+
+        /* Professional Grid Layout */
+        .team-grid-wrapper {
+            position: relative;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 35px;
+            width: 100%;
+        }
+
+        /* Team Member Card */
+        .team-member-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e0e6f0;
+            position: relative;
+        }
+
+        .team-member-card:hover {
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .member-image {
+            width: 100%;
+            height: 380px;
+            overflow: hidden;
+            background: #f9fafb;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .member-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+            background: white;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        .member-details {
+            padding: 32px 28px;
+            background: white;
+            text-align: center;
+        }
+
+        .member-name {
+            font-size: 20px;
+            font-weight: 800;
+            color: #1a1a2e;
+            margin: 0 0 8px 0;
+            letter-spacing: -0.2px;
+            line-height: 1.3;
+        }
+
+        .member-position {
+            font-size: 14px;
+            color: #2b2a95;
+            font-weight: 700;
+            margin: 0 0 22px 0;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            line-height: 1.4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 40px;
+        }
+
+        .member-meta {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-top: 18px;
+            padding-top: 18px;
+            border-top: 1px solid #e8ecf5;
+        }
+
+        .meta-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+        }
+
+        .meta-label {
+            color: #777777;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+
+        .meta-value {
+            color: #333333;
+            font-weight: 700;
+            letter-spacing: 0.1px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1400px) {
+            .team-container {
+                padding: 0 35px;
+            }
+
+            .team-grid {
+                grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+                gap: 30px;
+            }
+
+            .team-main-title {
+                font-size: 44px;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .microsoft-team-section {
+                padding: 100px 0;
+            }
+
+            .team-container {
+                padding: 0 30px;
+            }
+
+            .team-grid {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 28px;
+            }
+
+            .team-header {
+                margin-bottom: 60px;
+            }
+
+            .team-main-title {
+                font-size: 38px;
+            }
+
+            .team-description {
+                font-size: 17px;
+            }
+
+            .member-image {
+                height: 340px;
+            }
+
+            .member-details {
+                padding: 28px 24px;
+            }
+
+            .member-name {
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .microsoft-team-section {
+                padding: 80px 0;
+            }
+
+            .team-container {
+                padding: 0 20px;
+            }
+
+            .team-grid {
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 24px;
+            }
+
+            .team-header {
+                margin-bottom: 50px;
+            }
+
+            .team-main-title {
+                font-size: 32px;
+                margin-bottom: 12px;
+            }
+
+            .title-underline {
+                width: 100px;
+                height: 5px;
+                margin: 0 auto 20px;
+            }
+
+            .team-description {
+                font-size: 15px;
+            }
+
+            .member-image {
+                height: 300px;
+            }
+
+            .member-details {
+                padding: 24px 20px;
+            }
+
+            .member-name {
+                font-size: 17px;
+            }
+
+            .member-position {
+                font-size: 13px;
+                min-height: 36px;
+            }
+
+            .member-meta {
+                gap: 12px;
+                margin-top: 14px;
+                padding-top: 14px;
+            }
+
+            .meta-row {
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .microsoft-team-section {
+                padding: 60px 0;
+            }
+
+            .team-container {
+                padding: 0 15px;
+            }
+
+            .team-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .team-header {
+                margin-bottom: 40px;
+            }
+
+            .team-main-title {
+                font-size: 26px;
+                margin-bottom: 10px;
+            }
+
+            .title-underline {
+                width: 80px;
+                height: 4px;
+                margin: 0 auto 15px;
+            }
+
+            .team-description {
+                font-size: 14px;
+            }
+
+            .member-image {
+                height: 260px;
+            }
+
+            .member-details {
+                padding: 22px 18px;
+            }
+
+            .member-name {
+                font-size: 16px;
+            }
+
+            .member-position {
+                font-size: 12px;
+                margin-bottom: 15px;
+                min-height: 32px;
+            }
+
+            .member-meta {
+                gap: 10px;
+                margin-top: 12px;
+                padding-top: 12px;
+            }
+
+            .meta-row {
+                font-size: 11px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 2px;
+            }
+
+            .meta-label,
+            .meta-value {
+                font-size: 11px;
+            }
+        }
+    </style>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Hero Section with MSA Branding -->
+        <section class="msa-hero-section">
+            <div class="msa-hero-container">
+                <!-- Animated Logo -->
+                <div class="msa-logo-container">
+                    <div class="msa-logo-wrapper">
+                        <svg class="msa-logo" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Microsoft Logo Colors -->
+                            <rect x="20" y="20" width="70" height="70" fill="#F25022" rx="8"/>
+                            <rect x="110" y="20" width="70" height="70" fill="#7FBA00" rx="8"/>
+                            <rect x="20" y="110" width="70" height="70" fill="#00A4EF" rx="8"/>
+                            <rect x="110" y="110" width="70" height="70" fill="#FFB900" rx="8"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- MLSA Badge Logo -->
+                <div style="text-align: center; margin-bottom: 40px;">
+                    <img src="msa.png" alt="MLSA Program Logo" style="max-width: 300px; height: auto; filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3)); animation: fadeInScale 1s ease-out 0.5s both;" />
+                </div>
+
+                <!-- Main Content -->
+                <div class="msa-content">
+                    <h1 class="msa-title">Microsoft Student Ambassadors</h1>
+                    <p class="msa-subtitle">Empowering Students Through Technology, Innovation & Leadership</p>
+
+                    <!-- Rebranding Notice -->
+                    <div class="msa-rebranding-notice">
+                        <h3><i class="fas fa-info-circle"></i> Program Rebranding Update</h3>
+                        <p>
+                            The Microsoft Learn Student Ambassador (MLSA) program has been officially rebranded as the <strong>Microsoft Student Ambassadors (MSA)</strong> program. This rebranding reflects Microsoft's commitment to providing a more inclusive
+                            and comprehensive platform for students worldwide. While the name has evolved, our mission remains unchanged: to empower students with cutting-edge technology skills, leadership opportunities, and a global community of like-minded
+                            innovators. All existing ambassadors and their achievements remain fully recognized under the new MSA branding.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About MSA Section -->
+        <section class="about-msa-section">
+            <div class="about-msa-container">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <h2>About Microsoft Student Ambassadors</h2>
+                    <div class="underline"></div>
+                    <p>Join a global community of student leaders passionate about technology and innovation</p>
+                </div>
+
+                <!-- Content Grid -->
+                <div class="msa-content-grid">
+                    <div class="content-text">
+                        <h3>What is MSA?</h3>
+                        <p>
+                            The Microsoft Student Ambassadors (MSA) program is a prestigious global initiative designed to empower student leaders who are passionate about technology and making a positive impact in their communities. As an MSA, you gain access to exclusive learning
+                            resources, cutting-edge Microsoft technologies, networking opportunities with industry professionals, and the chance to organize impactful events that inspire others.
+                        </p>
+                        <p>
+                            Ambassadors serve as the bridge between Microsoft and their campus communities, fostering innovation, technical excellence, and collaborative learning. Through this program, students develop essential leadership skills, expand their professional network,
+                            and contribute to the advancement of technology education globally.
+                        </p>
+                    </div>
+
+                    <div class="content-image">
+                        <div class="feature-box">
+                            <h4><i class="fas fa-graduation-cap"></i> Student Leadership</h4>
+                            <p>
+                                MSA empowers students to become technology leaders on their campuses, organizing workshops, hackathons, and tech talks that inspire and educate their peers while building invaluable leadership experience.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="msa-content-grid" style="direction: rtl;">
+                    <div class="content-text" style="direction: ltr;">
+                        <h3>Why Join MSA?</h3>
+                        <p>
+                            Becoming a Microsoft Student Ambassador opens doors to unparalleled opportunities for personal and professional growth. You'll gain hands-on experience with Azure, AI, GitHub, and other Microsoft technologies while earning industry-recognized certifications.
+                            The program provides mentorship from Microsoft employees and industry experts, exclusive access to Microsoft events and conferences, and opportunities to collaborate with students from over 100 countries.
+                        </p>
+                        <p>
+                            Beyond technical skills, MSA cultivates essential soft skills including public speaking, event management, community building, and project leadership. These experiences significantly enhance your resume and prepare you for successful careers in the technology
+                            sector and beyond.
+                        </p>
+                    </div>
+
+                    <div class="content-image" style="direction: ltr;">
+                        <div class="feature-box">
+                            <h4><i class="fas fa-globe-americas"></i> Global Community</h4>
+                            <p>
+                                Connect with thousands of student ambassadors worldwide, collaborate on international projects, share knowledge across borders, and build a professional network that extends far beyond your university.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MNS UET Multan Chapter Highlight -->
+                <div class="chapter-highlight">
+                    <div class="chapter-highlight-content">
+                        <h3><i class="fas fa-university"></i> MSA MNS UET Multan Chapter</h3>
+                        <p>
+                            The Microsoft Student Ambassadors chapter at MNS University of Engineering and Technology, Multan, represents a vibrant community of tech enthusiasts and innovators committed to advancing technology education in our region. Our ambassadors actively organize
+                            workshops, coding bootcamps, and technical sessions that benefit hundreds of students across the university. We collaborate closely with the ICT Club to create impactful learning experiences, promote Microsoft technologies,
+                            and foster a culture of innovation and continuous learning. Through our collective efforts, we're building a strong foundation for the next generation of technology leaders in Pakistan.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MSA Leaders Section -->
+        <section class="msa-leaders-section">
+            <div class="leaders-container">
+                <div style="text-align: center; margin-bottom: 20px;">
+                    <h2 style="font-size: 42px; font-weight: 800; background: linear-gradient(135deg, #2b2a95, #00BCF2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 15px; animation: fadeInUp 0.8s ease-out;">
+                        Our MSA Leadership Team
+                    </h2>
+                    <p style="font-size: 18px; color: #6c757d; max-width: 700px; margin: 0 auto; line-height: 1.8;">
+                        Meet the passionate leaders driving Microsoft Student Ambassadors at MNS UET Multan
+                    </p>
+                </div>
+
+                <div class="leaders-grid">
+                    <!-- Campus Lead Card -->
+                    <div class="leader-card" style="animation: slideInLeft 0.8s ease-out;">
+                        <div class="leader-header">
+                            <div class="leader-avatar">
+                                <img src="daud1.png" alt="Muhammad Daud">
+                            </div>
+                            <h3 class="leader-name">Muhammad Daud</h3>
+                            <p class="leader-title">Campus Lead</p>
+                            <span class="beta-badge">
+                                <i class="fa fa-star"></i> Beta MSA
+                            </span>
+                            <div class="region-tag">
+                                <i class="fa fa-map-marker-alt"></i> Region Level
+                            </div>
+                        </div>
+                        <div class="leader-body">
+                            <p class="leader-description">
+                                Leading the MSA community at MNS UET Multan with passion and dedication. Committed to empowering students through technology, innovation, and collaborative learning experiences.
+                            </p>
+                            <div class="leader-achievements">
+                                <div class="achievement-badge">
+                                    <i class="fa fa-users"></i> Community Builder
+                                </div>
+                                <div class="achievement-badge">
+                                    <i class="fa fa-lightbulb"></i> Tech Innovator
+                                </div>
+                                <div class="achievement-badge">
+                                    <i class="fa fa-trophy"></i> Beta Ambassador
+                                </div>
+                            </div>
+                            <a href="https://mvp.microsoft.com/en-US/studentambassadors/profile/a0920338-b6c5-4f27-a86e-8efcebacb2ac" class="mvp-button" target="_blank" rel="noopener noreferrer">
+                                <i class="fa fa-external-link-alt"></i> View MSA MVP Profile
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Campus Co-Lead Card -->
+                    <div class="leader-card" style="animation: fadeInRight 0.8s ease-out 0.2s both;">
+                        <div class="leader-header">
+                            <div class="leader-avatar">
+                                <img src="zain.jpg" alt="Muhammad Zain">
+                            </div>
+                            <h3 class="leader-name">Muhammad Zain</h3>
+                            <p class="leader-title">Campus Co-Lead</p>
+                            <span class="beta-badge">
+                                <i class="fa fa-star"></i> Beta MSA
+                            </span>
+                            <div class="region-tag">
+                                <i class="fa fa-map-marker-alt"></i> Region Level
+                            </div>
+                        </div>
+                        <div class="leader-body">
+                            <p class="leader-description">
+                                Supporting and expanding the MSA vision at MNS UET Multan. Focused on creating impactful events, fostering innovation, and building a thriving tech community.
+                            </p>
+                            <div class="leader-achievements">
+                                <div class="achievement-badge">
+                                    <i class="fa fa-code"></i> Developer Advocate
+                                </div>
+                                <div class="achievement-badge">
+                                    <i class="fa fa-calendar-alt"></i> Event Organizer
+                                </div>
+                                <div class="achievement-badge">
+                                    <i class="fa fa-trophy"></i> Beta Ambassador
+                                </div>
+                            </div>
+                            <a href="https://mvp.microsoft.com/en-US/studentambassadors/profile/86a16743-3363-4b88-8344-6ca59e7ed49e" class="mvp-button" target="_blank" rel="noopener noreferrer">
+                                <i class="fa fa-external-link-alt"></i> View MSA MVP Profile
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- YouTube Video Section -->
+        <section class="msa-video-section">
+            <div class="video-container">
+                <div style="text-align: center; margin-bottom: 40px;">
+                    <h2 style="font-size: 42px; font-weight: 800; background: linear-gradient(135deg, #2b2a95, #00BCF2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 15px; animation: fadeInUp 0.8s ease-out;">
+                        MSA Program Video
+                    </h2>
+                    <p style="font-size: 18px; color: #6c757d; max-width: 700px; margin: 0 auto; line-height: 1.8;">
+                        Watch our Campus Lead and Co-Lead share their vision for MSA MNS UET Multan
+                    </p>
+                </div>
+
+                <div class="video-wrapper" style="animation: fadeInUp 1s ease-out;">
+                    <a href="https://youtu.be/6fQD_Pctkes?si=8Jvzh9umZNhWjYnr" target="_blank" rel="noopener noreferrer" style="text-decoration: none; display: block;">
+                        <div class="video-thumbnail">
+                            <img src="https://img.youtube.com/vi/6fQD_Pctkes/maxresdefault.jpg" alt="MSA Program Video Thumbnail">
+                            <div class="play-button-overlay"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Microsoft Teams Members Section -->
+        <section class="microsoft-team-section">
+            <div class="team-container">
+                <div class="team-header">
+                    <h2 class="team-main-title">Microsoft Teams - Leadership</h2>
+                    <div class="title-underline"></div>
+                    <p class="team-description">Our Leadership Team</p>
+                </div>
+
+                <!-- Professional Grid Layout -->
+                <div class="team-grid-wrapper">
+                    <div class="team-grid" id="teamGrid">
+                        <!-- Team Member 1 -->
+                        <div class="team-member-card">
+                            <div class="member-image">
+                                <img src="Microsoft Team Members/Abdul Mateen  Logistics & Operations Lead (2).png" alt="Abdul Mateen">
+                            </div>
+                            <div class="member-details">
+                                <h3 class="member-name">Abdul Mateen</h3>
+                                <p class="member-position">Logistics & Operations Lead</p>
+                                <div class="member-meta">
+                                    <div class="meta-row">
+                                        <span class="meta-label">Degree:</span>
+                                        <span class="meta-value">Cybersecurity</span>
+                                    </div>
+                                    <div class="meta-row">
+                                        <span class="meta-label">Department:</span>
+                                        <span class="meta-value">Computer Science</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Team Member 2 -->
+                        <div class="team-member-card">
+                            <div class="member-image">
+                                <img src="Microsoft Team Members/Abdul Rafay Qureshi Position  Social Media & Marketing Lead.png" alt="Abdul Rafay Qureshi">
+                            </div>
+                            <div class="member-details">
+                                <h3 class="member-name">Abdul Rafay Qureshi</h3>
+                                <p class="member-position">Social Media & Marketing Lead</p>
+                                <div class="member-meta">
+                                    <div class="meta-row">
+                                        <span class="meta-label">Degree:</span>
+                                        <span class="meta-value">Computer Science</span>
+                                    </div>
+                                    <div class="meta-row">
+                                        <span class="meta-label">Department:</span>
+                                        <span class="meta-value">Computer Science</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Team Member 3 -->
+                        <div class="team-member-card">
+                            <div class="member-image">
+                                <img src="Microsoft Team Members/Ahmad Hassan  Position Logistics & Operations Lead (2).png" alt="Ahmad Hassan">
+                            </div>
+                            <div class="member-details">
+                                <h3 class="member-name">Ahmad Hassan</h3>
+                                <p class="member-position">Logistics & Operations Lead</p>
+                                <div class="member-meta">
+                                    <div class="meta-row">
+                                        <span class="meta-label">Degree:</span>
+                                        <span class="meta-value">Artificial Intelligence</span>
+                                    </div>
+                                    <div class="meta-row">
+                                        <span class="meta-label">Department:</span>
+                                        <span class="meta-value">Computer Science</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Team Member 4 -->
+                        <div class="team-member-card">
+                            <div class="member-image">
+                                <img src="Microsoft Team Members/Armgahan Ahmad Shad Position Content & Documentation Lead.png" alt="Armgahan Ahmad Shad">
+                            </div>
+                            <div class="member-details">
+                                <h3 class="member-name">Armgahan Ahmad Shad</h3>
+                                <p class="member-position">Content & Documentation Lead</p>
+                                <div class="member-meta">
+                                    <div class="meta-row">
+                                        <span class="meta-label">Degree:</span>
+                                        <span class="meta-value">Information Technology</span>
+                                    </div>
+                                    <div class="meta-row">
+                                        <span class="meta-label">Department:</span>
+                                        <span class="meta-value">Computer Science</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Team Member 5 -->
+                        <div class="team-member-card">
+                            <div class="member-image">
+                                <img src="Microsoft Team Members/Ayesha Khan Position Technical Lead.png" alt="Ayesha Khan">
+                            </div>
+                            <div class="member-details">
+                                <h3 class="member-name">Ayesha Khan</h3>
+                                <p class="member-position">Technical Lead</p>
+                                <div class="member-meta">
+                                    <div class="meta-row">
+                                        <span class="meta-label">Degree:</span>
+                                        <span class="meta-value">Computer Science</span>
+                                    </div>
+                                    <div class="meta-row">
+                                        <span class="meta-label">Department:</span>
+                                        <span class="meta-value">Computer Science</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Team Member 6 -->
+                        <div class="team-member-card">
+                            <div class="member-image">
+                                <img src="Microsoft Team Members/Huzaifa Mushtaq Position Web & Operational Lead.png" alt="Huzaifa Mushtaq">
+                            </div>
+                            <div class="member-details">
+                                <h3 class="member-name">Huzaifa Mushtaq</h3>
+                                <p class="member-position">Web & Operational Lead</p>
+                                <div class="member-meta">
+                                    <div class="meta-row">
+                                        <span class="meta-label">Degree:</span>
+                                        <span class="meta-value">Information Technology</span>
+                                    </div>
+                                    <div class="meta-row">
+                                        <span class="meta-label">Department:</span>
+                                        <span class="meta-value">Computer Science</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Team Member 7 -->
+                        <div class="team-member-card">
+                            <div class="member-image">
+                                <img src="Microsoft Team Members/Mahnoor Position Social Media & Marketing Lead (2).png" alt="Mahnoor">
+                            </div>
+                            <div class="member-details">
+                                <h3 class="member-name">Mahnoor</h3>
+                                <p class="member-position">Social Media & Marketing Lead</p>
+                                <div class="member-meta">
+                                    <div class="meta-row">
+                                        <span class="meta-label">Degree:</span>
+                                        <span class="meta-value">Information Technology</span>
+                                    </div>
+                                    <div class="meta-row">
+                                        <span class="meta-label">Department:</span>
+                                        <span class="meta-value">Computer Science</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Team Member 8 -->
+                        <div class="team-member-card">
+                            <div class="member-image">
+                                <img src="Microsoft Team Members/Muhammad Idrees Position Content & Documentation Lead (2).png" alt="Muhammad Idrees">
+                            </div>
+                            <div class="member-details">
+                                <h3 class="member-name">Muhammad Idrees</h3>
+                                <p class="member-position">Content & Documentation Lead</p>
+                                <div class="member-meta">
+                                    <div class="meta-row">
+                                        <span class="meta-label">Degree:</span>
+                                        <span class="meta-value">Cybersecurity</span>
+                                    </div>
+                                    <div class="meta-row">
+                                        <span class="meta-label">Department:</span>
+                                        <span class="meta-value">Computer Science</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Team Member 9 -->
+                        <div class="team-member-card">
+                            <div class="member-image">
+                                <img src="Microsoft Team Members/Muhammad Masab Position Event Management Lead (2).png" alt="Muhammad Masab">
+                            </div>
+                            <div class="member-details">
+                                <h3 class="member-name">Muhammad Masab</h3>
+                                <p class="member-position">Event Management Lead</p>
+                                <div class="member-meta">
+                                    <div class="meta-row">
+                                        <span class="meta-label">Degree:</span>
+                                        <span class="meta-value">Information Technology</span>
+                                    </div>
+                                    <div class="meta-row">
+                                        <span class="meta-label">Department:</span>
+                                        <span class="meta-value">Computer Science</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Team Member 10 -->
+                        <div class="team-member-card">
+                            <div class="member-image">
+                                <img src="Microsoft Team Members/Muhammad Zaeem Position Event Management Lead.png" alt="Muhammad Zaeem">
+                            </div>
+                            <div class="member-details">
+                                <h3 class="member-name">Muhammad Zaeem</h3>
+                                <p class="member-position">Event Management Lead</p>
+                                <div class="member-meta">
+                                    <div class="meta-row">
+                                        <span class="meta-label">Degree:</span>
+                                        <span class="meta-value">Cybersecurity</span>
+                                    </div>
+                                    <div class="meta-row">
+                                        <span class="meta-label">Department:</span>
+                                        <span class="meta-value">Computer Science</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Team Member 11 -->
+                        <div class="team-member-card">
+                            <div class="member-image">
+                                <img src="Microsoft Team Members/Muhammed Kashif Position Logistics & Operations Lead.png" alt="Muhammed Kashif">
+                            </div>
+                            <div class="member-details">
+                                <h3 class="member-name">Muhammed Kashif</h3>
+                                <p class="member-position">Logistics & Operations Lead</p>
+                                <div class="member-meta">
+                                    <div class="meta-row">
+                                        <span class="meta-label">Degree:</span>
+                                        <span class="meta-value">Software Engineering</span>
+                                    </div>
+                                    <div class="meta-row">
+                                        <span class="meta-label">Department:</span>
+                                        <span class="meta-value">Computer Science</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Team Member 12 -->
+                        <div class="team-member-card">
+                            <div class="member-image">
+                                <img src="Microsoft Team Members/Tehreem Tufail Position Technical Lead (2).png" alt="Tehreem Tufail">
+                            </div>
+                            <div class="member-details">
+                                <h3 class="member-name">Tehreem Tufail</h3>
+                                <p class="member-position">Technical Lead</p>
+                                <div class="member-meta">
+                                    <div class="meta-row">
+                                        <span class="meta-label">Degree:</span>
+                                        <span class="meta-value">Computer Science</span>
+                                    </div>
+                                    <div class="meta-row">
+                                        <span class="meta-label">Department:</span>
+                                        <span class="meta-value">Computer Science</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- More content sections will be added here -->
+
+    </main>
+
+    <!-- Footer Separator -->
+    <div class="footer-separator"></div>
+
+    <!-- Footer Section - INLINE (No iframe) -->
+    <footer class="advanced-footer">
+        <!-- TOP ACCENT -->
+        <div class="footer-accent"></div>
+
+        <!-- BRANDING SECTION -->
+        <div class="footer-branding">
+            <!-- Particles Background -->
+            <div class="particles-container">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+
+            <div class="footer-brand-container">
+                <div class="brand-left">
+                    <div class="brand-logo-section">
+                        <img src="ICT Club Official Logo without Background.png" alt="ICT Club Logo" class="brand-logo">
+                    </div>
+                    <div class="brand-text">
+                        <h2>ICT Club</h2>
+                        <p>MNS University of Engineering &amp; Technology</p>
+                    </div>
+                    <div class="brand-description">
+                        An official student organization at MNS UET Multan, dedicated to empowering students through technology, innovation, and professional development in the field of Information and Communication Technology.
+                    </div>
+                    <div class="brand-badges">
+                        <div class="brand-badge">
+                            <i class="fas fa-check-circle"></i> Approved by MNS UET
+                        </div>
+                        <div class="brand-badge">
+                            <i class="fas fa-certificate"></i> Official Organization
+                        </div>
+                        <div class="brand-badge">
+                            <i class="fas fa-users"></i> Student Community
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MAIN FOOTER -->
+        <div class="footer-main">
+            <div class="footer-container">
+                <div class="footer-grid">
+
+                    <!-- QUICK LINKS -->
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                            <li><a href="index.html#objectives"><i class="fas fa-chevron-right"></i> Our Objectives</a></li>
+                            <li><a href="index.html#vision"><i class="fas fa-chevron-right"></i> Vision &amp; Mission</a></li>
+                            <li><a href="index.html#activities"><i class="fas fa-chevron-right"></i> Activities</a></li>
+                            <li><a href="team.html"><i class="fas fa-chevron-right"></i> Our Team</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- RESOURCES -->
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="ictcluballiances.html"><i class="fas fa-chevron-right"></i> Alliances</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- PORTALS -->
+                    <div class="footer-column">
+                        <h3>Portals</h3>
+                        <ul>
+                            <li><a href="verified.html"><i class="fas fa-chevron-right"></i> Certificate Verification</a></li>
+                            <li><a href="https://mnsuet.edu.pk/" target="_blank"><i class="fas fa-chevron-right"></i> MNS UET Multan</a></li>
+                            <li><a href="mlsa.html"><i class="fas fa-chevron-right"></i> MSA Program</a></li>
+                            <li><a href="policy.html"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                            <li><a href="policy.html#terms"><i class="fas fa-chevron-right"></i> Terms of Service</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- CONTACT -->
+                    <div class="footer-column">
+                        <h3>Contact Us</h3>
+
+                        <div class="contact-info-item">
+                            <div class="contact-icon-box">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p><a href="mailto:ict.mnsuet@gmail.com">ict.mnsuet@gmail.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-icon-box">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <p>MNS UET Multan<br>Punjab, Pakistan</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- SOCIAL SECTION -->
+        <div class="footer-social">
+            <div class="social-wrapper">
+                <div class="social-title">Connect With Us</div>
+                <div class="social-buttons">
+                    <a href="https://www.linkedin.com/company/ict-clubmns-uet-multan/" class="social-btn linkedin" target="_blank" title="LinkedIn" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://web.facebook.com/ictclubpk/" class="social-btn facebook" target="_blank" title="Facebook" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/ictclub_mnsuet?igsh=aHEwamdqcTU1bDEw" class="social-btn instagram" target="_blank" title="Instagram" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="mailto:ict.mnsuet@gmail.com" class="social-btn email" target="_blank" title="Email" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@ICTClubMNSUETMultan" class="social-btn youtube" target="_blank" title="YouTube" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER BOTTOM -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <div class="copyright-text">
+                    &copy; 2025 All Rights Reserved | <strong>ICT Club</strong> at MNS UET Multan..... <span class="heart-icon">❤</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        /* Footer Separator */
+        
+        .footer-separator {
+            height: 5px;
+            background: linear-gradient(90deg, #2b2a95 0%, #1e3a8a 50%, #2b2a95 100%);
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+        }
+        
+        .footer-separator::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            animation: shimmer 3s infinite;
+        }
+        
+        @keyframes shimmer {
+            0% {
+                left: -100%;
+            }
+            100% {
+                left: 100%;
+            }
+        }
+        /* ISOLATED ADVANCED WHITE FOOTER STYLES */
+        
+        .advanced-footer {
+            background: #ffffff;
+            color: #333333;
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            isolation: isolate;
+            clear: both;
+        }
+        
+        .advanced-footer * {
+            box-sizing: border-box;
+        }
+        
+        .advanced-footer .footer-accent {
+            height: 5px;
+            background: linear-gradient(90deg, #2b2a95 0%, #1e3a8a 50%, #2b2a95 100%);
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+        }
+        
+        .advanced-footer .footer-accent::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            animation: shimmer 3s infinite;
+        }
+        /* Branding Section */
+        
+        .advanced-footer .footer-branding {
+            background: #f8f9fa;
+            padding: 50px 0;
+            border-bottom: 2px solid #e9ecef;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        /* PARTICLES ANIMATION */
+        
+        .advanced-footer .particles-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 0;
+        }
+        
+        .advanced-footer .particle {
+            position: absolute;
+            background: radial-gradient(circle, rgba(30, 58, 138, 0.6), rgba(43, 42, 149, 0.3));
+            border-radius: 50%;
+            animation: float linear infinite;
+        }
+        
+        .advanced-footer .particle:nth-child(1) {
+            width: 80px;
+            height: 80px;
+            left: 10%;
+            top: 20%;
+            animation-duration: 15s;
+            animation-delay: 0s;
+        }
+        
+        .advanced-footer .particle:nth-child(2) {
+            width: 60px;
+            height: 60px;
+            left: 85%;
+            top: 30%;
+            animation-duration: 18s;
+            animation-delay: 2s;
+        }
+        
+        .advanced-footer .particle:nth-child(3) {
+            width: 50px;
+            height: 50px;
+            left: 25%;
+            top: 60%;
+            animation-duration: 20s;
+            animation-delay: 4s;
+        }
+        
+        .advanced-footer .particle:nth-child(4) {
+            width: 70px;
+            height: 70px;
+            left: 70%;
+            top: 70%;
+            animation-duration: 16s;
+            animation-delay: 1s;
+        }
+        
+        .advanced-footer .particle:nth-child(5) {
+            width: 40px;
+            height: 40px;
+            left: 50%;
+            top: 10%;
+            animation-duration: 22s;
+            animation-delay: 3s;
+        }
+        
+        .advanced-footer .particle:nth-child(6) {
+            width: 55px;
+            height: 55px;
+            left: 15%;
+            top: 80%;
+            animation-duration: 19s;
+            animation-delay: 5s;
+        }
+        
+        .advanced-footer .particle:nth-child(7) {
+            width: 45px;
+            height: 45px;
+            left: 90%;
+            top: 15%;
+            animation-duration: 17s;
+            animation-delay: 2.5s;
+        }
+        
+        .advanced-footer .particle:nth-child(8) {
+            width: 65px;
+            height: 65px;
+            left: 40%;
+            top: 85%;
+            animation-duration: 21s;
+            animation-delay: 1.5s;
+        }
+        
+        .advanced-footer .particle:nth-child(9) {
+            width: 50px;
+            height: 50px;
+            left: 75%;
+            top: 50%;
+            animation-duration: 18s;
+            animation-delay: 4.5s;
+        }
+        
+        .advanced-footer .particle:nth-child(10) {
+            width: 60px;
+            height: 60px;
+            left: 30%;
+            top: 35%;
+            animation-duration: 20s;
+            animation-delay: 0.5s;
+        }
+        
+        .advanced-footer .particle:nth-child(11) {
+            width: 35px;
+            height: 35px;
+            left: 60%;
+            top: 25%;
+            animation-duration: 16s;
+            animation-delay: 3.5s;
+        }
+        
+        .advanced-footer .particle:nth-child(12) {
+            width: 55px;
+            height: 55px;
+            left: 5%;
+            top: 50%;
+            animation-duration: 19s;
+            animation-delay: 2s;
+        }
+        
+        .advanced-footer .particle:nth-child(13) {
+            width: 48px;
+            height: 48px;
+            left: 95%;
+            top: 60%;
+            animation-duration: 17s;
+            animation-delay: 4s;
+        }
+        
+        .advanced-footer .particle:nth-child(14) {
+            width: 52px;
+            height: 52px;
+            left: 45%;
+            top: 5%;
+            animation-duration: 21s;
+            animation-delay: 1s;
+        }
+        
+        .advanced-footer .particle:nth-child(15) {
+            width: 58px;
+            height: 58px;
+            left: 80%;
+            top: 90%;
+            animation-duration: 18s;
+            animation-delay: 5s;
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(0) translateX(0) scale(1);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.6;
+            }
+            50% {
+                transform: translateY(-100px) translateX(50px) scale(1.2);
+                opacity: 0.8;
+            }
+            90% {
+                opacity: 0.6;
+            }
+            100% {
+                transform: translateY(-200px) translateX(-50px) scale(0.8);
+                opacity: 0;
+            }
+        }
+        
+        .advanced-footer .footer-brand-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 30px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .advanced-footer .brand-left {
+            width: 100%;
+            text-align: center;
+        }
+        
+        .advanced-footer .brand-logo-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        
+        .advanced-footer .brand-logo {
+            width: 140px;
+            height: 140px;
+            object-fit: contain;
+            filter: drop-shadow(0 8px 20px rgba(43, 42, 149, 0.25));
+            transition: all 0.4s ease;
+        }
+        
+        .advanced-footer .brand-logo:hover {
+            transform: scale(1.08) translateY(-5px);
+            filter: drop-shadow(0 12px 30px rgba(43, 42, 149, 0.35));
+        }
+        
+        .advanced-footer .brand-text {
+            margin-bottom: 25px;
+        }
+        
+        .advanced-footer .brand-text h2 {
+            font-size: 42px;
+            font-weight: 800;
+            background: linear-gradient(135deg, #2b2a95, #1e3a8a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        
+        .advanced-footer .brand-text p {
+            font-size: 16px;
+            color: #495057;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        
+        .advanced-footer .brand-description {
+            color: #495057;
+            font-size: 15px;
+            line-height: 1.8;
+            max-width: 750px;
+            margin: 0 auto 30px auto;
+            font-weight: 400;
+        }
+        
+        .advanced-footer .brand-badges {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        
+        .advanced-footer .brand-badge {
+            padding: 12px 28px;
+            background: linear-gradient(135deg, #ffffff, #f8f9fa);
+            border: 2px solid #dee2e6;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 700;
+            color: #2b2a95;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.4s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .advanced-footer .brand-badge:hover {
+            border-color: #1e3a8a;
+            background: linear-gradient(135deg, #f0f0ff, #ffffff);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(30, 58, 138, 0.2);
+        }
+        
+        .advanced-footer .brand-badge i {
+            color: #1e3a8a;
+            font-size: 16px;
+        }
+        /* Main Footer */
+        
+        .advanced-footer .footer-main {
+            padding: 60px 0 40px 0;
+            background: #ffffff;
+        }
+        
+        .advanced-footer .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+        
+        .advanced-footer .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 50px;
+            margin-bottom: 50px;
+        }
+        
+        .advanced-footer .footer-column h3 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #2b2a95;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            position: relative;
+            padding-bottom: 12px;
+        }
+        
+        .advanced-footer .footer-column h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: linear-gradient(90deg, #2b2a95, #1e3a8a);
+            border-radius: 3px;
+        }
+        
+        .advanced-footer .footer-column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .advanced-footer .footer-column ul li {
+            margin-bottom: 14px;
+        }
+        
+        .advanced-footer .footer-column ul li a {
+            color: #495057;
+            text-decoration: none;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .advanced-footer .footer-column ul li a:hover {
+            color: #2b2a95;
+            transform: translateX(5px);
+        }
+        
+        .advanced-footer .footer-column ul li a i {
+            font-size: 10px;
+            color: #1e3a8a;
+            transition: transform 0.3s ease;
+        }
+        
+        .advanced-footer .footer-column ul li a:hover i {
+            transform: translateX(3px);
+        }
+        
+        .advanced-footer .contact-info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .advanced-footer .contact-icon-box {
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(135deg, #f0f0ff, #e6e6ff);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2b2a95;
+            font-size: 18px;
+            flex-shrink: 0;
+            transition: all 0.3s ease;
+        }
+        
+        .advanced-footer .contact-info-item:hover .contact-icon-box {
+            background: linear-gradient(135deg, #1e3a8a, #2b2a95);
+            color: white;
+            transform: scale(1.1);
+        }
+        
+        .advanced-footer .contact-text h4 {
+            font-size: 13px;
+            font-weight: 700;
+            color: #2b2a95;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .advanced-footer .contact-text p {
+            font-size: 14px;
+            color: #6c757d;
+            line-height: 1.6;
+            margin: 0;
+        }
+        
+        .advanced-footer .contact-text a {
+            color: #495057;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .advanced-footer .contact-text a:hover {
+            color: #2b2a95;
+        }
+        /* Social Section */
+        
+        .advanced-footer .footer-social {
+            background: #f8f9fa;
+            padding: 40px 0;
+            border-top: 2px solid #e9ecef;
+            border-bottom: 2px solid #e9ecef;
+        }
+        
+        .advanced-footer .social-wrapper {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 30px;
+            text-align: center;
+        }
+        
+        .advanced-footer .social-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #2b2a95;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .advanced-footer .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .advanced-footer .social-btn {
+            width: 55px;
+            height: 55px;
+            background: white;
+            border: 2px solid #e9ecef;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #495057;
+            font-size: 22px;
+            text-decoration: none;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        
+        .advanced-footer .social-btn:hover {
+            transform: translateY(-8px) scale(1.1);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+        
+        .advanced-footer .social-btn.linkedin:hover {
+            background: #0077b5;
+            border-color: #0077b5;
+            color: white;
+        }
+        
+        .advanced-footer .social-btn.facebook:hover {
+            background: #1877f2;
+            border-color: #1877f2;
+            color: white;
+        }
+        
+        .advanced-footer .social-btn.instagram:hover {
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+            border-color: #bc1888;
+            color: white;
+        }
+        
+        .advanced-footer .social-btn.email:hover {
+            background: #ea4335;
+            border-color: #ea4335;
+            color: white;
+        }
+        
+        .advanced-footer .social-btn.youtube:hover {
+            background: #ff0000;
+            border-color: #ff0000;
+            color: white;
+        }
+        /* Footer Bottom */
+        
+        .advanced-footer .footer-bottom {
+            background: #ffffff;
+            padding: 30px 0;
+        }
+        
+        .advanced-footer .footer-bottom-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .advanced-footer .copyright-text {
+            color: #6c757d;
+            font-size: 14px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-align: center;
+        }
+        
+        .advanced-footer .copyright-text strong {
+            color: #2b2a95;
+            font-weight: 700;
+        }
+        
+        .advanced-footer .heart-icon {
+            color: #000000;
+            font-size: 16px;
+            display: inline-block;
+            animation: heartBeat 1.3s infinite;
+        }
+        
+        @keyframes heartBeat {
+            0%,
+            100% {
+                transform: scale(1);
+            }
+            10%,
+            30% {
+                transform: scale(1.1);
+            }
+            20%,
+            40% {
+                transform: scale(1.3);
+            }
+        }
+        /* Responsive */
+        
+        @media (max-width: 992px) {
+            .advanced-footer .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 40px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .advanced-footer .footer-branding {
+                padding: 35px 15px;
+            }
+            .advanced-footer .footer-brand-container {
+                padding: 0 15px;
+            }
+            .advanced-footer .brand-text h2 {
+                font-size: 32px;
+            }
+            .advanced-footer .brand-logo {
+                width: 100px;
+                height: 100px;
+            }
+            .advanced-footer .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+            .advanced-footer .footer-main {
+                padding: 40px 15px 30px 15px;
+            }
+            .advanced-footer .footer-container {
+                padding: 0 15px;
+            }
+            .advanced-footer .footer-bottom-content {
+                padding: 0 15px;
+            }
+            .advanced-footer .copyright-text {
+                font-size: 12px;
+                flex-wrap: wrap;
+                justify-content: center;
+                line-height: 1.6;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .advanced-footer .footer-branding {
+                padding: 30px 10px;
+            }
+            .advanced-footer .footer-brand-container {
+                padding: 0 10px;
+            }
+            .advanced-footer .brand-logo {
+                width: 90px;
+                height: 90px;
+            }
+            .advanced-footer .brand-text h2 {
+                font-size: 28px;
+            }
+            .advanced-footer .brand-text p {
+                font-size: 13px;
+            }
+            .advanced-footer .brand-description {
+                font-size: 13px;
+                padding: 0 10px;
+            }
+            .advanced-footer .brand-badges {
+                gap: 10px;
+                padding: 0 10px;
+            }
+            .advanced-footer .brand-badge {
+                padding: 10px 20px;
+                font-size: 12px;
+            }
+            .advanced-footer .footer-main {
+                padding: 35px 10px 25px 10px;
+            }
+            .advanced-footer .footer-container {
+                padding: 0 10px;
+            }
+            .advanced-footer .social-btn {
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+            }
+            .advanced-footer .footer-bottom {
+                padding: 20px 0;
+            }
+            .advanced-footer .footer-bottom-content {
+                padding: 0 10px;
+            }
+            .advanced-footer .copyright-text {
+                font-size: 11px;
+                line-height: 1.8;
+                word-break: break-word;
+            }
+        }
+    </style>
+
+    <!-- Required JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/mobile-nav/mobile-nav.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+
+</body>
+
+
+</html>

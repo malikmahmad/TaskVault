@@ -1,0 +1,3617 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ICT Club MNS UET</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicons -->
+    <link href="icon1111.png" rel="icon">
+    <link href="icon1111.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Font Awesome (latest CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+
+
+</head>
+
+<body>
+
+    <script>
+        if (!sessionStorage.getItem("seenLoader")) {
+            sessionStorage.setItem("seenLoader", "true");
+            window.location.href = "loader.html";
+        }
+    </script>
+
+
+    <!-- ========== ADVANCED PREMIUM NAVIGATION BAR ========== -->
+    <style>
+/* Fix Mobile Alignment Issues */
+        
+        html,
+        body {
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+            overflow-x: hidden !important;
+            box-sizing: border-box !important;
+        }
+        
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box !important;
+        }
+        /* Ensure all sections are full width on mobile */
+        
+        @media (max-width: 992px) {
+            .container,
+            .container-fluid,
+            section,
+            main {
+                max-width: 100% !important;
+                padding-left: 15px !important;
+                padding-right: 15px !important;
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+            }
+            .row {
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+            }
+            [class*="col-"] {
+                padding-left: 15px !important;
+                padding-right: 15px !important;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container,
+            .container-fluid,
+            section,
+            main {
+                padding-left: 12px !important;
+                padding-right: 12px !important;
+            }
+            [class*="col-"] {
+                padding-left: 12px !important;
+                padding-right: 12px !important;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container,
+            .container-fluid,
+            section,
+            main {
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+            }
+            [class*="col-"] {
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+            }
+        }
+        /* Navigation Bar Premium Styles */
+        
+        #advanced-navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 9999;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border-bottom: 1px solid rgba(0, 120, 215, 0.1);
+        }
+        
+        #advanced-navbar.scrolled {
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.12);
+            padding: 0;
+        }
+        
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+            transition: height 0.3s ease;
+            flex-wrap: nowrap;
+        }
+        
+        #advanced-navbar.scrolled .nav-container {
+            height: 70px;
+        }
+        /* Logo Styling with Image */
+        
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+            flex-shrink: 0;
+        }
+        
+        .nav-logo:hover {
+            transform: scale(1.03);
+        }
+        
+        .logo-image {
+            width: 55px;
+            height: 55px;
+            object-fit: contain;
+            transition: all 0.4s ease;
+            filter: drop-shadow(0 2px 8px rgba(0, 120, 215, 0.2));
+            flex-shrink: 0;
+        }
+        
+        #advanced-navbar.scrolled .logo-image {
+            width: 48px;
+            height: 48px;
+        }
+        
+        .nav-logo:hover .logo-image {
+            transform: rotate(360deg);
+            filter: drop-shadow(0 4px 12px rgba(0, 120, 215, 0.4));
+        }
+        
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+            white-space: nowrap;
+        }
+        
+        .logo-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: #0078D7;
+            letter-spacing: -0.5px;
+        }
+        
+        .logo-subtitle {
+            font-size: 11px;
+            color: #666;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        /* Desktop Navigation */
+        
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            flex-shrink: 0;
+        }
+        
+        .nav-menu>li {
+            position: relative;
+        }
+        
+        .nav-menu>li>a {
+            display: flex;
+            align-items: center;
+            padding: 10px 18px;
+            color: #2c3e50;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        
+        .nav-menu>li>a::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #0078D7, #00BCF2);
+            transform: translateX(-50%);
+            transition: width 0.3s ease;
+            border-radius: 3px 3px 0 0;
+        }
+        
+        .nav-menu>li>a:hover,
+        .nav-menu>li.active>a {
+            color: #0078D7;
+            background: transparent;
+        }
+        
+        .nav-menu>li>a:hover::before,
+        .nav-menu>li.active>a::before {
+            width: 80%;
+        }
+        
+        .nav-menu>li>a i {
+            margin-left: 5px;
+            font-size: 11px;
+            transition: transform 0.3s ease;
+        }
+        /* Dropdown on hover AND click */
+        
+        .nav-menu>li.dropdown:hover>a i,
+        .nav-menu>li.dropdown.active>a i {
+            transform: rotate(180deg);
+        }
+        /* Dropdown Mega Menu - WORKING VERSION */
+        
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+            padding: 15px;
+            min-width: 280px;
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease, max-height 0.4s ease;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            z-index: 10000;
+            margin-top: 10px;
+            display: block !important;
+            pointer-events: none;
+        }
+        /* Show dropdown on hover OR when active class */
+        
+        .nav-menu>li.dropdown:hover .dropdown-menu,
+        .nav-menu>li.dropdown.active .dropdown-menu {
+            opacity: 1 !important;
+            visibility: visible !important;
+            max-height: 600px !important;
+            pointer-events: auto !important;
+        }
+        
+        .dropdown-menu li {
+            list-style: none;
+        }
+        
+        .dropdown-menu a {
+            display: flex;
+            align-items: center;
+            padding: 12px 15px;
+            color: #2c3e50;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            gap: 12px;
+        }
+        
+        .dropdown-menu a i {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f0f7ff;
+            border-radius: 8px;
+            color: #0078D7;
+            font-size: 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .dropdown-menu a:hover {
+            background: rgba(0, 120, 215, 0.06);
+            transform: translateX(3px);
+        }
+        
+        .dropdown-menu a:hover i {
+            background: #0078D7;
+            color: white;
+        }
+        /* Mobile Menu Toggle - VISIBLE BLUE BUTTON */
+        
+        .mobile-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: #0078D7;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            z-index: 10001;
+            width: 45px;
+            height: 40px;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .mobile-toggle:hover {
+            background: #005A9E;
+        }
+        
+        .mobile-toggle span {
+            width: 25px;
+            height: 3px;
+            background: white;
+            border-radius: 3px;
+            transition: all 0.3s ease;
+            display: block;
+        }
+        
+        .mobile-toggle.active span:nth-child(1) {
+            transform: rotate(45deg) translate(7px, 7px);
+        }
+        
+        .mobile-toggle.active span:nth-child(2) {
+            opacity: 0;
+            transform: translateX(20px);
+        }
+        
+        .mobile-toggle.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -7px);
+        }
+        /* Mobile Menu - FULLY WORKING */
+        
+        .mobile-menu {
+            position: fixed;
+            top: 80px;
+            left: 0;
+            width: 100%;
+            height: calc(100vh - 80px);
+            background: white;
+            transform: translateX(100%);
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow-y: auto;
+            overflow-x: hidden;
+            z-index: 10000;
+            padding: 20px;
+            box-shadow: -5px 0 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .mobile-menu.active {
+            transform: translateX(0) !important;
+        }
+        /* Mobile Menu Backdrop */
+        
+        .mobile-menu::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: -1;
+        }
+        
+        .mobile-menu.active::before {
+            opacity: 1;
+            visibility: visible;
+        }
+        /* Mobile Menu Header */
+        
+        .mobile-menu-header {
+            background: linear-gradient(135deg, #0078D7 0%, #005A9E 100%);
+            color: white;
+            padding: 20px;
+            margin: -20px -20px 20px -20px;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .mobile-menu-header h3 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .mobile-menu-header h3 i {
+            font-size: 24px;
+        }
+        
+        .mobile-menu-header p {
+            margin: 8px 0 0 0;
+            font-size: 13px;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-menu-header {
+                padding: 15px;
+                margin: -15px -15px 15px -15px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .mobile-menu-header {
+                padding: 12px;
+                margin: -12px -12px 12px -12px;
+            }
+            .mobile-menu-header h3 {
+                font-size: 18px;
+            }
+            .mobile-menu-header p {
+                font-size: 12px;
+            }
+        }
+        
+        .mobile-menu>ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .mobile-menu>ul>li {
+            margin-bottom: 8px;
+            clear: both;
+            width: 100%;
+            display: block;
+        }
+        
+        .mobile-menu>ul>li>a {
+            display: flex;
+            align-items: center;
+            padding: 16px 20px;
+            color: #2c3e50;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            gap: 15px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        
+        .mobile-menu>ul>li>a i {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #0078D7;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        
+        .mobile-menu>ul>li>a:hover,
+        .mobile-menu>ul>li.active>a {
+            background: linear-gradient(135deg, #0078D7 0%, #005A9E 100%);
+            color: white;
+            transform: translateX(5px);
+            box-shadow: 0 4px 15px rgba(0, 120, 215, 0.3);
+        }
+        
+        .mobile-menu>ul>li>a:hover i,
+        .mobile-menu>ul>li.active>a i {
+            color: white;
+            transform: scale(1.1);
+        }
+        /* Mobile Dropdown Styling */
+        
+        .mobile-menu .mobile-dropdown {
+            clear: both;
+            width: 100%;
+            display: block;
+        }
+        
+        .mobile-menu .mobile-dropdown>a {
+            position: relative;
+            padding-right: 50px;
+        }
+        
+        .mobile-menu .mobile-dropdown>a i.fa-chevron-down {
+            position: absolute;
+            right: 20px;
+            width: auto;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        
+        .mobile-menu .dropdown-menu {
+            position: static;
+            opacity: 1;
+            visibility: visible;
+            transform: none;
+            box-shadow: none;
+            padding: 12px 0 0 20px;
+            margin-top: 12px;
+            margin-bottom: 12px;
+            pointer-events: auto;
+            border: none;
+            border-left: 4px solid #0078D7;
+            display: none !important;
+            background: rgba(0, 120, 215, 0.03);
+            max-height: none !important;
+            overflow: visible !important;
+            border-radius: 0 12px 12px 0;
+            width: 100%;
+            clear: both;
+        }
+        
+        .mobile-menu .dropdown-menu.active {
+            display: block !important;
+            animation: slideDown 0.3s ease;
+        }
+        
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .mobile-menu .dropdown-menu::before {
+            display: none;
+        }
+        
+        .mobile-menu .dropdown-menu a {
+            display: flex;
+            align-items: center;
+            padding: 14px 18px;
+            margin-bottom: 8px;
+            margin-right: 10px;
+            background: white;
+            border-radius: 10px;
+            color: #2c3e50;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+            gap: 12px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+        }
+        
+        .mobile-menu .dropdown-menu a i {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #0078D7;
+            font-size: 14px;
+        }
+        
+        .mobile-menu .dropdown-menu a:hover {
+            background: #0078D7;
+            color: white;
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(0, 120, 215, 0.25);
+        }
+        
+        .mobile-menu .dropdown-menu a:hover i {
+            color: white;
+        }
+        
+        .mobile-cta {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 2px solid #e9ecef;
+        }
+        /* Responsive Design */
+        
+        @media (max-width: 1440px) {
+            .nav-menu {
+                gap: 8px;
+            }
+            .nav-menu>li>a {
+                padding: 10px 14px;
+                font-size: 13.5px;
+            }
+            .logo-title {
+                font-size: 20px;
+            }
+            .logo-subtitle {
+                font-size: 10px;
+            }
+        }
+        
+        @media (max-width: 1366px) {
+            .nav-menu {
+                gap: 5px;
+            }
+            .nav-menu>li>a {
+                padding: 10px 12px;
+                font-size: 13px;
+            }
+        }
+        
+        @media (max-width: 1280px) {
+            .nav-menu {
+                gap: 3px;
+            }
+            .nav-menu>li>a {
+                padding: 10px 10px;
+                font-size: 12.5px;
+            }
+        }
+        
+        @media (max-width: 1200px) {
+            .nav-menu {
+                gap: 2px;
+            }
+            .nav-menu>li>a {
+                padding: 10px 8px;
+                font-size: 12px;
+            }
+        }
+        
+        @media (max-width: 1100px) {
+            .nav-menu>li>a {
+                padding: 8px 6px;
+                font-size: 11.5px;
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .nav-menu {
+                display: none !important;
+            }
+            .mobile-toggle {
+                display: flex !important;
+            }
+            .nav-container {
+                padding: 0 20px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-container {
+                height: 70px;
+                padding: 0 15px;
+            }
+            .logo-image {
+                width: 48px;
+                height: 48px;
+            }
+            .logo-title {
+                font-size: 18px;
+            }
+            .logo-subtitle {
+                font-size: 10px;
+            }
+            .mobile-menu {
+                top: 70px;
+                height: calc(100vh - 70px);
+                padding: 15px;
+            }
+            .mobile-menu>ul>li {
+                margin-bottom: 6px;
+            }
+            .mobile-menu>ul>li>a {
+                padding: 14px 16px;
+                font-size: 15px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .nav-container {
+                height: 65px;
+                padding: 0 12px;
+            }
+            .logo-image {
+                width: 42px;
+                height: 42px;
+            }
+            .logo-title {
+                font-size: 16px;
+            }
+            .logo-subtitle {
+                font-size: 9px;
+            }
+            .mobile-menu {
+                top: 65px;
+                height: calc(100vh - 65px);
+                padding: 12px;
+            }
+            .mobile-menu>ul>li>a {
+                padding: 12px 14px;
+                font-size: 14px;
+                gap: 12px;
+            }
+            .mobile-toggle {
+                width: 42px;
+                height: 38px;
+            }
+        }
+        
+        /* Smooth Scroll Padding */
+html {
+    scroll-padding-top: 85px;
+}
+
+/* Loading Animation */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#advanced-navbar {
+    animation: fadeInDown 0.6s ease;
+}
+    </style>
+
+    <!-- Navigation HTML -->
+    <nav id="advanced-navbar">
+        <div class="nav-container">
+            <!-- Logo with Image -->
+            <a href="#intro" class="nav-logo scrollto">
+                <img src="ICT Club Official Logo without Background.png" alt="ICT Club Logo" class="logo-image">
+                <div class="logo-text">
+                    <span class="logo-title">ICT Club</span>
+                    <span class="logo-subtitle">MNS UET Multan</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <ul class="nav-menu">
+                <li class="active"><a href="#intro" class="scrollto">Home</a></li>
+                <li><a href="#about" class="scrollto">Purpose</a></li>
+                <li><a href="#objectives" class="scrollto">Objectives</a></li>
+                <li><a href="#vision" class="scrollto">Vision</a></li>
+                <li><a href="#activities" class="scrollto">Activities</a></li>
+                <li class="dropdown">
+                    <a href="#">Explore <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="ictcluballiances.html"><i class="fas fa-handshake"></i> Alliances</a></li>
+                        <li><a href="verified.html"><i class="fas fa-certificate"></i> Certificate Verification</a></li>
+                        <li><a href="https://mnsuet.edu.pk/" target="_blank"><i class="fas fa-university"></i> MNS UET Multan</a></li>
+                        <li><a href="policy.html"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
+                        <li><a href="policy.html#terms"><i class="fas fa-file-contract"></i> Terms & Conditions</a></li>
+                    </ul>
+                </li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="mlsa.html">MSA MNS UET</a></li>
+            </ul>
+
+            <!-- Mobile Toggle -->
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-header">
+                <h3><i class="fas fa-bars"></i> Navigation Menu</h3>
+                <p>ICT Club MNS UET Multan</p>
+            </div>
+            <ul>
+                <li class="active"><a href="#intro" class="mobile-link scrollto"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about" class="mobile-link scrollto"><i class="fas fa-info-circle"></i> Purpose</a></li>
+                <li><a href="#objectives" class="mobile-link scrollto"><i class="fas fa-bullseye"></i> Objectives</a></li>
+                <li><a href="#vision" class="mobile-link scrollto"><i class="fas fa-eye"></i> Vision</a></li>
+                <li><a href="#activities" class="mobile-link scrollto"><i class="fas fa-calendar-check"></i> Activities</a></li>
+                <li class="mobile-dropdown">
+                    <a href="#" id="mobileDropdownToggle">
+                        <i class="fas fa-compass"></i>
+                        <span>Explore</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu" id="mobileDropdownMenu">
+                        <li><a href="ictcluballiances.html" class="mobile-link"><i class="fas fa-handshake"></i> Alliances</a></li>
+                        <li><a href="verified.html" class="mobile-link"><i class="fas fa-certificate"></i> Certificate Verification</a></li>
+                        <li><a href="https://mnsuet.edu.pk/" target="_blank" class="mobile-link"><i class="fas fa-university"></i> MNS UET Multan</a></li>
+                        <li><a href="policy.html" class="mobile-link"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
+                        <li><a href="policy.html#terms" class="mobile-link"><i class="fas fa-file-contract"></i> Terms & Conditions</a></li>
+                    </ul>
+                </li>
+                <li><a href="team.html" class="mobile-link"><i class="fas fa-users"></i> Our Team</a></li>
+                <li><a href="mlsa.html" class="mobile-link"><i class="fas fa-user-graduate"></i>MSA MNS UET</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <script>
+        // Advanced Navigation JavaScript
+        (function() {
+            const navbar = document.getElementById('advanced-navbar');
+            const mobileToggle = document.getElementById('mobileToggle');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const mobileDropdownToggle = document.getElementById('mobileDropdownToggle');
+            const mobileDropdownMenu = document.getElementById('mobileDropdownMenu');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+            const desktopDropdown = document.querySelector('.nav-menu .dropdown');
+
+            console.log('Navigation initialized:', {
+                navbar: !!navbar,
+                mobileToggle: !!mobileToggle,
+                mobileMenu: !!mobileMenu,
+                desktopDropdown: !!desktopDropdown
+            });
+
+            // Scroll Effect
+            window.addEventListener('scroll', () => {
+                const currentScroll = window.pageYOffset;
+
+                if (currentScroll > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+
+            // Desktop Dropdown Click Toggle (for touch devices and better UX)
+            if (desktopDropdown) {
+                const dropdownLink = desktopDropdown.querySelector('a');
+                if (dropdownLink) {
+                    dropdownLink.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        desktopDropdown.classList.toggle('active');
+                        console.log('Desktop dropdown toggled:', desktopDropdown.classList.contains('active'));
+                    });
+                }
+
+                // Close dropdown when clicking outside
+                document.addEventListener('click', (e) => {
+                    if (!desktopDropdown.contains(e.target)) {
+                        desktopDropdown.classList.remove('active');
+                    }
+                });
+            }
+
+            // Mobile Toggle
+            if (mobileToggle && mobileMenu) {
+                mobileToggle.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    mobileToggle.classList.toggle('active');
+                    mobileMenu.classList.toggle('active');
+
+                    console.log('Mobile menu toggled:', mobileMenu.classList.contains('active'));
+
+                    // Prevent body scroll when menu is open
+                    if (mobileMenu.classList.contains('active')) {
+                        document.body.style.overflow = 'hidden';
+                    } else {
+                        document.body.style.overflow = '';
+                    }
+                });
+            }
+
+            // Mobile Dropdown Toggle
+            if (mobileDropdownToggle && mobileDropdownMenu) {
+                mobileDropdownToggle.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    mobileDropdownMenu.classList.toggle('active');
+                    console.log('Mobile dropdown toggled:', mobileDropdownMenu.classList.contains('active'));
+
+                    const icon = mobileDropdownToggle.querySelector('.fa-chevron-down');
+                    if (icon) {
+                        icon.style.transform = mobileDropdownMenu.classList.contains('active') ? 'rotate(180deg)' : 'rotate(0)';
+                        icon.style.transition = 'transform 0.3s ease';
+                    }
+                });
+            }
+
+            // Close mobile menu when any link is clicked
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (mobileToggle) mobileToggle.classList.remove('active');
+                    if (mobileMenu) mobileMenu.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            });
+
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', (e) => {
+                if (mobileMenu && mobileMenu.classList.contains('active')) {
+                    if (!mobileMenu.contains(e.target) && mobileToggle && !mobileToggle.contains(e.target)) {
+                        mobileToggle.classList.remove('active');
+                        mobileMenu.classList.remove('active');
+                        document.body.style.overflow = '';
+                    }
+                }
+            });
+
+            // Active link highlighting based on scroll
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-menu a[href^="#"], .mobile-menu > ul > li > a[href^="#"]');
+
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (pageYOffset >= (sectionTop - 100)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    const parent = link.closest('li');
+                    if (parent && !parent.classList.contains('dropdown')) {
+                        parent.classList.remove('active');
+                        if (link.getAttribute('href') === `#${current}`) {
+                            parent.classList.add('active');
+                        }
+                    }
+                });
+            });
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a.scrollto').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href && href.startsWith('#')) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            const navHeight = navbar ? navbar.offsetHeight : 80;
+                            window.scrollTo({
+                                top: target.offsetTop - navHeight,
+                                behavior: 'smooth'
+                            });
+                        }
+                    }
+                });
+            });
+        })();
+    </script>
+    <!-- ========== END ADVANCED NAVIGATION ========== -->
+
+    <style>
+        /* Adjust intro section for fixed navbar */
+        
+        #intro {
+            padding-top: 90px !important;
+        }
+        
+        @media (max-width: 768px) {
+            #intro {
+                padding-top: 80px !important;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            #intro {
+                padding-top: 75px !important;
+            }
+        }
+    </style>
+
+    <!-- Intro Section -->
+    <section id="intro" class="clearfix">
+        <div class="container d-flex h-100">
+            <div class="row justify-content-center align-self-center">
+                <div class="col-md-6 intro-info order-md-first order-last">
+                    <h2>Information and Communication <br>Technology <span>Club!</span></h2>
+                    <div class="cta-buttons">
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/company/ict-clubmns-uet-multan/" class="btn-linkedin" target="_blank">
+                            <i class="fab fa-linkedin-in"></i> Visit Our LinkedIn
+                        </a>
+
+                        <!-- WhatsApp -->
+                        <a href="https://forms.gle/35rKqe5t2XxePCFEA" class="btn-whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Join WhatsApp Group
+                        </a>
+                    </div>
+
+                    <style>
+                        #intro .row {
+                            width: 100%;
+                        }
+
+                        .intro-info {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                        }
+
+                        .cta-buttons a {
+                            font-weight: 700;
+                            padding: 14px 28px;
+                            border-radius: 8px;
+                            text-decoration: none;
+                            /* reset */
+                            transition: all 0.3s ease;
+                            color: #fff;
+                            display: inline-flex;
+                            align-items: center;
+                            gap: 10px;
+                            text-align: center;
+                            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+                            font-size: 16px;
+                        }
+                        
+                        .cta-buttons a:hover,
+                        .cta-buttons a:focus {
+                            text-decoration: none;
+                            /* remove underline always */
+                        }
+                        
+                        .cta-buttons {
+                            display: flex;
+                            gap: 32px;
+                            /* was 20px */
+                            flex-wrap: wrap;
+                            justify-content: flex-start;
+                            margin-top: 20px;
+                        }
+                        /* LinkedIn Button */
+                        
+                        .btn-linkedin {
+                            background: #0077b5;
+                        }
+                        
+                        .btn-linkedin:hover {
+                            background: #005582;
+                            transform: translateY(-2px);
+                        }
+                        /* WhatsApp Button */
+                        
+                        .btn-whatsapp {
+                            background: #25d366;
+                        }
+                        
+                        .btn-whatsapp:hover {
+                            background: #1da851;
+                            transform: translateY(-2px);
+                        }
+                        /* Enhanced responsive design for CTA buttons */
+
+                        @media (max-width: 992px) {
+                            .cta-buttons {
+                                gap: 20px;
+                                justify-content: center;
+                            }
+                            .intro-info {
+                                text-align: center;
+                            }
+                        }
+                        
+                        @media (max-width: 768px) {
+                            .cta-buttons {
+                                flex-direction: column;
+                                align-items: center;
+                                gap: 15px;
+                            }
+                            .cta-buttons a {
+                                width: 100%;
+                                max-width: 300px;
+                                justify-content: center;
+                                font-size: 14px;
+                                padding: 12px 20px;
+                            }
+                        }
+                        
+                        @media (max-width: 480px) {
+                            .cta-buttons a {
+                                font-size: 13px;
+                                padding: 10px 16px;
+                                max-width: 280px;
+                            }
+                        }
+                    </style>
+
+                </div>
+                <div class="col-md-6 intro-img order-md-last order-first">
+                    <img src="img/intro-img11111.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- #intro -->
+
+
+    <main id="main">
+
+        <!--==========================
+      About Us Section
+    ============================-->
+        <section id="about">
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-5 col-md-6">
+                        <div class="about-img">
+                            <img src="abou.png" alt="about1-img">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7 col-md-6">
+                        <div class="about-content">
+                            <h2>Purpose of the ICT Club</h2>
+                            <h3>Educating the Next Wave of Tech Pioneers.</h3>
+                            <p style="text-align: justify;">
+                                In a rapidly evolving world where technology is at the heart of every industry, having a strong foundation in <strong>Information and Communication Technology (ICT)</strong> is essential for any student pursuing a career
+                                in tech.
+                            </p>
+
+                            <p style="text-align: justify;">
+                                The <strong>ICT Club</strong> at <strong>Muhammad Nawaz Sharif University of Engineering & Technology, Multan</strong>, will serve as a <strong>central hub</strong> for all technology-related activities, providing students
+                                with an unparalleled opportunity to dive into multiple domains like Microsoft technologies, artificial intelligence, cloud computing, data science, cybersecurity, and other related domains.
+                            </p>
+
+                            <p style="text-align: justify;">
+                                By offering hands-on experiences, mentorship, and exposure to industry trends, the club empowers students to develop skills that are essential for thriving in today’s job market. This initiative not only prepares a workforce-ready generation of tech professionals
+                                who can innovate, adapt, and drive meaningful change in the digital era, but also actively supports and collaborates with various locally established societies and clubs at <strong>MNS UET Multan</strong>.
+                            </p>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- #about -->
+
+        <!-- UPGRADED PREMIUM PARTNERS SECTION WITH SLIDING ANIMATION -->
+        <section class="partners-section-premium">
+            <div class="partners-background-overlay"></div>
+            <div class="partners-container">
+                <div class="partners-header">
+                    <span class="partners-badge">
+                        <i class="fas fa-handshake"></i> Strategic Partnerships
+                    </span>
+                    <h2 class="partners-title">Our Partners &amp; Collaborators</h2>
+                    <p class="partners-subtitle">Trusted by industry leaders and innovative organizations worldwide</p>
+                </div>
+
+                <div class="partners-slider-wrapper">
+                    <div class="partners-slider">
+                        <div class="partner-slide">
+                            <img src="mlsa.png" alt="Microsoft Learn Student Ambassadors" />
+                            <span class="partner-name">Microsoft Learn</span>
+                        </div>
+                        <div class="partner-slide">
+                            <img src="tedx.png" alt="TEDx" />
+                            <span class="partner-name">TEDx</span>
+                        </div>
+                        <div class="partner-slide">
+                            <img src="azure.png" alt="Microsoft Azure" />
+                            <span class="partner-name">Microsoft Azure</span>
+                        </div>
+                        <div class="partner-slide">
+                            <img src="datacamp.png" alt="DataCamp" />
+                            <span class="partner-name">DataCamp</span>
+                        </div>
+                        <div class="partner-slide">
+                            <img src="Google .jpg" alt="Google" />
+                            <span class="partner-name">Google</span>
+                        </div>
+                        <div class="partner-slide">
+                            <img src="goo. jpg.png" alt="Google Cloud" />
+                            <span class="partner-name">Google Cloud</span>
+                        </div>
+                        <div class="partner-slide">
+                            <img src="notion.png" alt="Notion" />
+                            <span class="partner-name">Notion</span>
+                        </div>
+                        <div class="partner-slide">
+                            <img src="GitHub_Lockup_Dark.png" alt="GitHub" />
+                            <span class="partner-name">GitHub</span>
+                        </div>
+                        <!-- Duplicate for seamless loop -->
+                        <div class="partner-slide">
+                            <img src="mlsa.png" alt="Microsoft Learn Student Ambassadors" />
+                            <span class="partner-name">Microsoft Learn</span>
+                        </div>
+                        <div class="partner-slide">
+                            <img src="tedx.png" alt="TEDx" />
+                            <span class="partner-name">TEDx</span>
+                        </div>
+                        <div class="partner-slide">
+                            <img src="azure.png" alt="Microsoft Azure" />
+                            <span class="partner-name">Microsoft Azure</span>
+                        </div>
+                        <div class="partner-slide">
+                            <img src="datacamp.png" alt="DataCamp" />
+                            <span class="partner-name">DataCamp</span>
+                        </div>
+                        <div class="partner-slide">
+                            <img src="Google .jpg" alt="Google" />
+                            <span class="partner-name">Google</span>
+                        </div>
+                        <div class="partner-slide">
+                            <img src="goo. jpg.png" alt="Google Cloud" />
+                            <span class="partner-name">Google Cloud</span>
+                        </div>
+                        <div class="partner-slide">
+                            <img src="notion.png" alt="Notion" />
+                            <span class="partner-name">Notion</span>
+                        </div>
+                        <div class="partner-slide">
+                            <img src="GitHub_Lockup_Dark.png" alt="GitHub" />
+                            <span class="partner-name">GitHub</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <style>
+            /* === PREMIUM PARTNERS SECTION WITH SLIDING ANIMATION === */
+
+            .partners-section-premium {
+                background: #ffffff;
+                padding: 80px 0;
+                position: relative;
+                overflow: hidden;
+                border-top: 1px solid #e9ecef;
+                border-bottom: 1px solid #e9ecef;
+                width: 100vw;
+                margin-left: calc(-50vw + 50%);
+            }
+
+            .partners-background-overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
+                pointer-events: none;
+            }
+
+            .partners-container {
+                max-width: 100%;
+                margin: 0;
+                padding: 0;
+                position: relative;
+                z-index: 1;
+            }
+
+            .partners-header {
+                text-align: center;
+                margin-bottom: 50px;
+                padding: 0 30px;
+            }
+
+            .partners-badge {
+                display: inline-block;
+                background: #2b2a95;
+                color: white;
+                padding: 10px 28px;
+                border-radius: 50px;
+                font-size: 13px;
+                font-weight: 700;
+                letter-spacing: 1.5px;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+                box-shadow: 0 4px 15px rgba(43, 42, 149, 0.2);
+            }
+
+            .partners-badge i {
+                margin-right: 8px;
+            }
+
+            .partners-title {
+                font-size: 42px;
+                font-weight: 800;
+                color: #2c3e50;
+                margin: 0 0 15px 0;
+                line-height: 1.2;
+            }
+
+            .partners-subtitle {
+                font-size: 18px;
+                color: #6c757d;
+                margin: 0 auto;
+                font-weight: 400;
+                max-width: 700px;
+            }
+
+            .partners-slider-wrapper {
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+                padding: 40px 0;
+            }
+
+            .partners-slider {
+                display: flex;
+                gap: 80px;
+                animation: slidePartners 50s linear infinite;
+                width: max-content;
+                padding-left: 0;
+            }
+
+            .partners-slider:hover {
+                animation-play-state: paused;
+            }
+
+            .partner-slide {
+                flex-shrink: 0;
+                width: 200px;
+                height: 180px;
+                background: #ffffff;
+                border-radius: 16px;
+                padding: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+                border: 1px solid #e9ecef;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+                transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                position: relative;
+                overflow: hidden;
+            }
+
+            .partner-slide::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 3px;
+                background: linear-gradient(90deg, #2b2a95, #1e3a8a);
+                transform: scaleX(0);
+                transition: transform 0.4s ease;
+            }
+
+            .partner-slide:hover {
+                transform: translateY(-10px);
+                border-color: #2b2a95;
+                box-shadow: 0 12px 40px rgba(43, 42, 149, 0.15);
+            }
+
+            .partner-slide:hover::before {
+                transform: scaleX(1);
+            }
+
+            .partner-slide img {
+                width: 110px;
+                height: 110px;
+                object-fit: contain;
+                transition: all 0.4s ease;
+            }
+
+            .partner-slide:hover img {
+                transform: scale(1.1);
+            }
+
+            .partner-name {
+                color: #2c3e50;
+                font-size: 13px;
+                font-weight: 600;
+                text-align: center;
+                opacity: 0.8;
+                transition: all 0.3s ease;
+            }
+
+            .partner-slide:hover .partner-name {
+                opacity: 1;
+                color: #2b2a95;
+            }
+
+            @keyframes slidePartners {
+                0% { transform: translateX(0); }
+                100% { transform: translateX(-50%); }
+            }
+
+            @media (max-width: 992px) {
+                .partners-section-premium { padding: 60px 0; }
+                .partners-title { font-size: 36px; }
+                .partners-subtitle { font-size: 16px; }
+                .partner-slide { width: 180px; height: 160px; padding: 25px; }
+                .partner-slide img { width: 100px; height: 100px; }
+                .partners-slider { gap: 60px; }
+            }
+
+            @media (max-width: 768px) {
+                .partners-section-premium { padding: 50px 0; }
+                .partners-header { padding: 0 20px; }
+                .partners-title { font-size: 32px; }
+                .partners-subtitle { font-size: 15px; }
+                .partners-slider { gap: 50px; }
+                .partner-slide { width: 160px; height: 150px; padding: 20px; }
+                .partner-slide img { width: 90px; height: 90px; }
+                .partner-name { font-size: 12px; }
+            }
+
+            @media (max-width: 480px) {
+                .partners-header { padding: 0 15px; }
+                .partners-title { font-size: 26px; }
+                .partners-badge { font-size: 11px; padding: 8px 20px; }
+                .partner-slide { width: 140px; height: 140px; padding: 18px; }
+                .partner-slide img { width: 80px; height: 80px; }
+                .partners-slider { gap: 40px; }
+            }
+        </style>
+
+        <!--==========================
+      Services Section
+    ============================-->
+        <section id="objectives" class="section-bg" style="display: block !important; visibility: visible !important; opacity: 1 !important;">
+            <div class="container" style="display: block !important; visibility: visible !important; opacity: 1 !important;">
+
+                <header class="section-header" style="display: block !important; visibility: visible !important; opacity: 1 !important;">
+                    <h3>Our Objectives</h3>
+                    <p>At ICT Club, we are dedicated to enhancing the skills, knowledge, and career prospects of tech students. Our key objectives include:</p>
+                </header>
+
+
+                <div class="row" style="display: flex !important; visibility: visible !important; opacity: 1 !important;">
+
+                    <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s" style="display: block !important; visibility: visible !important; opacity: 1 !important;">
+                        <div class="box" style="display: block !important; visibility: visible !important; opacity: 1 !important;">
+                            <div class="icon" style="background: #fceef3;"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div>
+                            <h4 class="title"><a href="">Enhance ICT Skills</a></h4>
+                            <p style="text-align: justify;">
+                                We aim to enhance students' capacity to effectively utilize modern ICT tools for both academic and professional purposes.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s" style="display: block !important; visibility: visible !important; opacity: 1 !important;">
+                        <div class="box" style="display: block !important; visibility: visible !important; opacity: 1 !important;">
+                            <div class="icon" style="background: #fff0da;"><i class="ion-ios-bookmarks-outline" style="color: #e98e06;"></i></div>
+                            <h4 class="title"><a href="">Hands-on Training</a></h4>
+                            <p style="text-align: justify;">
+                                Participate in workshops that provide hands-on training in various ICT tools and technologies to keep your skills up to date.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s" style="display: block !important; visibility: visible !important; opacity: 1 !important;">
+                        <div class="box" style="display: block !important; visibility: visible !important; opacity: 1 !important;">
+                            <div class="icon" style="background: #e6fdfc;"><i class="ion-ios-paper-outline" style="color: #3fcdc7;"></i></div>
+                            <h4 class="title"><a href="">Collaborative Learning</a></h4>
+                            <p style="text-align: justify;">
+                                Encourage collaborative learning and knowledge-sharing among students in ICT-related fields to foster mutual growth.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s" style="display: block !important; visibility: visible !important; opacity: 1 !important;">
+                        <div class="box" style="display: block !important; visibility: visible !important; opacity: 1 !important;">
+                            <div class="icon" style="background: #eafde7;"><i class="ion-ios-speedometer-outline" style="color:#41cf2e;"></i></div>
+                            <h4 class="title"><a href="">Industry Preparation</a></h4>
+                            <p style="text-align: justify;">
+                                Prepare students for industry standards through exposure to real-world ICT applications and practical skills.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s" style="display: block !important; visibility: visible !important; opacity: 1 !important;">
+                        <div class="box" style="display: block !important; visibility: visible !important; opacity: 1 !important;">
+                            <div class="icon" style="background: #e1eeff;"><i class="ion-ios-world-outline" style="color: #2282ff;"></i></div>
+                            <h4 class="title"><a href="">Collabs & Partnerships</a></h4>
+                            <p style="text-align: justify;">
+                                Build collaborations with tech communities and organizations to exchange resources, share knowledge, and offer opportunities.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s" style="display: block !important; visibility: visible !important; opacity: 1 !important;">
+                        <div class="box" style="display: block !important; visibility: visible !important; opacity: 1 !important;">
+                            <div class="icon" style="background: #ecebff;"><i class="ion-ios-clock-outline" style="color: #8660fe;"></i></div>
+                            <h4 class="title"><a href="">Networking Opportunities</a></h4>
+                            <p style="text-align: justify;">
+                                Create networking opportunities with industry professionals and alumni in the ICT sector, fostering valuable connections.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </section>
+        <!-- #Vision -->
+        <!--==========================
+      Vision
+    ============================-->
+        <!-- VISION SECTION -->
+        <section id="vision" class="vision-section">
+            <div class="container text-center">
+                <!-- Heading -->
+                <h3 class="vision-title">Vision and Long-Term Impact</h3>
+
+                <!-- Image -->
+                <div class="vision-img">
+                    <img src="img/why-us111.png" alt="Vision Image">
+                </div>
+
+                <!-- Text -->
+                <div class="vision-content">
+                    <p>The <strong>Vision</strong> of the ICT Club is to establish MNS-UET Multan as a tech powerhouse, an institution known for producing skilled graduates who are ready to meet industry demands and drive innovation.</p>
+                    <p>Our goal is not only to improve the employability of our students but also to foster a culture of leadership, creativity, and collaboration. By offering workshops, certifications, competitions, and project opportunities, the ICT Club
+                        aims to cultivate a generation of tech leaders who can contribute meaningfully to the tech ecosystem on both local and global scales.
+                    </p>
+                    <p><strong>In the long term, the ICT Club will play a pivotal role in shaping the future of MNS-UET, providing a strong foundation for tech education and career readiness.</strong></p>
+
+                </div>
+            </div>
+        </section>
+
+        <style>
+            /* === ISOLATED VISION SECTION STYLES === */
+            
+            #vision {
+                padding: 80px 0;
+            }
+            
+            #vision .vision-title {
+                color: #413e66;
+                font-family: "Montserrat", sans-serif;
+                font-weight: 700;
+                margin-bottom: 40px;
+                /* extra space below heading */
+                padding: 20px 0;
+                /* top & bottom padding for breathing room */
+            }
+            
+            #vision .vision-content {
+                padding-top: 40px;
+                max-width: 800px;
+                margin: auto;
+            }
+            
+            #vision .vision-content p {
+                text-align: justify;
+            }
+            
+            #vision .vision-img {
+                position: relative;
+                margin: 40px auto;
+                /* more vertical spacing around image */
+                max-width: 500px;
+                padding: 20px;
+                /* padding around image container */
+            }
+            
+            #vision .vision-img img {
+                width: 100%;
+                border: 8px solid #fff;
+                transition: transform 0.5s ease, box-shadow 0.5s ease;
+            }
+            
+            #vision .vision-img img:hover {
+                transform: scale(1.03);
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            }
+            
+            #vision .vision-img::before {
+                position: absolute;
+                left: -31px;
+                top: -30px;
+                width: 90%;
+                height: 92%;
+                z-index: -1;
+                content: '';
+                background-color: #ebf1fa;
+                transition: .5s;
+            }
+            
+            #vision .vision-img::after {
+                position: absolute;
+                right: -31px;
+                bottom: -30px;
+                width: 90%;
+                height: 92%;
+                z-index: -1;
+                content: '';
+                background-color: #ebf1fa;
+                transition: .5s;
+            }
+        </style>
+
+        <!-- GSAP + ScrollTrigger -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+        <script>
+            gsap.registerPlugin(ScrollTrigger);
+
+            // Heading Animation
+            gsap.from("#vision .vision-title", {
+                y: -50,
+                opacity: 0,
+                duration: 1,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: "#vision .vision-title",
+                    start: "top 85%",
+                    end: "bottom 75%",
+                    scrub: true
+                }
+            });
+
+            // Image Animation
+            gsap.from("#vision .vision-img img", {
+                scale: 0.85,
+                opacity: 0,
+                y: 50,
+                duration: 1.2,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: "#vision .vision-img",
+                    start: "top 80%",
+                    end: "bottom 60%",
+                    scrub: true
+                }
+            });
+
+            // Text Animation
+            gsap.from("#vision .vision-content", {
+                y: 50,
+                opacity: 0,
+                duration: 1,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: "#vision .vision-content",
+                    start: "top 85%",
+                    end: "bottom 70%",
+                    scrub: true
+                }
+            });
+        </script>
+
+
+        <section id="activities" class="section-bg">
+            <div class="container">
+                <header class="section-header">
+                    <h3>Our Activities</h3>
+                    <p>Explore our past events and activities. We empower our members through dynamic workshops, inspiring tech talks, thrilling coding challenges, and collaborative projects that spark creativity and real-world impact.</p>
+                </header>
+
+                <!-- Enterprise Gallery Carousel -->
+                <div class="activities-gallery-wrapper">
+                    <div class="owl-carousel activities-carousel">
+                        <!-- Event Cards with Overlays -->
+                        <div class="gallery-item" data-poster="1">
+                            <div class="poster-container">
+                                <img src="events/act.png" alt="Event Poster" loading="lazy">
+                                <div class="overlay-content">
+                                    <div class="overlay-badge">Event</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-item" data-poster="2">
+                            <div class="poster-container">
+                                <img src="events/act1.jpg" alt="Event Poster 1" loading="lazy">
+                                <div class="overlay-content">
+                                    <div class="overlay-badge">Workshop</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-item" data-poster="3">
+                            <div class="poster-container">
+                                <img src="events/act2.jpg" alt="Event Poster 2" loading="lazy">
+                                <div class="overlay-content">
+                                    <div class="overlay-badge">Competition</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-item" data-poster="4">
+                            <div class="poster-container">
+                                <img src="events/act3.jpg" alt="Event Poster 3" loading="lazy">
+                                <div class="overlay-content">
+                                    <div class="overlay-badge">Seminar</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-item" data-poster="5">
+                            <div class="poster-container">
+                                <img src="events/act4.jpg" alt="Event Poster 4" loading="lazy">
+                                <div class="overlay-content">
+                                    <div class="overlay-badge">Hackathon</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-item" data-poster="6">
+                            <div class="poster-container">
+                                <img src="events/act5.jpg" alt="Event Poster 5" loading="lazy">
+                                <div class="overlay-content">
+                                    <div class="overlay-badge">Networking</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-item" data-poster="7">
+                            <div class="poster-container">
+                                <img src="events/act6.jpg" alt="Event Poster 6" loading="lazy">
+                                <div class="overlay-content">
+                                    <div class="overlay-badge">Tech Talk</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-item" data-poster="8">
+                            <div class="poster-container">
+                                <img src="events/act7.jpg" alt="Event Poster 7" loading="lazy">
+                                <div class="overlay-content">
+                                    <div class="overlay-badge">Training</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-item" data-poster="9">
+                            <div class="poster-container">
+                                <img src="events/act8.jpg" alt="Event Poster 8" loading="lazy">
+                                <div class="overlay-content">
+                                    <div class="overlay-badge">Meetup</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-item" data-poster="10">
+                            <div class="poster-container">
+                                <img src="events/act9.jpg" alt="Event Poster 9" loading="lazy">
+                                <div class="overlay-content">
+                                    <div class="overlay-badge">Panel</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-item" data-poster="11">
+                            <div class="poster-container">
+                                <img src="events/act10.jpg" alt="Event Poster 10" loading="lazy">
+                                <div class="overlay-content">
+                                    <div class="overlay-badge">Workshop</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-item" data-poster="12">
+                            <div class="poster-container">
+                                <img src="events/act11.jpg" alt="Event Poster 11" loading="lazy">
+                                <div class="overlay-content">
+                                    <div class="overlay-badge">Event</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-item" data-poster="13">
+                            <div class="poster-container">
+                                <img src="events/act12.jpg" alt="Event Poster 12" loading="lazy">
+                                <div class="overlay-content">
+                                    <div class="overlay-badge">Webinar</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-item" data-poster="14">
+                            <div class="poster-container">
+                                <img src="events/act13.jpeg" alt="Event Poster 13" loading="lazy">
+                                <div class="overlay-content">
+                                    <div class="overlay-badge">Event</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lightbox Modal -->
+                <div id="lightbox-modal" class="lightbox-modal">
+                    <div class="lightbox-content">
+                        <span class="lightbox-close">&times;</span>
+                        <img id="lightbox-img" src="" alt="Full size poster">
+                    </div>
+                </div>
+
+                <!-- Enterprise Gallery Styling -->
+                <style>
+                    .activities-gallery-wrapper {
+                        padding: 80px 0;
+                        background: linear-gradient(180deg, #ffffff 0%, #f5f7fa 50%, #ffffff 100%);
+                        margin: 0 -30px;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                    }
+
+                    .activities-carousel {
+                        max-width: 1600px;
+                        margin: 0 auto;
+                        padding: 0 20px;
+                    }
+                    
+                    .activities-carousel .owl-nav {
+                        text-align: center;
+                        margin-top: 30px;
+                    }
+                    
+                    .activities-carousel .owl-nav button.owl-prev,
+                    .activities-carousel .owl-nav button.owl-next {
+                        background: #0078D7;
+                        color: white;
+                        border: none;
+                        padding: 10px 20px;
+                        margin: 0 10px;
+                        border-radius: 50px;
+                        font-size: 18px;
+                        transition: all 0.3s ease;
+                        box-shadow: 0 4px 15px rgba(0, 120, 215, 0.3);
+                    }
+                    
+                    .activities-carousel .owl-nav button.owl-prev:hover,
+                    .activities-carousel .owl-nav button.owl-next:hover {
+                        background: #005A9E;
+                        transform: translateY(-2px);
+                    }
+                    
+                    .activities-carousel .owl-dots {
+                        text-align: center;
+                        margin-top: 20px;
+                    }
+                    
+                    .activities-carousel .owl-dots .owl-dot {
+                        display: inline-block;
+                        margin: 0 5px;
+                    }
+                    
+                    .activities-carousel .owl-dots .owl-dot span {
+                        width: 12px;
+                        height: 12px;
+                        background: #ccc;
+                        border-radius: 50%;
+                        display: block;
+                        transition: all 0.3s ease;
+                    }
+                    
+                    .activities-carousel .owl-dots .owl-dot.active span {
+                        background: #0078D7;
+                        transform: scale(1.3);
+                    }
+
+                    .gallery-item {
+                        position: relative;
+                        border-radius: 16px;
+                        overflow: hidden;
+                        background: white;
+                        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+                        aspect-ratio: 2 / 3;
+                        border: 1px solid rgba(200, 200, 200, 0.3);
+                        cursor: pointer;
+                    }
+
+                    .poster-container {
+                        width: 100%;
+                        height: 100%;
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+                        overflow: hidden;
+                        padding: 8px;
+                        box-sizing: border-box;
+                    }
+
+                    .poster-container img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        display: block;
+                        max-width: 100%;
+                        max-height: 100%;
+                    }
+
+                    .overlay-content {
+                        display: none;
+                    }
+
+                    .overlay-badge {
+                        display: none;
+                    }
+
+                    /* Lightbox Modal */
+                    .lightbox-modal {
+                        display: none;
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background: rgba(0, 0, 0, 0.9);
+                        z-index: 9999;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 20px;
+                        backdrop-filter: blur(5px);
+                    }
+
+                    .lightbox-modal.active {
+                        display: flex;
+                    }
+
+                    .lightbox-content {
+                        position: relative;
+                        max-width: 90%;
+                        max-height: 90vh;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    .lightbox-content img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        max-height: 90vh;
+                        border-radius: 12px;
+                    }
+
+                    .lightbox-close {
+                        position: absolute;
+                        top: -40px;
+                        right: 0;
+                        color: white;
+                        font-size: 32px;
+                        cursor: pointer;
+                        font-weight: bold;
+                        transition: color 0.3s;
+                    }
+
+                    .lightbox-close:hover {
+                        color: #ddd;
+                    }
+
+                    /* Laptop - 2 columns */
+                    @media (min-width: 992px) and (max-width: 1199px) {
+                        .gallery-item {
+                            border-radius: 14px;
+                        }
+                    }
+
+                    /* Tablet - 2 columns */
+                    @media (min-width: 768px) and (max-width: 991px) {
+                        .activities-gallery-wrapper {
+                            padding: 60px 0;
+                        }
+
+                        .gallery-item {
+                            aspect-ratio: 2 / 3;
+                            border-radius: 12px;
+                        }
+
+                        .poster-container {
+                            padding: 6px;
+                        }
+                    }
+
+                    /* Mobile - 1 column */
+                    @media (max-width: 767px) {
+                        .activities-gallery-wrapper {
+                            padding: 50px 0;
+                            margin: 0 -15px;
+                            padding-left: 15px;
+                            padding-right: 15px;
+                        }
+
+                        .gallery-item {
+                            aspect-ratio: 2 / 3;
+                            border-radius: 12px;
+                        }
+
+                        .poster-container {
+                            padding: 6px;
+                        }
+                    }
+
+                    /* Extra small mobile */
+                    @media (max-width: 480px) {
+                        .activities-gallery-wrapper {
+                            padding: 40px 0;
+                        }
+
+                        .gallery-item {
+                            border-radius: 10px;
+                            aspect-ratio: 2 / 3;
+                        }
+
+                        .poster-container {
+                            padding: 4px;
+                        }
+                    }
+                </style>
+
+                <!-- Lightbox JavaScript -->
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const galleryItems = document.querySelectorAll('.gallery-item');
+                        const lightboxModal = document.getElementById('lightbox-modal');
+                        const lightboxImg = document.getElementById('lightbox-img');
+                        const closeBtn = document.querySelector('.lightbox-close');
+
+                        // Open lightbox when clicking on a poster
+                        galleryItems.forEach(item => {
+                            item.addEventListener('click', function() {
+                                const img = this.querySelector('.poster-container img');
+                                lightboxImg.src = img.src;
+                                lightboxImg.alt = img.alt;
+                                lightboxModal.classList.add('active');
+                                document.body.style.overflow = 'hidden';
+                            });
+                        });
+
+                        // Close lightbox when clicking the close button
+                        closeBtn.addEventListener('click', function() {
+                            lightboxModal.classList.remove('active');
+                            document.body.style.overflow = 'auto';
+                        });
+
+                        // Close lightbox when clicking outside the image
+                        lightboxModal.addEventListener('click', function(e) {
+                            if (e.target === lightboxModal) {
+                                lightboxModal.classList.remove('active');
+                                document.body.style.overflow = 'auto';
+                            }
+                        });
+
+                        // Close lightbox with Escape key
+                        document.addEventListener('keydown', function(e) {
+                            if (e.key === 'Escape' && lightboxModal.classList.contains('active')) {
+                                lightboxModal.classList.remove('active');
+                                document.body.style.overflow = 'auto';
+                            }
+                        });
+                    });
+                </script>
+
+                <!-- OwlCarousel Initialization -->
+                <script>
+                    $(document).ready(function(){
+                        $(".activities-carousel").owlCarousel({
+                            loop: true,
+                            margin: 30,
+                            nav: true,
+                            navText: [
+                                '<i class="fas fa-chevron-left"></i>',
+                                '<i class="fas fa-chevron-right"></i>'
+                            ],
+                            dots: true,
+                            autoplay: true,
+                            autoplayTimeout: 3000,
+                            autoplayHoverPause: true,
+                            responsive: {
+                                0: {
+                                    items: 1
+                                },
+                                768: {
+                                    items: 2
+                                },
+                                1200: {
+                                    items: 3
+                                }
+                            }
+                        });
+                    });
+                </script>
+
+
+
+                <section id="activities" class="section-bg">
+                    <div class="container">
+                        <section id="animated-logo" class="section-bg" style="margin-top:7px;">
+
+                            <div class="container text-center">
+                                <div class="logo-container">
+                                    <img src="icon11111.png" alt="CosmiCode Logo" class="animated-logo">
+                                </div>
+                                <p>Check our activities on our LinkedIn page</p>
+                                <div style="height:60px;"></div>
+                                <!-- Gooey Button (LinkedIn) -->
+                                <span class="gooey-btn-wrap">
+            <style>
+              /* Isolated Gooey Button Styles */
+              .gooey-btn-wrap svg {
+                position: absolute;
+                top: -4000px;
+                left: -4000px;
+              }
+              .gooey-btn-wrap #gooey-button {
+                padding: 1rem 2rem;
+                font-size: 1.1rem;
+                font-weight: 600;
+                border: none;
+                color: #fff;
+                filter: url("#gooey");
+                position: relative;
+                background-color: #2b2a95; /* LinkedIn Blue */
+                cursor: pointer;
+                border-radius: 6px;
+              }
+              .gooey-btn-wrap #gooey-button:focus {
+                outline: none;
+              }
+              .gooey-btn-wrap #gooey-button .bubbles {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+              }
+              .gooey-btn-wrap #gooey-button .bubble {
+                background-color: #2b2a95;
+                border-radius: 100%;
+                position: absolute;
+                display: block;
+                z-index: -1;
+              }
+              .gooey-btn-wrap #gooey-button .bubble:nth-child(1) { left: 45px; width: 20px; height: 20px; animation: move-1 3.02s infinite; animation-delay: 0.2s; }
+              .gooey-btn-wrap #gooey-button .bubble:nth-child(2) { left: 44px; width: 20px; height: 20px; animation: move-2 3.04s infinite; animation-delay: 0.4s; }
+              .gooey-btn-wrap #gooey-button .bubble:nth-child(3) { left: 26px; width: 20px; height: 20px; animation: move-3 3.06s infinite; animation-delay: 0.6s; }
+              .gooey-btn-wrap #gooey-button .bubble:nth-child(4) { left: 47px; width: 20px; height: 20px; animation: move-4 3.08s infinite; animation-delay: 0.8s; }
+              .gooey-btn-wrap #gooey-button .bubble:nth-child(5) { left: 73px; width: 20px; height: 20px; animation: move-5 3.1s infinite; animation-delay: 1s; }
+              .gooey-btn-wrap #gooey-button .bubble:nth-child(6) { left: 43px; width: 20px; height: 20px; animation: move-6 3.12s infinite; animation-delay: 1.2s; }
+              .gooey-btn-wrap #gooey-button .bubble:nth-child(7) { left: 55px; width: 20px; height: 20px; animation: move-7 3.14s infinite; animation-delay: 1.4s; }
+              .gooey-btn-wrap #gooey-button .bubble:nth-child(8) { left: 100px; width: 20px; height: 20px; animation: move-8 3.16s infinite; animation-delay: 1.6s; }
+              .gooey-btn-wrap #gooey-button .bubble:nth-child(9) { left: 49px; width: 20px; height: 20px; animation: move-9 3.18s infinite; animation-delay: 1.8s; }
+              .gooey-btn-wrap #gooey-button .bubble:nth-child(10) { left: 41px; width: 20px; height: 20px; animation: move-10 3.2s infinite; animation-delay: 2s; }
+
+              /* Keyframes */
+              @keyframes move-1 { 0% { transform: translate(0,0);} 99% { transform: translate(0,-126px);} 100% { transform: translate(0,0); opacity:0;}}
+              @keyframes move-2 { 0% { transform: translate(0,0);} 99% { transform: translate(0,-94px);} 100% { transform: translate(0,0); opacity:0;}}
+              @keyframes move-3 { 0% { transform: translate(0,0);} 99% { transform: translate(0,-93px);} 100% { transform: translate(0,0); opacity:0;}}
+              @keyframes move-4 { 0% { transform: translate(0,0);} 99% { transform: translate(0,-100px);} 100% { transform: translate(0,0); opacity:0;}}
+              @keyframes move-5 { 0% { transform: translate(0,0);} 99% { transform: translate(0,-87px);} 100% { transform: translate(0,0); opacity:0;}}
+              @keyframes move-6 { 0% { transform: translate(0,0);} 99% { transform: translate(0,-73px);} 100% { transform: translate(0,0); opacity:0;}}
+              @keyframes move-7 { 0% { transform: translate(0,0);} 99% { transform: translate(0,-65px);} 100% { transform: translate(0,0); opacity:0;}}
+              @keyframes move-8 { 0% { transform: translate(0,0);} 99% { transform: translate(0,-107px);} 100% { transform: translate(0,0); opacity:0;}}
+              @keyframes move-9 { 0% { transform: translate(0,0);} 99% { transform: translate(0,-82px);} 100% { transform: translate(0,0); opacity:0;}}
+              @keyframes move-10 { 0% { transform: translate(0,0);} 99% { transform: translate(0,-60px);} 100% { transform: translate(0,0); opacity:0;}}
+            </style>
+
+            <!-- SVG Filter -->
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+              <defs>
+                <filter id="gooey">
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+                  <feColorMatrix in="blur" type="matrix"
+                    values="1 0 0 0 0  
+                            0 1 0 0 0  
+                            0 0 1 0 0  
+                            0 0 0 19 -9"
+                    result="highContrastGraphic" />
+                  <feComposite in="SourceGraphic" in2="highContrastGraphic" operator="atop" />
+                </filter>
+              </defs>
+            </svg>
+
+            <!-- Button -->
+            <button id="gooey-button" onclick="window.open('https://www.linkedin.com/company/ict-clubmns-uet-multan/', '_blank')">
+              Visit LinkedIn
+              <span class="bubbles">
+                <span class="bubble"></span>
+                                <span class="bubble"></span>
+                                <span class="bubble"></span>
+                                <span class="bubble"></span>
+                                <span class="bubble"></span>
+                                <span class="bubble"></span>
+                                <span class="bubble"></span>
+                                <span class="bubble"></span>
+                                <span class="bubble"></span>
+                                <span class="bubble"></span>
+                                </span>
+                                </button>
+                                </span>
+
+
+
+
+                            </div>
+                    </div>
+                    </section>
+
+                    <!-- 3D Motion Style -->
+                    <style>
+                        /* Remove big gap between swiper and animated logo */
+                        
+                        #poster-swiper-section-isolated {
+                            padding-bottom: 10px !important;
+                        }
+                        
+                        #animated-logo {
+                            margin-top: 10px !important;
+                            padding-top: 10px !important;
+                        }
+                        
+                        #animated-logo {
+                            padding: 10px 0;
+                            display: flex;
+                            justify-content: center;
+                            perspective: 1200px;
+                        }
+                        
+                        .logo-container {
+                            display: inline-block;
+                            transform-style: preserve-3d;
+                        }
+                        
+                        .animated-logo {
+                            width: 200px;
+                            animation: hangAndSwing 4s infinite ease-in-out;
+                        }
+                        
+                        @keyframes hangAndSwing {
+                            0% {
+                                transform: rotate(0deg);
+                            }
+                            25% {
+                                transform: rotate(15deg);
+                            }
+                            50% {
+                                transform: rotate(0deg);
+                            }
+                            75% {
+                                transform: rotate(-15deg);
+                            }
+                            100% {
+                                transform: rotate(0deg);
+                            }
+                        }
+                    </style>
+
+
+
+
+
+                    <!-- partners section moved above objectives -->
+
+                    <hr style="border: 0; height: 2px; background: linear-gradient(to right, #667eea, #764ba2); border-radius: 2px; margin: 80px 0;">
+
+
+
+                    <!DOCTYPE html>
+
+                    <meta charset="UTF-8">
+                    <title>ICT Club FAQ - Dark Section Only</title>
+                    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+                    <style>
+                         :root {
+                            --faq-bg: #ffffff;
+                            --faq-box: #f5fdff;
+                            --faq-text: #000000;
+                            --faq-blue: #00aaff;
+                        }
+                        /* FAQ SECTION ONLY STYLING */
+                        
+                        #faq-clean {
+                            font-family: 'Segoe UI', sans-serif;
+                            background-color: var(--faq-bg);
+                            color: var(--faq-text);
+                            padding: 80px 20px;
+                        }
+                        
+                        #faq-clean .section-header {
+                            text-align: center;
+                            margin-bottom: 40px;
+                        }
+                        
+                        #faq-clean .section-header h3 {
+                            font-size: 2em;
+                            margin-bottom: 10px;
+                            color: var(--faq-text);
+                        }
+                        
+                        #faq-clean .section-header p {
+                            color: #a0a0a0;
+                            font-size: 1em;
+                        }
+                        
+                        #faq-clean .faq-item {
+                            background: var(--faq-box);
+                            margin-bottom: 15px;
+                            border-radius: 10px;
+                            overflow: hidden;
+                            box-shadow: none !important;
+                            /* Force remove any shadow */
+                            transition: 0.3s ease;
+                        }
+                        
+                        #faq-clean .faq-question {
+                            padding: 18px 24px;
+                            cursor: pointer;
+                            position: relative;
+                            font-weight: 600;
+                            font-size: 1rem;
+                            color: var(--faq-text);
+                            transition: background 0.3s;
+                        }
+                        
+                        #faq-clean .faq-question:hover {
+                            background-color: rgba(255, 255, 255, 0.05);
+                        }
+                        
+                        #faq-clean .faq-answer {
+                            max-height: 0;
+                            overflow: hidden;
+                            padding: 0 24px;
+                            color: #000000;
+                            font-size: 0.95rem;
+                            transition: max-height 0.5s ease, padding 0.4s ease;
+                        }
+                        
+                        #faq-clean .faq-item.open .faq-answer {
+                            padding: 16px 24px 20px;
+                            max-height: 500px;
+                        }
+                        
+                        #faq-clean .faq-question::after {
+                            content: '+';
+                            position: absolute;
+                            right: 24px;
+                            color: var(--faq-blue);
+                            font-size: 22px;
+                            line-height: 1;
+                            transition: transform 0.3s ease, content 0.3s ease;
+                        }
+                        
+                        #faq-clean .faq-item.open .faq-question::after {
+                            content: '−';
+                            transform: rotate(180deg);
+                        }
+                        
+                        [data-aos] {
+                            transition-property: transform, opacity !important;
+                        }
+                    </style>
+
+                    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+                    <script>
+                        AOS.init({
+                            duration: 900,
+                            once: true
+                        });
+
+                        document.querySelectorAll('#faq-clean .faq-question').forEach(question => {
+                            question.addEventListener('click', () => {
+                                const item = question.parentElement;
+                                item.classList.toggle('open');
+                            });
+                        });
+                    </script>
+
+            </div>
+            <!-- closes #main-content -->
+
+            <script>
+                setTimeout(() => {
+                    document.getElementById('loader').classList.add('fade-out');
+                    setTimeout(() => {
+                        document.getElementById('loader').style.display = 'none';
+                        document.getElementById('main-content').style.display = 'block';
+                    }, 1000);
+                }, 6000);
+            </script>
+
+
+
+</body>
+
+
+<!--==========================
+  
+    Footer
+    <!DOCTYPE html>
+  <meta charset="UTF-8">
+  <title>3D Cube with Star Background</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ✅ Star Background CSS (Scoped to Cube Area) -->
+<style>
+    #cube-section {
+        position: relative;
+        width: 100%;
+        height: 70vh;
+        min-height: 270px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    
+    canvas.star-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        pointer-events: none;
+        background-color: #ffffff;
+        background-image: radial-gradient(circle at top right, rgba(121, 68, 154, 0.13), transparent), radial-gradient(circle at 20% 80%, rgba(41, 196, 255, 0.13), transparent);
+    }
+    
+    #ict-cube-container {
+        position: relative;
+        z-index: 1;
+        /* cube is above the canvas */
+    }
+    
+    @keyframes rotateCube {
+        from {
+            transform: rotateX(0deg) rotateY(0deg);
+        }
+        to {
+            transform: rotateX(360deg) rotateY(360deg);
+        }
+    }
+</style>
+
+<!-- ✅ Section with Background Canvas and Cube -->
+<div id="cube-section">
+    <canvas class="star-background"></canvas>
+
+    <div id="ict-cube-container" style="perspective:800px; width:150px; height:150px;">
+        <div id="ict-cube" style="
+        position:relative;
+        width:100%;
+        height:100%;
+        transform-style:preserve-3d;
+        animation:rotateCube 8s infinite linear;
+      ">
+            <!-- 6 sides -->
+            <div style="position:absolute;width:150px;height:150px;background:#fff;border:2px solid #000;display:flex;align-items:center;justify-content:center;transform:translateZ(75px);">
+                <img src="09.jpg" style="width:80px;height:80px;">
+            </div>
+            <div style="position:absolute;width:150px;height:150px;background:#fff;border:2px solid #000;display:flex;align-items:center;justify-content:center;transform:rotateY(180deg) translateZ(75px);">
+                <img src="uni1.png" style="width:80px;height:80px;">
+            </div>
+            <div style="position:absolute;width:150px;height:150px;background:#fff;border:2px solid #000;display:flex;align-items:center;justify-content:center;transform:rotateY(90deg) translateZ(75px);">
+                <img src="09.jpg" style="width:80px;height:80px;">
+            </div>
+            <div style="position:absolute;width:150px;height:150px;background:#fff;border:2px solid #000;display:flex;align-items:center;justify-content:center;transform:rotateY(-90deg) translateZ(75px);">
+                <img src="uni1.png" style="width:80px;height:80px;">
+            </div>
+            <div style="position:absolute;width:150px;height:150px;background:#fff;border:2px solid #000;display:flex;align-items:center;justify-content:center;transform:rotateX(90deg) translateZ(75px);">
+                <img src="09.jpg" style="width:80px;height:80px;">
+            </div>
+            <div style="position:absolute;width:150px;height:150px;background:#fff;border:2px solid #000;display:flex;align-items:center;justify-content:center;transform:rotateX(-90deg) translateZ(75px);">
+                <img src="uni1.png" style="width:80px;height:80px;">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ✅ Cube Rotation Script -->
+<script>
+    const cube = document.getElementById('ict-cube');
+    const container = document.getElementById('ict-cube-container');
+
+    let rotationX = 0;
+    let rotationY = 0;
+    let velocityX = 0.05;
+    let velocityY = 0.05;
+
+    function animate() {
+        rotationX += velocityX;
+        rotationY += velocityY;
+        cube.style.transform = `rotateX(${rotationX}deg) rotateY(${rotationY}deg)`;
+        requestAnimationFrame(animate);
+    }
+    animate();
+
+    container.addEventListener('mousemove', (e) => {
+        const rect = container.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+        velocityY = x * 0.002;
+        velocityX = -y * 0.002;
+    });
+
+    container.addEventListener('mouseleave', () => {
+        velocityX = 0.05;
+        velocityY = 0.05;
+    });
+</script>
+
+<!-- ✅ Star Background Script (Scoped) -->
+<script>
+    const canvas = document.querySelector('.star-background');
+    const context = canvas.getContext('2d');
+
+    let scale = 1,
+        width,
+        height;
+    let stars = [];
+    let pointerX, pointerY;
+
+    const STAR_COLOR = '#3969cf';
+    const STAR_SIZE = 3;
+    const STAR_MIN_SCALE = 0.2;
+    const OVERFLOW_THRESHOLD = 50;
+    const STAR_COUNT = 100;
+
+    let velocity = {
+        x: 0,
+        y: 0,
+        tx: 0,
+        ty: 0,
+        z: 0.0005
+    };
+    let touchInput = false;
+
+    function generate() {
+        for (let i = 0; i < STAR_COUNT; i++) {
+            stars.push({
+                x: 0,
+                y: 0,
+                z: STAR_MIN_SCALE + Math.random() * (1 - STAR_MIN_SCALE)
+            });
+        }
+    }
+
+    function placeStar(star) {
+        star.x = Math.random() * width;
+        star.y = Math.random() * height;
+    }
+
+    function recycleStar(star) {
+        let direction = 'z';
+        let vx = Math.abs(velocity.x);
+        let vy = Math.abs(velocity.y);
+
+        if (vx > 1 || vy > 1) {
+            let axis = vx > vy ?
+                Math.random() < vx / (vx + vy) ? 'h' : 'v' :
+                Math.random() < vy / (vx + vy) ? 'v' : 'h';
+
+            direction = axis === 'h' ?
+                velocity.x > 0 ? 'l' : 'r' :
+                velocity.y > 0 ? 't' : 'b';
+        }
+
+        star.z = STAR_MIN_SCALE + Math.random() * (1 - STAR_MIN_SCALE);
+
+        if (direction === 'z') {
+            star.z = 0.1;
+            star.x = Math.random() * width;
+            star.y = Math.random() * height;
+        } else if (direction === 'l') {
+            star.x = -OVERFLOW_THRESHOLD;
+            star.y = height * Math.random();
+        } else if (direction === 'r') {
+            star.x = width + OVERFLOW_THRESHOLD;
+            star.y = height * Math.random();
+        } else if (direction === 't') {
+            star.x = width * Math.random();
+            star.y = -OVERFLOW_THRESHOLD;
+        } else if (direction === 'b') {
+            star.x = width * Math.random();
+            star.y = height + OVERFLOW_THRESHOLD;
+        }
+    }
+
+    function resize() {
+        scale = window.devicePixelRatio || 1;
+        const rect = canvas.getBoundingClientRect();
+        width = rect.width * scale;
+        height = rect.height * scale;
+        canvas.width = width;
+        canvas.height = height;
+        stars.forEach(placeStar);
+    }
+
+    function step() {
+        context.clearRect(0, 0, width, height);
+        update();
+        render();
+        requestAnimationFrame(step);
+    }
+
+    function update() {
+        velocity.tx *= 0.96;
+        velocity.ty *= 0.96;
+        velocity.x += (velocity.tx - velocity.x) * 0.8;
+        velocity.y += (velocity.ty - velocity.y) * 0.8;
+
+        stars.forEach(star => {
+            star.x += velocity.x * star.z;
+            star.y += velocity.y * star.z;
+            star.x += (star.x - width / 2) * velocity.z * star.z;
+            star.y += (star.y - height / 2) * velocity.z * star.z;
+            star.z += velocity.z;
+
+            if (
+                star.x < -OVERFLOW_THRESHOLD ||
+                star.x > width + OVERFLOW_THRESHOLD ||
+                star.y < -OVERFLOW_THRESHOLD ||
+                star.y > height + OVERFLOW_THRESHOLD
+            ) {
+                recycleStar(star);
+            }
+        });
+    }
+
+    function render() {
+        stars.forEach(star => {
+            context.beginPath();
+            context.lineCap = 'round';
+            context.lineWidth = STAR_SIZE * star.z * scale;
+            context.globalAlpha = 0.5 + 0.5 * Math.random();
+            context.strokeStyle = STAR_COLOR;
+
+            let tailX = velocity.x * 2;
+            let tailY = velocity.y * 2;
+            if (Math.abs(tailX) < 0.1) tailX = 0.5;
+            if (Math.abs(tailY) < 0.1) tailY = 0.5;
+
+            context.moveTo(star.x, star.y);
+            context.lineTo(star.x + tailX, star.y + tailY);
+            context.stroke();
+        });
+    }
+
+    function movePointer(x, y) {
+        if (typeof pointerX === 'number' && typeof pointerY === 'number') {
+            let ox = x - pointerX;
+            let oy = y - pointerY;
+            velocity.tx += ox / 8 * scale * (touchInput ? 1 : -1);
+            velocity.ty += oy / 8 * scale * (touchInput ? 1 : -1);
+        }
+
+        pointerX = x;
+        pointerY = y;
+    }
+
+    function onMouseMove(event) {
+        touchInput = false;
+        movePointer(event.clientX, event.clientY);
+    }
+
+    function onTouchMove(event) {
+        touchInput = true;
+        movePointer(event.touches[0].clientX, event.touches[0].clientY);
+        event.preventDefault();
+    }
+
+    function onMouseLeave() {
+        pointerX = null;
+        pointerY = null;
+    }
+
+    const starArea = document.getElementById('cube-section');
+
+    starArea.addEventListener('mousemove', onMouseMove);
+    starArea.addEventListener('touchmove', onTouchMove);
+    starArea.addEventListener('mouseleave', onMouseLeave);
+    starArea.addEventListener('touchend', onMouseLeave);
+
+
+    generate();
+    resize();
+    step();
+</script>
+
+
+
+
+
+
+
+
+
+
+<!--==========================
+    Footer
+  ============================-->
+
+<!-- === PASTE THIS JUST ABOVE YOUR FOOTER === -->
+<div class="footer-separator"></div>
+
+<!-- Footer Section - INLINE (No iframe) -->
+<footer class="advanced-footer">
+    <!-- TOP ACCENT -->
+    <div class="footer-accent"></div>
+
+    <!-- BRANDING SECTION -->
+    <div class="footer-branding">
+        <!-- Particles Background -->
+        <div class="particles-container">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+
+        <div class="footer-brand-container">
+            <div class="brand-left">
+                <div class="brand-logo-section">
+                    <img src="ICT Club Official Logo without Background.png" alt="ICT Club Logo" class="brand-logo">
+                </div>
+                <div class="brand-text">
+                    <h2>ICT Club</h2>
+                    <p>MNS University of Engineering &amp; Technology</p>
+                </div>
+                <div class="brand-description">
+                    An official student organization at MNS UET Multan, dedicated to empowering students through technology, innovation, and professional development in the field of Information and Communication Technology.
+                </div>
+                <div class="brand-badges">
+                    <div class="brand-badge">
+                        <i class="fas fa-check-circle"></i> Approved by MNS UET
+                    </div>
+                    <div class="brand-badge">
+                        <i class="fas fa-certificate"></i> Official Organization
+                    </div>
+                    <div class="brand-badge">
+                        <i class="fas fa-users"></i> Student Community
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN FOOTER -->
+    <div class="footer-main">
+        <div class="footer-container">
+            <div class="footer-grid">
+
+                <!-- QUICK LINKS -->
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="#objectives"><i class="fas fa-chevron-right"></i> Our Objectives</a></li>
+                        <li><a href="#vision"><i class="fas fa-chevron-right"></i> Vision &amp; Mission</a></li>
+                        <li><a href="#activities"><i class="fas fa-chevron-right"></i> Activities</a></li>
+                        <li><a href="team.html"><i class="fas fa-chevron-right"></i> Our Team</a></li>
+                    </ul>
+                </div>
+
+                <!-- RESOURCES -->
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="ictcluballiances.html"><i class="fas fa-chevron-right"></i> Alliances</a></li>
+                    </ul>
+                </div>
+
+                <!-- PORTALS -->
+                <div class="footer-column">
+                    <h3>Portals</h3>
+                    <ul>
+                        <li><a href="verified.html"><i class="fas fa-chevron-right"></i> Certificate Verification</a></li>
+                        <li><a href="https://mnsuet.edu.pk/" target="_blank"><i class="fas fa-chevron-right"></i> MNS UET Multan</a></li>
+                        <li><a href="mlsa.html"><i class="fas fa-chevron-right"></i> MSA Program</a></li>
+                        <li><a href="policy.html"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                        <li><a href="policy.html#terms"><i class="fas fa-chevron-right"></i> Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- CONTACT -->
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+
+                    <div class="contact-info-item">
+                        <div class="contact-icon-box">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p><a href="mailto:ict.mnsuet@gmail.com">ict.mnsuet@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-icon-box">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Location</h4>
+                            <p>MNS UET Multan<br>Punjab, Pakistan</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- SOCIAL SECTION -->
+    <div class="footer-social">
+        <div class="social-wrapper">
+            <div class="social-title">Connect With Us</div>
+            <div class="social-buttons">
+                <a href="https://www.linkedin.com/company/ict-clubmns-uet-multan/" class="social-btn linkedin" target="_blank" title="LinkedIn" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://web.facebook.com/ictclubpk/" class="social-btn facebook" target="_blank" title="Facebook" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/ictclub_mnsuet?igsh=aHEwamdqcTU1bDEw" class="social-btn instagram" target="_blank" title="Instagram" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="mailto:ict.mnsuet@gmail.com" class="social-btn email" target="_blank" title="Email" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.youtube.com/@ICTClubMNSUETMultan" class="social-btn youtube" target="_blank" title="YouTube" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER BOTTOM -->
+    <div class="footer-bottom">
+        <div class="footer-bottom-content">
+            <div class="copyright-text">
+                &copy; 2025 All Rights Reserved | <strong>ICT Club</strong> at MNS UET Multan ...... <span class="heart-icon">❤</span>
+            </div>
+        </div>
+    </div>
+</footer>
+<style>
+    /* ISOLATED ADVANCED WHITE FOOTER STYLES */
+    /* Scoped to .advanced-footer to prevent conflicts with other page elements */
+    
+    .advanced-footer {
+        background: #ffffff;
+        color: #333333;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        isolation: isolate;
+        clear: both;
+    }
+    
+    .advanced-footer * {
+        box-sizing: border-box;
+    }
+    
+    .advanced-footer .footer-accent {
+        height: 5px;
+        background: linear-gradient(90deg, #2b2a95 0%, #1e3a8a 50%, #2b2a95 100%);
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+    }
+    
+    .advanced-footer .footer-accent::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+        animation: shimmer 3s infinite;
+    }
+    
+    @keyframes shimmer {
+        0% {
+            left: -100%;
+        }
+        100% {
+            left: 100%;
+        }
+    }
+    
+    .advanced-footer .footer-branding {
+        background: #f8f9fa;
+        padding: 50px 0;
+        border-bottom: 2px solid #e9ecef;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
+    /* PARTICLES ANIMATION */
+    
+    .advanced-footer .particles-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 0;
+    }
+    
+    .advanced-footer .particle {
+        position: absolute;
+        background: radial-gradient(circle, rgba(30, 58, 138, 0.6), rgba(43, 42, 149, 0.3));
+        border-radius: 50%;
+        animation: float linear infinite;
+    }
+    
+    .advanced-footer .particle:nth-child(1) {
+        width: 80px;
+        height: 80px;
+        left: 10%;
+        top: 20%;
+        animation-duration: 15s;
+        animation-delay: 0s;
+    }
+    
+    .advanced-footer .particle:nth-child(2) {
+        width: 60px;
+        height: 60px;
+        left: 85%;
+        top: 30%;
+        animation-duration: 18s;
+        animation-delay: 2s;
+    }
+    
+    .advanced-footer .particle:nth-child(3) {
+        width: 50px;
+        height: 50px;
+        left: 25%;
+        top: 60%;
+        animation-duration: 20s;
+        animation-delay: 4s;
+    }
+    
+    .advanced-footer .particle:nth-child(4) {
+        width: 70px;
+        height: 70px;
+        left: 70%;
+        top: 70%;
+        animation-duration: 16s;
+        animation-delay: 1s;
+    }
+    
+    .advanced-footer .particle:nth-child(5) {
+        width: 40px;
+        height: 40px;
+        left: 50%;
+        top: 10%;
+        animation-duration: 22s;
+        animation-delay: 3s;
+    }
+    
+    .advanced-footer .particle:nth-child(6) {
+        width: 55px;
+        height: 55px;
+        left: 15%;
+        top: 80%;
+        animation-duration: 19s;
+        animation-delay: 5s;
+    }
+    
+    .advanced-footer .particle:nth-child(7) {
+        width: 45px;
+        height: 45px;
+        left: 90%;
+        top: 15%;
+        animation-duration: 17s;
+        animation-delay: 2.5s;
+    }
+    
+    .advanced-footer .particle:nth-child(8) {
+        width: 65px;
+        height: 65px;
+        left: 40%;
+        top: 85%;
+        animation-duration: 21s;
+        animation-delay: 1.5s;
+    }
+    
+    .advanced-footer .particle:nth-child(9) {
+        width: 50px;
+        height: 50px;
+        left: 75%;
+        top: 50%;
+        animation-duration: 18s;
+        animation-delay: 4.5s;
+    }
+    
+    .advanced-footer .particle:nth-child(10) {
+        width: 60px;
+        height: 60px;
+        left: 30%;
+        top: 35%;
+        animation-duration: 20s;
+        animation-delay: 0.5s;
+    }
+    
+    .advanced-footer .particle:nth-child(11) {
+        width: 35px;
+        height: 35px;
+        left: 60%;
+        top: 25%;
+        animation-duration: 16s;
+        animation-delay: 3.5s;
+    }
+    
+    .advanced-footer .particle:nth-child(12) {
+        width: 55px;
+        height: 55px;
+        left: 5%;
+        top: 50%;
+        animation-duration: 19s;
+        animation-delay: 2s;
+    }
+    
+    .advanced-footer .particle:nth-child(13) {
+        width: 48px;
+        height: 48px;
+        left: 95%;
+        top: 60%;
+        animation-duration: 17s;
+        animation-delay: 4s;
+    }
+    
+    .advanced-footer .particle:nth-child(14) {
+        width: 52px;
+        height: 52px;
+        left: 45%;
+        top: 5%;
+        animation-duration: 21s;
+        animation-delay: 1s;
+    }
+    
+    .advanced-footer .particle:nth-child(15) {
+        width: 58px;
+        height: 58px;
+        left: 80%;
+        top: 90%;
+        animation-duration: 18s;
+        animation-delay: 5s;
+    }
+    
+    @keyframes float {
+        0% {
+            transform: translateY(0) translateX(0) scale(1);
+            opacity: 0;
+        }
+        10% {
+            opacity: 0.6;
+        }
+        50% {
+            transform: translateY(-100px) translateX(50px) scale(1.2);
+            opacity: 0.8;
+        }
+        90% {
+            opacity: 0.6;
+        }
+        100% {
+            transform: translateY(-200px) translateX(-50px) scale(0.8);
+            opacity: 0;
+        }
+    }
+    
+    .advanced-footer .footer-brand-container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 30px;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .advanced-footer .brand-left {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .advanced-footer .brand-logo-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    
+    .advanced-footer .brand-logo {
+        width: 140px;
+        height: 140px;
+        object-fit: contain;
+        filter: drop-shadow(0 8px 20px rgba(43, 42, 149, 0.25));
+        transition: all 0.4s ease;
+    }
+    
+    .advanced-footer .brand-logo:hover {
+        transform: scale(1.08) translateY(-5px);
+        filter: drop-shadow(0 12px 30px rgba(43, 42, 149, 0.35));
+    }
+    
+    .advanced-footer .brand-text {
+        margin-bottom: 25px;
+    }
+    
+    .advanced-footer .brand-text h2 {
+        font-size: 42px;
+        font-weight: 800;
+        background: linear-gradient(135deg, #2b2a95, #1e3a8a);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 8px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    
+    .advanced-footer .brand-text p {
+        font-size: 16px;
+        color: #495057;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+    
+    .advanced-footer .brand-description {
+        color: #495057;
+        font-size: 15px;
+        line-height: 1.8;
+        max-width: 750px;
+        margin: 0 auto 30px auto;
+        font-weight: 400;
+    }
+    
+    .advanced-footer .brand-badges {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    
+    .advanced-footer .brand-badge {
+        padding: 12px 28px;
+        background: linear-gradient(135deg, #ffffff, #f8f9fa);
+        border: 2px solid #dee2e6;
+        border-radius: 50px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #2b2a95;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transition: all 0.4s ease;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+    
+    .advanced-footer .brand-badge:hover {
+        border-color: #1e3a8a;
+        background: linear-gradient(135deg, #f0f0ff, #ffffff);
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(30, 58, 138, 0.2);
+    }
+    
+    .advanced-footer .brand-badge i {
+        color: #1e3a8a;
+        font-size: 16px;
+    }
+    
+    .advanced-footer .footer-main {
+        padding: 60px 0 40px 0;
+        background: #ffffff;
+    }
+    
+    .advanced-footer .footer-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+    
+    .advanced-footer .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .advanced-footer .footer-column h3 {
+        font-size: 16px;
+        font-weight: 700;
+        color: #2b2a95;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        position: relative;
+        padding-bottom: 12px;
+    }
+    
+    .advanced-footer .footer-column h3::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 40px;
+        height: 3px;
+        background: linear-gradient(90deg, #2b2a95, #1e3a8a);
+        border-radius: 3px;
+    }
+    
+    .advanced-footer .footer-column ul {
+        list-style: none;
+    }
+    
+    .advanced-footer .footer-column ul li {
+        margin-bottom: 14px;
+    }
+    
+    .advanced-footer .footer-column ul li a {
+        color: #495057;
+        text-decoration: none;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transition: all 0.3s ease;
+        font-weight: 500;
+    }
+    
+    .advanced-footer .footer-column ul li a:hover {
+        color: #2b2a95;
+        transform: translateX(5px);
+    }
+    
+    .advanced-footer .footer-column ul li a i {
+        font-size: 10px;
+        color: #1e3a8a;
+        transition: transform 0.3s ease;
+    }
+    
+    .advanced-footer .footer-column ul li a:hover i {
+        transform: translateX(3px);
+    }
+    
+    .advanced-footer .contact-info-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .advanced-footer .contact-icon-box {
+        width: 45px;
+        height: 45px;
+        background: linear-gradient(135deg, #f0f0ff, #e6e6ff);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #2b2a95;
+        font-size: 18px;
+        flex-shrink: 0;
+        transition: all 0.3s ease;
+    }
+    
+    .advanced-footer .contact-info-item:hover .contact-icon-box {
+        background: linear-gradient(135deg, #1e3a8a, #2b2a95);
+        color: white;
+        transform: scale(1.1);
+    }
+    
+    .advanced-footer .contact-text h4 {
+        font-size: 13px;
+        font-weight: 700;
+        color: #2b2a95;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+    
+    .advanced-footer .contact-text p {
+        font-size: 14px;
+        color: #6c757d;
+        line-height: 1.6;
+    }
+    
+    .advanced-footer .contact-text a {
+        color: #495057;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        font-weight: 500;
+    }
+    
+    .advanced-footer .contact-text a:hover {
+        color: #2b2a95;
+    }
+    
+    .advanced-footer .footer-social {
+        background: #f8f9fa;
+        padding: 40px 0;
+        border-top: 2px solid #e9ecef;
+        border-bottom: 2px solid #e9ecef;
+    }
+    
+    .advanced-footer .social-wrapper {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 30px;
+        text-align: center;
+    }
+    
+    .advanced-footer .social-title {
+        font-size: 18px;
+        font-weight: 700;
+        color: #2b2a95;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    
+    .advanced-footer .social-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    
+    .advanced-footer .social-btn {
+        width: 55px;
+        height: 55px;
+        background: white;
+        border: 2px solid #e9ecef;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #495057;
+        font-size: 22px;
+        text-decoration: none;
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+    
+    .advanced-footer .social-btn:hover {
+        transform: translateY(-8px) scale(1.1);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+    
+    .advanced-footer .social-btn.linkedin:hover {
+        background: #0077b5;
+        border-color: #0077b5;
+        color: white;
+    }
+    
+    .advanced-footer .social-btn.facebook:hover {
+        background: #1877f2;
+        border-color: #1877f2;
+        color: white;
+    }
+    
+    .advanced-footer .social-btn.instagram:hover {
+        background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+        border-color: #bc1888;
+        color: white;
+    }
+    
+    .advanced-footer .social-btn.email:hover {
+        background: #ea4335;
+        border-color: #ea4335;
+        color: white;
+    }
+    
+    .advanced-footer .social-btn.youtube:hover {
+        background: #ff0000;
+        border-color: #ff0000;
+        color: white;
+    }
+    
+    .advanced-footer .footer-bottom {
+        background: #ffffff;
+        padding: 30px 0;
+    }
+    
+    .advanced-footer .footer-bottom-content {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .advanced-footer .copyright-text {
+        color: #6c757d;
+        font-size: 14px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        text-align: center;
+    }
+    
+    .advanced-footer .copyright-text strong {
+        color: #2b2a95;
+        font-weight: 700;
+    }
+    
+    .advanced-footer .heart-icon {
+        color: #000000;
+        font-size: 16px;
+        display: inline-block;
+        animation: heartBeat 1.3s infinite;
+    }
+    
+    @keyframes heartBeat {
+        0%,
+        100% {
+            transform: scale(1);
+        }
+        10%,
+        30% {
+            transform: scale(1.1);
+        }
+        20%,
+        40% {
+            transform: scale(1.3);
+        }
+    }
+    
+    @media (max-width: 992px) {
+        .footer-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .footer-branding {
+            padding: 35px 15px;
+        }
+        .footer-brand-container {
+            padding: 0 15px;
+        }
+        .brand-text h2 {
+            font-size: 32px;
+        }
+        .brand-logo {
+            width: 100px;
+            height: 100px;
+        }
+        .footer-grid {
+            grid-template-columns: 1fr;
+            gap: 35px;
+        }
+        .footer-main {
+            padding: 40px 15px 30px 15px;
+        }
+        .footer-container {
+            padding: 0 15px;
+        }
+        .footer-bottom-content {
+            padding: 0 15px;
+        }
+        .copyright-text {
+            font-size: 12px;
+            flex-wrap: wrap;
+            justify-content: center;
+            line-height: 1.6;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .footer-branding {
+            padding: 30px 10px;
+        }
+        .footer-brand-container {
+            padding: 0 10px;
+        }
+        .brand-logo {
+            width: 90px;
+            height: 90px;
+        }
+        .brand-text h2 {
+            font-size: 28px;
+        }
+        .brand-text p {
+            font-size: 13px;
+        }
+        .brand-description {
+            font-size: 13px;
+            padding: 0 10px;
+        }
+        .brand-badges {
+            gap: 10px;
+            padding: 0 10px;
+        }
+        .brand-badge {
+            padding: 10px 20px;
+            font-size: 12px;
+        }
+        .footer-main {
+            padding: 35px 10px 25px 10px;
+        }
+        .footer-container {
+            padding: 0 10px;
+        }
+        .social-btn {
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+        }
+        .footer-bottom {
+            padding: 20px 0;
+        }
+        .footer-bottom-content {
+            padding: 0 10px;
+        }
+        .copyright-text {
+            font-size: 11px;
+            line-height: 1.8;
+            word-break: break-word;
+        }
+    }
+    /* CRITICAL: Ensure all content is visible */
+    
+    #main,
+    main {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        position: relative !important;
+        z-index: 1 !important;
+    }
+    
+    section {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+    
+    #intro {
+        padding-top: 90px !important;
+    }
+</style>
+
+
+
+
+
+<!-- Uncomment below i you want to use a preloader -->
+<!-- <div id="preloader"></div> -->
+
+<!-- JavaScript Libraries -->
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/jquery/jquery-migrate.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/isotope/isotope.pkgd.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
+<!-- Contact Form JavaScript File -->
+<script src="contactform/contactform.js"></script>
+
+<!-- Template Main Javascript File -->
+<script src="js/main.js"></script>
+
+
+</html>

@@ -1,0 +1,2242 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ICT Club MNS UET</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <meta content="" name="description">
+
+    <!-- Favicons -->
+    <link href="icon1111.png" rel="icon">
+    <link href="icon1111.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Font Awesome (latest CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- AOS Animate On Scroll CSS & JS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', AOS.init);
+    </script>
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #ffffff, #ffffff);
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .verification-card {
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+            margin: 50px auto;
+            border-radius: 24px;
+            padding: 40px;
+            text-align: center;
+            color: #fff;
+            animation: slideUp 1s ease forwards;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .status-icon {
+            position: relative;
+            width: 90px;
+            height: 90px;
+            margin: 0 auto 20px;
+            animation: fadeIn 1s ease forwards;
+        }
+        
+        .checkmark-circle {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #00C9A7, #005B41);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: popIn 0.5s ease forwards;
+        }
+        
+        .checkmark {
+            width: 52px;
+            height: 52px;
+            position: absolute;
+            top: 19px;
+            left: 19px;
+        }
+        
+        h2 {
+            font-size: 36px;
+            margin: 25px 0;
+            font-weight: 600;
+            background: linear-gradient(to right, #00C9A7, #005B41);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: fadeIn 1s ease forwards;
+        }
+        
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            text-align: left;
+            font-size: 18px;
+            margin: 35px 0;
+            color: #000000;
+            animation: fadeIn 1.2s ease forwards;
+        }
+        
+        .certified-by {
+            margin-top: 30px;
+            font-size: 18px;
+            color: #000000;
+            animation: fadeIn 1.5s ease forwards;
+        }
+        
+        .copy-btn {
+            margin-top: 30px;
+            padding: 14px 30px;
+            border: none;
+            border-radius: 50px;
+            background: linear-gradient(135deg, #006fc9, #002a5b);
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            animation: fadeIn 2s ease forwards;
+        }
+        
+        .copy-btn:hover {
+            box-shadow: 0 0 20px rgba(0, 255, 200, 0.5);
+        }
+        
+        .copy-msg {
+            margin-top: 10px;
+            color: #7cfec7;
+            font-size: 16px;
+        }
+        
+        @keyframes popIn {
+            0% {
+                transform: scale(0);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- ========== ADVANCED PREMIUM NAVIGATION BAR ========== -->
+    <style>
+        /* Fix Mobile Alignment Issues */
+        
+        html,
+        body {
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+            overflow-x: hidden !important;
+            box-sizing: border-box !important;
+        }
+        
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box !important;
+        }
+        /* Ensure all sections are full width on mobile */
+        
+        @media (max-width: 992px) {
+            .container,
+            .container-fluid,
+            section,
+            main {
+                max-width: 100% !important;
+                padding-left: 15px !important;
+                padding-right: 15px !important;
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+            }
+            .row {
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+            }
+            [class*="col-"] {
+                padding-left: 15px !important;
+                padding-right: 15px !important;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container,
+            .container-fluid,
+            section,
+            main {
+                padding-left: 12px !important;
+                padding-right: 12px !important;
+            }
+            [class*="col-"] {
+                padding-left: 12px !important;
+                padding-right: 12px !important;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container,
+            .container-fluid,
+            section,
+            main {
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+            }
+            [class*="col-"] {
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+            }
+        }
+        /* Navigation Bar Premium Styles */
+        
+        #advanced-navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 9999;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border-bottom: 1px solid rgba(0, 120, 215, 0.1);
+        }
+        
+        #advanced-navbar.scrolled {
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.12);
+            padding: 0;
+        }
+        
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+            transition: height 0.3s ease;
+            flex-wrap: nowrap;
+        }
+        
+        #advanced-navbar.scrolled .nav-container {
+            height: 70px;
+        }
+        /* Logo Styling with Image */
+        
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+            flex-shrink: 0;
+        }
+        
+        .nav-logo:hover {
+            transform: scale(1.03);
+        }
+        
+        .logo-image {
+            width: 55px;
+            height: 55px;
+            object-fit: contain;
+            transition: all 0.4s ease;
+            filter: drop-shadow(0 2px 8px rgba(0, 120, 215, 0.2));
+            flex-shrink: 0;
+        }
+        
+        #advanced-navbar.scrolled .logo-image {
+            width: 48px;
+            height: 48px;
+        }
+        
+        .nav-logo:hover .logo-image {
+            transform: rotate(360deg);
+            filter: drop-shadow(0 4px 12px rgba(0, 120, 215, 0.4));
+        }
+        
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+            white-space: nowrap;
+        }
+        
+        .logo-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: #0078D7;
+            letter-spacing: -0.5px;
+        }
+        
+        .logo-subtitle {
+            font-size: 11px;
+            color: #666;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        /* Desktop Navigation */
+        
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            flex-shrink: 0;
+        }
+        
+        .nav-menu>li {
+            position: relative;
+        }
+        
+        .nav-menu>li>a {
+            display: flex;
+            align-items: center;
+            padding: 10px 18px;
+            color: #2c3e50;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        
+        .nav-menu>li>a::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #0078D7, #00BCF2);
+            transform: translateX(-50%);
+            transition: width 0.3s ease;
+            border-radius: 3px 3px 0 0;
+        }
+        
+        .nav-menu>li>a:hover,
+        .nav-menu>li.active>a {
+            color: #0078D7;
+            background: transparent;
+        }
+        
+        .nav-menu>li>a:hover::before,
+        .nav-menu>li.active>a::before {
+            width: 80%;
+        }
+        
+        .nav-menu>li>a i {
+            margin-left: 5px;
+            font-size: 11px;
+            transition: transform 0.3s ease;
+        }
+        /* Dropdown on hover AND click */
+        
+        .nav-menu>li.dropdown:hover>a i,
+        .nav-menu>li.dropdown.active>a i {
+            transform: rotate(180deg);
+        }
+        /* Dropdown Mega Menu - WORKING VERSION */
+        
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+            padding: 15px;
+            min-width: 280px;
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease, max-height 0.4s ease;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            z-index: 10000;
+            margin-top: 10px;
+            display: block !important;
+            pointer-events: none;
+        }
+        /* Show dropdown on hover OR when active class */
+        
+        .nav-menu>li.dropdown:hover .dropdown-menu,
+        .nav-menu>li.dropdown.active .dropdown-menu {
+            opacity: 1 !important;
+            visibility: visible !important;
+            max-height: 600px !important;
+            pointer-events: auto !important;
+        }
+        
+        .dropdown-menu li {
+            list-style: none;
+        }
+        
+        .dropdown-menu a {
+            display: flex;
+            align-items: center;
+            padding: 12px 15px;
+            color: #2c3e50;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            gap: 12px;
+        }
+        
+        .dropdown-menu a i {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f0f7ff;
+            border-radius: 8px;
+            color: #0078D7;
+            font-size: 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .dropdown-menu a:hover {
+            background: rgba(0, 120, 215, 0.06);
+            transform: translateX(3px);
+        }
+        
+        .dropdown-menu a:hover i {
+            background: #0078D7;
+            color: white;
+        }
+        /* Mobile Menu Toggle - VISIBLE BLUE BUTTON */
+        
+        .mobile-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: #0078D7;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            z-index: 10001;
+            width: 45px;
+            height: 40px;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .mobile-toggle:hover {
+            background: #005A9E;
+        }
+        
+        .mobile-toggle span {
+            width: 25px;
+            height: 3px;
+            background: white;
+            border-radius: 3px;
+            transition: all 0.3s ease;
+            display: block;
+        }
+        
+        .mobile-toggle.active span:nth-child(1) {
+            transform: rotate(45deg) translate(7px, 7px);
+        }
+        
+        .mobile-toggle.active span:nth-child(2) {
+            opacity: 0;
+            transform: translateX(20px);
+        }
+        
+        .mobile-toggle.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -7px);
+        }
+        /* Mobile Menu - FULLY WORKING */
+        
+        .mobile-menu {
+            position: fixed;
+            top: 80px;
+            left: 0;
+            width: 100%;
+            height: calc(100vh - 80px);
+            background: white;
+            transform: translateX(100%);
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow-y: auto;
+            overflow-x: hidden;
+            z-index: 10000;
+            padding: 20px;
+            box-shadow: -5px 0 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .mobile-menu.active {
+            transform: translateX(0) !important;
+        }
+        /* Mobile Menu Backdrop */
+        
+        .mobile-menu::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: -1;
+        }
+        
+        .mobile-menu.active::before {
+            opacity: 1;
+            visibility: visible;
+        }
+        /* Mobile Menu Header */
+        
+        .mobile-menu-header {
+            background: linear-gradient(135deg, #0078D7 0%, #005A9E 100%);
+            color: white;
+            padding: 20px;
+            margin: -20px -20px 20px -20px;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .mobile-menu-header h3 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .mobile-menu-header h3 i {
+            font-size: 24px;
+        }
+        
+        .mobile-menu-header p {
+            margin: 8px 0 0 0;
+            font-size: 13px;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-menu-header {
+                padding: 15px;
+                margin: -15px -15px 15px -15px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .mobile-menu-header {
+                padding: 12px;
+                margin: -12px -12px 12px -12px;
+            }
+            .mobile-menu-header h3 {
+                font-size: 18px;
+            }
+            .mobile-menu-header p {
+                font-size: 12px;
+            }
+        }
+        
+        .mobile-menu>ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .mobile-menu>ul>li {
+            margin-bottom: 8px;
+            clear: both;
+            width: 100%;
+            display: block;
+        }
+        
+        .mobile-menu>ul>li>a {
+            display: flex;
+            align-items: center;
+            padding: 16px 20px;
+            color: #2c3e50;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            gap: 15px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        
+        .mobile-menu>ul>li>a i {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #0078D7;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        
+        .mobile-menu>ul>li>a:hover,
+        .mobile-menu>ul>li.active>a {
+            background: linear-gradient(135deg, #0078D7 0%, #005A9E 100%);
+            color: white;
+            transform: translateX(5px);
+            box-shadow: 0 4px 15px rgba(0, 120, 215, 0.3);
+        }
+        
+        .mobile-menu>ul>li>a:hover i,
+        .mobile-menu>ul>li.active>a i {
+            color: white;
+            transform: scale(1.1);
+        }
+        /* Mobile Dropdown Styling */
+        
+        .mobile-menu .mobile-dropdown {
+            clear: both;
+            width: 100%;
+            display: block;
+        }
+        
+        .mobile-menu .mobile-dropdown>a {
+            position: relative;
+            padding-right: 50px;
+        }
+        
+        .mobile-menu .mobile-dropdown>a i.fa-chevron-down {
+            position: absolute;
+            right: 20px;
+            width: auto;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        
+        .mobile-menu .dropdown-menu {
+            position: static;
+            opacity: 1;
+            visibility: visible;
+            transform: none;
+            box-shadow: none;
+            padding: 12px 0 0 20px;
+            margin-top: 12px;
+            margin-bottom: 12px;
+            pointer-events: auto;
+            border: none;
+            border-left: 4px solid #0078D7;
+            display: none !important;
+            background: rgba(0, 120, 215, 0.03);
+            max-height: none !important;
+            overflow: visible !important;
+            border-radius: 0 12px 12px 0;
+            width: 100%;
+            clear: both;
+        }
+        
+        .mobile-menu .dropdown-menu.active {
+            display: block !important;
+            animation: slideDown 0.3s ease;
+        }
+        
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .mobile-menu .dropdown-menu::before {
+            display: none;
+        }
+        
+        .mobile-menu .dropdown-menu a {
+            display: flex;
+            align-items: center;
+            padding: 14px 18px;
+            margin-bottom: 8px;
+            margin-right: 10px;
+            background: white;
+            border-radius: 10px;
+            color: #2c3e50;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+            gap: 12px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+        }
+        
+        .mobile-menu .dropdown-menu a i {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #0078D7;
+            font-size: 14px;
+        }
+        
+        .mobile-menu .dropdown-menu a:hover {
+            background: #0078D7;
+            color: white;
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(0, 120, 215, 0.25);
+        }
+        
+        .mobile-menu .dropdown-menu a:hover i {
+            color: white;
+        }
+        
+        .mobile-cta {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 2px solid #e9ecef;
+        }
+        /* Responsive Design */
+        
+        @media (max-width: 1440px) {
+            .nav-menu {
+                gap: 8px;
+            }
+            .nav-menu>li>a {
+                padding: 10px 14px;
+                font-size: 13.5px;
+            }
+            .logo-title {
+                font-size: 20px;
+            }
+            .logo-subtitle {
+                font-size: 10px;
+            }
+        }
+        
+        @media (max-width: 1366px) {
+            .nav-menu {
+                gap: 5px;
+            }
+            .nav-menu>li>a {
+                padding: 10px 12px;
+                font-size: 13px;
+            }
+        }
+        
+        @media (max-width: 1280px) {
+            .nav-menu {
+                gap: 3px;
+            }
+            .nav-menu>li>a {
+                padding: 10px 10px;
+                font-size: 12.5px;
+            }
+        }
+        
+        @media (max-width: 1200px) {
+            .nav-menu {
+                gap: 2px;
+            }
+            .nav-menu>li>a {
+                padding: 10px 8px;
+                font-size: 12px;
+            }
+        }
+        
+        @media (max-width: 1100px) {
+            .nav-menu>li>a {
+                padding: 8px 6px;
+                font-size: 11.5px;
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .nav-menu {
+                display: none !important;
+            }
+            .mobile-toggle {
+                display: flex !important;
+            }
+            .nav-container {
+                padding: 0 20px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-container {
+                height: 70px;
+                padding: 0 15px;
+            }
+            .logo-image {
+                width: 48px;
+                height: 48px;
+            }
+            .logo-title {
+                font-size: 18px;
+            }
+            .logo-subtitle {
+                font-size: 10px;
+            }
+            .mobile-menu {
+                top: 70px;
+                height: calc(100vh - 70px);
+                padding: 15px;
+            }
+            .mobile-menu>ul>li {
+                margin-bottom: 6px;
+            }
+            .mobile-menu>ul>li>a {
+                padding: 14px 16px;
+                font-size: 15px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .nav-container {
+                height: 65px;
+                padding: 0 12px;
+            }
+            .logo-image {
+                width: 42px;
+                height: 42px;
+            }
+            .logo-title {
+                font-size: 16px;
+            }
+            .logo-subtitle {
+                font-size: 9px;
+            }
+            .mobile-menu {
+                top: 65px;
+                height: calc(100vh - 65px);
+                padding: 12px;
+            }
+            .mobile-menu>ul>li>a {
+                padding: 12px 14px;
+                font-size: 14px;
+                gap: 12px;
+            }
+            .mobile-toggle {
+                width: 42px;
+                height: 38px;
+            }
+        }
+        /* Smooth Scroll Padding */
+        
+        html {
+            scroll-padding-top: 85px;
+        }
+        /* Loading Animation */
+        
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        #advanced-navbar {
+            animation: fadeInDown 0.6s ease;
+        }
+    </style>
+
+    <!-- Navigation HTML -->
+    <nav id="advanced-navbar">
+        <div class="nav-container">
+            <!-- Logo with Image -->
+            <a href="index.html" class="nav-logo">
+                <img src="ICT Club Official Logo without Background.png" alt="ICT Club Logo" class="logo-image">
+                <div class="logo-text">
+                    <span class="logo-title">ICT Club</span>
+                    <span class="logo-subtitle">MNS UET Multan</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">Purpose</a></li>
+                <li><a href="index.html#objectives">Objectives</a></li>
+                <li><a href="index.html#vision">Vision</a></li>
+                <li><a href="index.html#activities">Activities</a></li>
+                <li class="dropdown">
+                    <a href="#">Explore <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="ictcluballiances.html"><i class="fas fa-handshake"></i> Alliances</a></li>
+                        <li><a href="clubs.html"><i class="fas fa-users-cog"></i> Clubs & Societies</a></li>
+                        <li><a href="resources.html"><i class="fas fa-book-open"></i> Resources Hub</a></li>
+                        <li><a href="blogs.html"><i class="fas fa-blog"></i> Blogs & Articles</a></li>
+                        <li><a href="verified.html"><i class="fas fa-certificate"></i> Certificate Verification</a></li>
+                        <li><a href="https://mnsuet.edu.pk/" target="_blank"><i class="fas fa-university"></i> MNS UET Multan</a></li>
+                        <li><a href="branding.html"><i class="fas fa-palette"></i> Branding</a></li>
+                        <li><a href="policy.html"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
+                        <li><a href="policy.html#terms"><i class="fas fa-file-contract"></i> Terms & Conditions</a></li>
+                    </ul>
+                </li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="mlsa.html">MSA MNS UET</a></li>
+            </ul>
+
+            <!-- Mobile Toggle -->
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-header">
+                <h3><i class="fas fa-bars"></i> Navigation Menu</h3>
+                <p>ICT Club MNS UET Multan</p>
+            </div>
+            <ul>
+                <li><a href="index.html" class="mobile-link"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="index.html#about" class="mobile-link"><i class="fas fa-info-circle"></i> Purpose</a></li>
+                <li><a href="index.html#objectives" class="mobile-link"><i class="fas fa-bullseye"></i> Objectives</a></li>
+                <li><a href="index.html#vision" class="mobile-link"><i class="fas fa-eye"></i> Vision</a></li>
+                <li><a href="index.html#activities" class="mobile-link"><i class="fas fa-calendar-check"></i> Activities</a></li>
+                <li class="mobile-dropdown">
+                    <a href="#" id="mobileDropdownToggle">
+                        <i class="fas fa-compass"></i>
+                        <span>Explore</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu" id="mobileDropdownMenu">
+                        <li><a href="ictcluballiances.html" class="mobile-link"><i class="fas fa-handshake"></i> Alliances</a></li>
+                        <li><a href="clubs.html" class="mobile-link"><i class="fas fa-users-cog"></i> Clubs & Societies</a></li>
+                        <li><a href="resources.html" class="mobile-link"><i class="fas fa-book-open"></i> Resources Hub</a></li>
+                        <li><a href="blogs.html" class="mobile-link"><i class="fas fa-blog"></i> Blogs & Articles</a></li>
+                        <li><a href="verified.html" class="mobile-link"><i class="fas fa-certificate"></i> Certificate Verification</a></li>
+                        <li><a href="https://mnsuet.edu.pk/" target="_blank" class="mobile-link"><i class="fas fa-university"></i> MNS UET Multan</a></li>
+                        <li><a href="branding.html" class="mobile-link"><i class="fas fa-palette"></i> Branding</a></li>
+                        <li><a href="policy.html" class="mobile-link"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
+                        <li><a href="policy.html#terms" class="mobile-link"><i class="fas fa-file-contract"></i> Terms & Conditions</a></li>
+                    </ul>
+                </li>
+                <li><a href="team.html" class="mobile-link"><i class="fas fa-users"></i> Our Team</a></li>
+                <li><a href="mlsa.html" class="mobile-link"><i class="fas fa-user-graduate"></i> MSA MNS UET</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <script>
+        // Advanced Navigation JavaScript
+        (function() {
+            const navbar = document.getElementById('advanced-navbar');
+            const mobileToggle = document.getElementById('mobileToggle');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const mobileDropdownToggle = document.getElementById('mobileDropdownToggle');
+            const mobileDropdownMenu = document.getElementById('mobileDropdownMenu');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+            const desktopDropdown = document.querySelector('.nav-menu .dropdown');
+
+            console.log('Navigation initialized:', {
+                navbar: !!navbar,
+                mobileToggle: !!mobileToggle,
+                mobileMenu: !!mobileMenu,
+                desktopDropdown: !!desktopDropdown
+            });
+
+            // Scroll Effect
+            window.addEventListener('scroll', () => {
+                const currentScroll = window.pageYOffset;
+
+                if (currentScroll > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+
+            // Desktop Dropdown Click Toggle (for touch devices and better UX)
+            if (desktopDropdown) {
+                const dropdownLink = desktopDropdown.querySelector('a');
+                if (dropdownLink) {
+                    dropdownLink.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        desktopDropdown.classList.toggle('active');
+                        console.log('Desktop dropdown toggled:', desktopDropdown.classList.contains('active'));
+                    });
+                }
+
+                // Close dropdown when clicking outside
+                document.addEventListener('click', (e) => {
+                    if (!desktopDropdown.contains(e.target)) {
+                        desktopDropdown.classList.remove('active');
+                    }
+                });
+            }
+
+            // Mobile Toggle
+            if (mobileToggle && mobileMenu) {
+                mobileToggle.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    mobileToggle.classList.toggle('active');
+                    mobileMenu.classList.toggle('active');
+
+                    console.log('Mobile menu toggled:', mobileMenu.classList.contains('active'));
+
+                    // Prevent body scroll when menu is open
+                    if (mobileMenu.classList.contains('active')) {
+                        document.body.style.overflow = 'hidden';
+                    } else {
+                        document.body.style.overflow = '';
+                    }
+                });
+            }
+
+            // Mobile Dropdown Toggle
+            if (mobileDropdownToggle && mobileDropdownMenu) {
+                mobileDropdownToggle.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    mobileDropdownMenu.classList.toggle('active');
+                    console.log('Mobile dropdown toggled:', mobileDropdownMenu.classList.contains('active'));
+
+                    const icon = mobileDropdownToggle.querySelector('.fa-chevron-down');
+                    if (icon) {
+                        icon.style.transform = mobileDropdownMenu.classList.contains('active') ? 'rotate(180deg)' : 'rotate(0)';
+                        icon.style.transition = 'transform 0.3s ease';
+                    }
+                });
+            }
+
+            // Close mobile menu when any link is clicked
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (mobileToggle) mobileToggle.classList.remove('active');
+                    if (mobileMenu) mobileMenu.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            });
+
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', (e) => {
+                if (mobileMenu && mobileMenu.classList.contains('active')) {
+                    if (!mobileMenu.contains(e.target) && mobileToggle && !mobileToggle.contains(e.target)) {
+                        mobileToggle.classList.remove('active');
+                        mobileMenu.classList.remove('active');
+                        document.body.style.overflow = '';
+                    }
+                }
+            });
+        })();
+    </script>
+    <!-- ========== END ADVANCED NAVIGATION ========== -->
+
+    <style>
+        /* Adjust sections for fixed navbar */
+        
+        body {
+            padding-top: 80px;
+        }
+        
+        #intro {
+            margin-top: 0 !important;
+            padding-top: 60px !important;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding-top: 70px;
+            }
+            #intro {
+                padding-top: 40px !important;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding-top: 65px;
+            }
+            #intro {
+                padding-top: 30px !important;
+            }
+        }
+    </style>
+
+    <!-- Intro Section -->
+    <section id="intro" class="clearfix">
+        <div class="container d-flex h-100">
+            <div class="row justify-content-center align-self-center">
+                <div class="col-md-6 intro-info order-md-first order-last">
+                    <h2>ICT Club <br><span>Branding!</span></h2>
+                    <div>
+                    </div>
+                </div>
+                <div class="col-md-6 intro-img order-md-last order-first">
+                    <img src="img/intro-img11111.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- #intro -->
+
+
+    <main id="main">
+
+        <section id="branding-assets">
+            <div class="branding-wrapper">
+                <h2 style="text-align: center; font-weight: bold; color: #413e66;">
+                    ICT Club & MNS-UET Official Branding</h2>
+
+                <p class="branding-intro">
+                    Official logos and banners of ICT Club and MNS-UET. These files are provided strictly for authorized university and club-related use.
+                </p>
+
+                <!-- ICT Club Logo With BG -->
+                <div class="branding-card">
+                    <div class="branding-image">
+                        <img src="ICT Club Official Logo with Background.jpg" alt="MNS-UET Banner Transparent">
+                        <p class="branding-name">ICT Club Official Logo </p>
+                    </div>
+                    <a href="#" onclick="downloadBrandingFile('ICT Club Official Logo with Background.jpg'); return false;" class="branding-btn">Download</a>
+                </div>
+
+                <!-- ICT Club Logo Transparent -->
+                <div class="branding-card">
+                    <div class="branding-image">
+                        <img src="ICT Club Official Logo without Background.png" alt="MNS-UET Banner Transparent">
+                        <p class="branding-name">ICT Club Official Logo (Transparent)</p>
+                    </div>
+                    <a href="#" onclick="downloadBrandingFile('ICT Club Official Logo without Background.png'); return false;" class="branding-btn">Download</a>
+                </div>
+                <!-- ICT Club Banner With BG -->
+                <div class="branding-card">
+                    <div class="branding-image">
+                        <img src="ICT Club Banner with background.jpg" alt="MNS-UET Banner Transparent">
+                        <p class="branding-name">ICT Club Banner</p>
+                    </div>
+                    <a href="#" onclick="downloadBrandingFile('ICT Club Banner with background.jpg'); return false;" class="branding-btn">Download</a>
+                </div>
+
+                <!-- ICT Club Banner Transparent -->
+                <div class="branding-card">
+                    <div class="branding-image">
+                        <img src="ICT Club Banner without background.png" alt="MNS-UET Banner Transparent">
+                        <p class="branding-name">ICT Club Banner (Transparent)</p>
+                    </div>
+                    <a href="#" onclick="downloadBrandingFile('ICT Club Banner without background.png'); return false;" class="branding-btn">Download</a>
+                </div>
+
+                <!-- MNS-UET Logo With BG -->
+                <div class="branding-card">
+                    <div class="branding-image">
+                        <img src="MNS UET Official Logo with Background.png.jpg" alt="MNS-UET Banner Transparent">
+                        <p class="branding-name">MNS UET Official Logo</p>
+                    </div>
+                    <a href="#" onclick="downloadBrandingFile('MNS UET Official Logo with Background.png.jpg'); return false;" class="branding-btn">Download</a>
+                </div>
+
+                <!-- MNS-UET Logo Transparent -->
+                <div class="branding-card">
+                    <div class="branding-image">
+                        <img src="MNS UET Official Logo without Background.png.png" alt="MNS-UET Banner Transparent">
+                        <p class="branding-name">MNS UET Official Logo (Transparent)</p>
+                    </div>
+                    <a href="#" onclick="downloadBrandingFile('MNS UET Official Logo without Background.png.png'); return false;" class="branding-btn">Download</a>
+                </div>
+
+                <!-- MNS-UET Banner With BG -->
+                <div class="branding-card">
+                    <div class="branding-image">
+                        <img src="MNS UET Banner with background.jpg" alt="MNS-UET Banner Transparent">
+                        <p class="branding-name">MNS-UET Banner </p>
+                    </div>
+                    <a href="#" onclick="downloadBrandingFile('MNS UET Banner with background.jpg'); return false;" class="branding-btn">Download</a>
+                </div>
+
+                <!-- MNS-UET Banner Transparent -->
+                <div class="branding-card">
+                    <div class="branding-image">
+                        <img src="MNS UET Banner without background (2).png" alt="MNS-UET Banner Transparent">
+                        <p class="branding-name">MNS-UET Banner (Transparent)</p>
+                    </div>
+                    <a href="#" onclick="downloadBrandingFile('MNS UET Banner without background (2).png'); return false;" class="branding-btn">Download</a>
+                </div>
+
+
+            </div>
+        </section>
+
+        <style>
+            /* Isolated styles only for branding page */
+            
+            #branding-assets {
+                font-family: 'Poppins', sans-serif;
+                background: #ffffff;
+                padding: 60px 20px;
+            }
+            
+            #branding-assets .branding-wrapper {
+                max-width: 900px;
+                margin: auto;
+            }
+            
+            #branding-assets h1 {
+                font-size: 2.4rem;
+                font-weight: 800;
+                color: #363f70;
+                text-align: center;
+                margin-bottom: 15px;
+                text-transform: uppercase;
+            }
+            
+            #branding-assets .branding-intro {
+                text-align: justify;
+                font-size: 1.05rem;
+                color: #333;
+                line-height: 1.8;
+                max-width: 750px;
+                margin: 0 auto 50px;
+            }
+            /* Card layout */
+            
+            #branding-assets .branding-card {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background: #f9f9f9;
+                padding: 20px 25px;
+                margin-bottom: 25px;
+                border: 1px solid #ddd;
+                border-left: 6px solid #002a6e;
+            }
+            
+            #branding-assets .branding-card img {
+                max-width: 160px;
+                height: auto;
+            }
+            
+            #branding-assets .branding-btn {
+                background: #002a6e;
+                color: #fff;
+                font-weight: 700;
+                text-transform: uppercase;
+                padding: 14px 24px;
+                text-decoration: none;
+                border: none;
+                font-size: 1rem;
+                min-width: 250px;
+                text-align: center;
+            }
+            
+            #branding-assets .branding-btn:hover {
+                background: #0049a8;
+            }
+            /* Mobile fix */
+            
+            @media (max-width: 700px) {
+                #branding-assets .branding-card {
+                    flex-direction: column;
+                    text-align: center;
+                }
+                #branding-assets .branding-card img {
+                    margin-bottom: 15px;
+                    max-width: 200px;
+                }
+                #branding-assets .branding-btn {
+                    width: 100%;
+                    min-width: unset;
+                }
+            }
+        </style>
+
+
+    </main>
+    <!-- #main -->
+
+    <!--==========================
+    Footer
+  ============================-->
+
+    <!-- === PASTE THIS JUST ABOVE YOUR FOOTER === -->
+    <div class="footer-separator"></div>
+
+    <!-- Footer Section - INLINE (No iframe) -->
+    <footer class="advanced-footer">
+        <!-- TOP ACCENT -->
+        <div class="footer-accent"></div>
+
+        <!-- BRANDING SECTION -->
+        <div class="footer-branding">
+            <!-- Particles Background -->
+            <div class="particles-container">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+
+            <div class="footer-brand-container">
+                <div class="brand-left">
+                    <div class="brand-logo-section">
+                        <img src="ICT Club Official Logo without Background.png" alt="ICT Club Logo" class="brand-logo">
+                    </div>
+                    <div class="brand-text">
+                        <h2>ICT Club</h2>
+                        <p>MNS University of Engineering &amp; Technology</p>
+                    </div>
+                    <div class="brand-description">
+                        An official student organization at MNS UET Multan, dedicated to empowering students through technology, innovation, and professional development in the field of Information and Communication Technology.
+                    </div>
+                    <div class="brand-badges">
+                        <div class="brand-badge">
+                            <i class="fas fa-check-circle"></i> Approved by MNS UET
+                        </div>
+                        <div class="brand-badge">
+                            <i class="fas fa-certificate"></i> Official Organization
+                        </div>
+                        <div class="brand-badge">
+                            <i class="fas fa-users"></i> Student Community
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MAIN FOOTER -->
+        <div class="footer-main">
+            <div class="footer-container">
+                <div class="footer-grid">
+
+                    <!-- QUICK LINKS -->
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                            <li><a href="index.html#objectives"><i class="fas fa-chevron-right"></i> Our Objectives</a></li>
+                            <li><a href="index.html#vision"><i class="fas fa-chevron-right"></i> Vision &amp; Mission</a></li>
+                            <li><a href="index.html#activities"><i class="fas fa-chevron-right"></i> Activities</a></li>
+                            <li><a href="team.html"><i class="fas fa-chevron-right"></i> Our Team</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- RESOURCES -->
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="ictcluballiances.html"><i class="fas fa-chevron-right"></i> Alliances</a></li>
+                            <li><a href="resources.html"><i class="fas fa-chevron-right"></i> Resources Hub</a></li>
+                            <li><a href="clubs.html"><i class="fas fa-chevron-right"></i> Clubs &amp; Societies</a></li>
+                            <li><a href="blogs.html"><i class="fas fa-chevron-right"></i> Blogs</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- PORTALS -->
+                    <div class="footer-column">
+                        <h3>Portals</h3>
+                        <ul>
+                            <li><a href="verified.html"><i class="fas fa-chevron-right"></i> Certificate Verification</a></li>
+                            <li><a href="https://mnsuet.edu.pk/" target="_blank"><i class="fas fa-chevron-right"></i> MNS UET Multan</a></li>
+                            <li><a href="mlsa.html"><i class="fas fa-chevron-right"></i> MSA Program</a></li>
+                            <li><a href="policy.html"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                            <li><a href="policy.html#terms"><i class="fas fa-chevron-right"></i> Terms of Service</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- CONTACT -->
+                    <div class="footer-column">
+                        <h3>Contact Us</h3>
+
+                        <div class="contact-info-item">
+                            <div class="contact-icon-box">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p><a href="mailto:ict.mnsuet@gmail.com">ict.mnsuet@gmail.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-icon-box">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <p>MNS UET Multan<br>Punjab, Pakistan</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- SOCIAL SECTION -->
+        <div class="footer-social">
+            <div class="social-wrapper">
+                <div class="social-title">Connect With Us</div>
+                <div class="social-buttons">
+                    <a href="https://www.linkedin.com/company/ict-clubmns-uet-multan/" class="social-btn linkedin" target="_blank" title="LinkedIn" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://web.facebook.com/ictclubpk/" class="social-btn facebook" target="_blank" title="Facebook" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/ictclub_mnsuet?igsh=aHEwamdqcTU1bDEw" class="social-btn instagram" target="_blank" title="Instagram" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="mailto:ict.mnsuet@gmail.com" class="social-btn email" target="_blank" title="Email" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@ICTClubMNSUETMultan" class="social-btn youtube" target="_blank" title="YouTube" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER BOTTOM -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <div class="copyright-text">
+                    &copy; 2025 All Rights Reserved | <strong>ICT Club</strong> at MNS UET Multan ...... <span class="heart-icon">❤</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <style>
+        /* ISOLATED ADVANCED WHITE FOOTER STYLES */
+        /* Scoped to .advanced-footer to prevent conflicts with other page elements */
+        
+        .advanced-footer {
+            background: #ffffff;
+            color: #333333;
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            isolation: isolate;
+            clear: both;
+        }
+        
+        .advanced-footer * {
+            box-sizing: border-box;
+        }
+        
+        .advanced-footer .footer-accent {
+            height: 5px;
+            background: linear-gradient(90deg, #2b2a95 0%, #1e3a8a 50%, #2b2a95 100%);
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+        }
+        
+        .advanced-footer .footer-accent::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            animation: shimmer 3s infinite;
+        }
+        
+        @keyframes shimmer {
+            0% {
+                left: -100%;
+            }
+            100% {
+                left: 100%;
+            }
+        }
+        
+        .advanced-footer .footer-branding {
+            background: #f8f9fa;
+            padding: 50px 0;
+            border-bottom: 2px solid #e9ecef;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        /* PARTICLES ANIMATION */
+        
+        .advanced-footer .particles-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 0;
+        }
+        
+        .advanced-footer .particle {
+            position: absolute;
+            background: radial-gradient(circle, rgba(30, 58, 138, 0.6), rgba(43, 42, 149, 0.3));
+            border-radius: 50%;
+            animation: float linear infinite;
+        }
+        
+        .advanced-footer .particle:nth-child(1) {
+            width: 80px;
+            height: 80px;
+            left: 10%;
+            top: 20%;
+            animation-duration: 15s;
+            animation-delay: 0s;
+        }
+        
+        .advanced-footer .particle:nth-child(2) {
+            width: 60px;
+            height: 60px;
+            left: 85%;
+            top: 30%;
+            animation-duration: 18s;
+            animation-delay: 2s;
+        }
+        
+        .advanced-footer .particle:nth-child(3) {
+            width: 50px;
+            height: 50px;
+            left: 25%;
+            top: 60%;
+            animation-duration: 20s;
+            animation-delay: 4s;
+        }
+        
+        .advanced-footer .particle:nth-child(4) {
+            width: 70px;
+            height: 70px;
+            left: 70%;
+            top: 70%;
+            animation-duration: 16s;
+            animation-delay: 1s;
+        }
+        
+        .advanced-footer .particle:nth-child(5) {
+            width: 40px;
+            height: 40px;
+            left: 50%;
+            top: 10%;
+            animation-duration: 22s;
+            animation-delay: 3s;
+        }
+        
+        .advanced-footer .particle:nth-child(6) {
+            width: 55px;
+            height: 55px;
+            left: 15%;
+            top: 80%;
+            animation-duration: 19s;
+            animation-delay: 5s;
+        }
+        
+        .advanced-footer .particle:nth-child(7) {
+            width: 45px;
+            height: 45px;
+            left: 90%;
+            top: 15%;
+            animation-duration: 17s;
+            animation-delay: 2.5s;
+        }
+        
+        .advanced-footer .particle:nth-child(8) {
+            width: 65px;
+            height: 65px;
+            left: 40%;
+            top: 85%;
+            animation-duration: 21s;
+            animation-delay: 1.5s;
+        }
+        
+        .advanced-footer .particle:nth-child(9) {
+            width: 50px;
+            height: 50px;
+            left: 75%;
+            top: 50%;
+            animation-duration: 18s;
+            animation-delay: 4.5s;
+        }
+        
+        .advanced-footer .particle:nth-child(10) {
+            width: 60px;
+            height: 60px;
+            left: 30%;
+            top: 35%;
+            animation-duration: 20s;
+            animation-delay: 0.5s;
+        }
+        
+        .advanced-footer .particle:nth-child(11) {
+            width: 35px;
+            height: 35px;
+            left: 60%;
+            top: 25%;
+            animation-duration: 16s;
+            animation-delay: 3.5s;
+        }
+        
+        .advanced-footer .particle:nth-child(12) {
+            width: 55px;
+            height: 55px;
+            left: 5%;
+            top: 50%;
+            animation-duration: 19s;
+            animation-delay: 2s;
+        }
+        
+        .advanced-footer .particle:nth-child(13) {
+            width: 48px;
+            height: 48px;
+            left: 95%;
+            top: 60%;
+            animation-duration: 17s;
+            animation-delay: 4s;
+        }
+        
+        .advanced-footer .particle:nth-child(14) {
+            width: 52px;
+            height: 52px;
+            left: 45%;
+            top: 5%;
+            animation-duration: 21s;
+            animation-delay: 1s;
+        }
+        
+        .advanced-footer .particle:nth-child(15) {
+            width: 58px;
+            height: 58px;
+            left: 80%;
+            top: 90%;
+            animation-duration: 18s;
+            animation-delay: 5s;
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(0) translateX(0) scale(1);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.6;
+            }
+            50% {
+                transform: translateY(-100px) translateX(50px) scale(1.2);
+                opacity: 0.8;
+            }
+            90% {
+                opacity: 0.6;
+            }
+            100% {
+                transform: translateY(-200px) translateX(-50px) scale(0.8);
+                opacity: 0;
+            }
+        }
+        
+        .advanced-footer .footer-brand-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 30px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .advanced-footer .brand-left {
+            width: 100%;
+            text-align: center;
+        }
+        
+        .advanced-footer .brand-logo-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        
+        .advanced-footer .brand-logo {
+            width: 140px;
+            height: 140px;
+            object-fit: contain;
+            filter: drop-shadow(0 8px 20px rgba(43, 42, 149, 0.25));
+            transition: all 0.4s ease;
+        }
+        
+        .advanced-footer .brand-logo:hover {
+            transform: scale(1.08) translateY(-5px);
+            filter: drop-shadow(0 12px 30px rgba(43, 42, 149, 0.35));
+        }
+        
+        .advanced-footer .brand-text {
+            margin-bottom: 25px;
+        }
+        
+        .advanced-footer .brand-text h2 {
+            font-size: 42px;
+            font-weight: 800;
+            background: linear-gradient(135deg, #2b2a95, #1e3a8a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        
+        .advanced-footer .brand-text p {
+            font-size: 16px;
+            color: #495057;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        
+        .advanced-footer .brand-description {
+            color: #495057;
+            font-size: 15px;
+            line-height: 1.8;
+            max-width: 750px;
+            margin: 0 auto 30px auto;
+            font-weight: 400;
+        }
+        
+        .advanced-footer .brand-badges {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        
+        .advanced-footer .brand-badge {
+            padding: 12px 28px;
+            background: linear-gradient(135deg, #ffffff, #f8f9fa);
+            border: 2px solid #dee2e6;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 700;
+            color: #2b2a95;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.4s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .advanced-footer .brand-badge:hover {
+            border-color: #1e3a8a;
+            background: linear-gradient(135deg, #f0f0ff, #ffffff);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(30, 58, 138, 0.2);
+        }
+        
+        .advanced-footer .brand-badge i {
+            color: #1e3a8a;
+            font-size: 16px;
+        }
+        
+        .advanced-footer .footer-main {
+            padding: 60px 0 40px 0;
+            background: #ffffff;
+        }
+        
+        .advanced-footer .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+        
+        .advanced-footer .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 50px;
+            margin-bottom: 50px;
+        }
+        
+        .advanced-footer .footer-column h3 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #2b2a95;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            position: relative;
+            padding-bottom: 12px;
+        }
+        
+        .advanced-footer .footer-column h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: linear-gradient(90deg, #2b2a95, #1e3a8a);
+            border-radius: 3px;
+        }
+        
+        .advanced-footer .footer-column ul {
+            list-style: none;
+        }
+        
+        .advanced-footer .footer-column ul li {
+            margin-bottom: 14px;
+        }
+        
+        .advanced-footer .footer-column ul li a {
+            color: #495057;
+            text-decoration: none;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .advanced-footer .footer-column ul li a:hover {
+            color: #2b2a95;
+            transform: translateX(5px);
+        }
+        
+        .advanced-footer .footer-column ul li a i {
+            font-size: 10px;
+            color: #1e3a8a;
+            transition: transform 0.3s ease;
+        }
+        
+        .advanced-footer .footer-column ul li a:hover i {
+            transform: translateX(3px);
+        }
+        
+        .advanced-footer .contact-info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .advanced-footer .contact-icon-box {
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(135deg, #f0f0ff, #e6e6ff);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2b2a95;
+            font-size: 18px;
+            flex-shrink: 0;
+            transition: all 0.3s ease;
+        }
+        
+        .advanced-footer .contact-info-item:hover .contact-icon-box {
+            background: linear-gradient(135deg, #1e3a8a, #2b2a95);
+            color: white;
+            transform: scale(1.1);
+        }
+        
+        .advanced-footer .contact-text h4 {
+            font-size: 13px;
+            font-weight: 700;
+            color: #2b2a95;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .advanced-footer .contact-text p {
+            font-size: 14px;
+            color: #6c757d;
+            line-height: 1.6;
+        }
+        
+        .advanced-footer .contact-text a {
+            color: #495057;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .advanced-footer .contact-text a:hover {
+            color: #2b2a95;
+        }
+        
+        .advanced-footer .footer-social {
+            background: #f8f9fa;
+            padding: 40px 0;
+            border-top: 2px solid #e9ecef;
+            border-bottom: 2px solid #e9ecef;
+        }
+        
+        .advanced-footer .social-wrapper {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 30px;
+            text-align: center;
+        }
+        
+        .advanced-footer .social-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #2b2a95;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .advanced-footer .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .advanced-footer .social-btn {
+            width: 55px;
+            height: 55px;
+            background: white;
+            border: 2px solid #e9ecef;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #495057;
+            font-size: 22px;
+            text-decoration: none;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        
+        .advanced-footer .social-btn:hover {
+            transform: translateY(-8px) scale(1.1);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+        
+        .advanced-footer .social-btn.linkedin:hover {
+            background: #0077b5;
+            border-color: #0077b5;
+            color: white;
+        }
+        
+        .advanced-footer .social-btn.facebook:hover {
+            background: #1877f2;
+            border-color: #1877f2;
+            color: white;
+        }
+        
+        .advanced-footer .social-btn.instagram:hover {
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+            border-color: #bc1888;
+            color: white;
+        }
+        
+        .advanced-footer .social-btn.email:hover {
+            background: #ea4335;
+            border-color: #ea4335;
+            color: white;
+        }
+        
+        .advanced-footer .social-btn.youtube:hover {
+            background: #ff0000;
+            border-color: #ff0000;
+            color: white;
+        }
+        
+        .advanced-footer .footer-bottom {
+            background: #ffffff;
+            padding: 30px 0;
+        }
+        
+        .advanced-footer .footer-bottom-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .advanced-footer .copyright-text {
+            color: #6c757d;
+            font-size: 14px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-align: center;
+        }
+        
+        .advanced-footer .copyright-text strong {
+            color: #2b2a95;
+            font-weight: 700;
+        }
+        
+        .advanced-footer .heart-icon {
+            color: #000000;
+            font-size: 16px;
+            display: inline-block;
+            animation: heartBeat 1.3s infinite;
+        }
+        
+        @keyframes heartBeat {
+            0%,
+            100% {
+                transform: scale(1);
+            }
+            10%,
+            30% {
+                transform: scale(1.1);
+            }
+            20%,
+            40% {
+                transform: scale(1.3);
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .advanced-footer .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 40px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .advanced-footer .footer-branding {
+                padding: 35px 15px;
+            }
+            .advanced-footer .footer-brand-container {
+                padding: 0 15px;
+            }
+            .advanced-footer .brand-text h2 {
+                font-size: 32px;
+            }
+            .advanced-footer .brand-logo {
+                width: 100px;
+                height: 100px;
+            }
+            .advanced-footer .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+            .advanced-footer .footer-main {
+                padding: 40px 15px 30px 15px;
+            }
+            .advanced-footer .footer-container {
+                padding: 0 15px;
+            }
+            .advanced-footer .footer-bottom-content {
+                padding: 0 15px;
+            }
+            .advanced-footer .copyright-text {
+                font-size: 12px;
+                flex-wrap: wrap;
+                justify-content: center;
+                line-height: 1.6;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .advanced-footer .footer-branding {
+                padding: 30px 10px;
+            }
+            .advanced-footer .footer-brand-container {
+                padding: 0 10px;
+            }
+            .advanced-footer .brand-logo {
+                width: 90px;
+                height: 90px;
+            }
+            .advanced-footer .brand-text h2 {
+                font-size: 28px;
+            }
+            .advanced-footer .brand-text p {
+                font-size: 13px;
+            }
+            .advanced-footer .brand-description {
+                font-size: 13px;
+                padding: 0 10px;
+            }
+            .advanced-footer .brand-badges {
+                gap: 10px;
+                padding: 0 10px;
+            }
+            .advanced-footer .brand-badge {
+                padding: 10px 20px;
+                font-size: 12px;
+            }
+            .advanced-footer .footer-main {
+                padding: 35px 10px 25px 10px;
+            }
+            .advanced-footer .footer-container {
+                padding: 0 10px;
+            }
+            .advanced-footer .social-btn {
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+            }
+            .advanced-footer .footer-bottom {
+                padding: 20px 0;
+            }
+            .advanced-footer .footer-bottom-content {
+                padding: 0 10px;
+            }
+            .advanced-footer .copyright-text {
+                font-size: 11px;
+                line-height: 1.8;
+                word-break: break-word;
+            }
+        }
+    </style>
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <!-- Uncomment below i you want to use a preloader -->
+    <!-- <div id="preloader"></div> -->
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <!-- Contact Form JavaScript File -->
+    <script src="contactform/contactform.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+
+    <!-- Branding Download Handler -->
+    <script>
+        function downloadBrandingFile(fileName) {
+            // Create a new image element to load the file
+            const img = new Image();
+            img.crossOrigin = 'anonymous';
+            img.onload = function() {
+                // Convert image to canvas
+                const canvas = document.createElement('canvas');
+                canvas.width = img.width;
+                canvas.height = img.height;
+                const ctx = canvas.getContext('2d');
+                ctx.drawImage(img, 0, 0);
+                
+                // Convert canvas to blob and download
+                canvas.toBlob(function(blob) {
+                    const url = window.URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = fileName;
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                    window.URL.revokeObjectURL(url);
+                });
+            };
+            img.onerror = function() {
+                // Fallback: direct link click
+                const link = document.createElement('a');
+                link.href = './' + fileName;
+                link.download = fileName;
+                link.style.display = 'none';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            };
+            img.src = './' + fileName;
+        }
+    </script>
+
+</body>
+
+</html>
