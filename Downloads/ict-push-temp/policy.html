@@ -1,0 +1,2364 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ICT Club MNS UET</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicons -->
+    <link href="icon1111.png" rel="icon">
+    <link href="icon1111.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Font Awesome (latest CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- AOS Animate On Scroll CSS & JS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', AOS.init);
+    </script>
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #ffffff, #ffffff);
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .verification-card {
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+            margin: 50px auto;
+            border-radius: 24px;
+            padding: 40px;
+            text-align: center;
+            color: #fff;
+            animation: slideUp 1s ease forwards;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .status-icon {
+            position: relative;
+            width: 90px;
+            height: 90px;
+            margin: 0 auto 20px;
+            animation: fadeIn 1s ease forwards;
+        }
+        
+        .checkmark-circle {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #00C9A7, #005B41);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: popIn 0.5s ease forwards;
+        }
+        
+        .checkmark {
+            width: 52px;
+            height: 52px;
+            position: absolute;
+            top: 19px;
+            left: 19px;
+        }
+        
+        h2 {
+            font-size: 36px;
+            margin: 25px 0;
+            font-weight: 600;
+            background: linear-gradient(to right, #00C9A7, #005B41);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: fadeIn 1s ease forwards;
+        }
+        
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            text-align: left;
+            font-size: 18px;
+            margin: 35px 0;
+            color: #000000;
+            animation: fadeIn 1.2s ease forwards;
+        }
+        
+        .certified-by {
+            margin-top: 30px;
+            font-size: 18px;
+            color: #000000;
+            animation: fadeIn 1.5s ease forwards;
+        }
+        
+        .copy-btn {
+            margin-top: 30px;
+            padding: 14px 30px;
+            border: none;
+            border-radius: 50px;
+            background: linear-gradient(135deg, #006fc9, #002a5b);
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            animation: fadeIn 2s ease forwards;
+        }
+        
+        .copy-btn:hover {
+            box-shadow: 0 0 20px rgba(0, 255, 200, 0.5);
+        }
+        
+        .copy-msg {
+            margin-top: 10px;
+            color: #7cfec7;
+            font-size: 16px;
+        }
+        
+        @keyframes popIn {
+            0% {
+                transform: scale(0);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- ========== ADVANCED PREMIUM NAVIGATION BAR ========== -->
+    <style>
+        /* Fix Mobile Alignment Issues */
+        
+        html,
+        body {
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+            overflow-x: hidden !important;
+            box-sizing: border-box !important;
+        }
+        
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box !important;
+        }
+        /* Ensure all sections are full width on mobile */
+        
+        @media (max-width: 992px) {
+            .container,
+            .container-fluid,
+            section,
+            main {
+                max-width: 100% !important;
+                padding-left: 15px !important;
+                padding-right: 15px !important;
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+            }
+            .row {
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+            }
+            [class*="col-"] {
+                padding-left: 15px !important;
+                padding-right: 15px !important;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container,
+            .container-fluid,
+            section,
+            main {
+                padding-left: 12px !important;
+                padding-right: 12px !important;
+            }
+            [class*="col-"] {
+                padding-left: 12px !important;
+                padding-right: 12px !important;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container,
+            .container-fluid,
+            section,
+            main {
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+            }
+            [class*="col-"] {
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+            }
+        }
+        /* Navigation Bar Premium Styles */
+        
+        #advanced-navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 9999;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border-bottom: 1px solid rgba(0, 120, 215, 0.1);
+        }
+        
+        #advanced-navbar.scrolled {
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.12);
+            padding: 0;
+        }
+        
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+            transition: height 0.3s ease;
+            flex-wrap: nowrap;
+        }
+        
+        #advanced-navbar.scrolled .nav-container {
+            height: 70px;
+        }
+        /* Logo Styling with Image */
+        
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+            flex-shrink: 0;
+        }
+        
+        .nav-logo:hover {
+            transform: scale(1.03);
+        }
+        
+        .logo-image {
+            width: 55px;
+            height: 55px;
+            object-fit: contain;
+            transition: all 0.4s ease;
+            filter: drop-shadow(0 2px 8px rgba(0, 120, 215, 0.2));
+            flex-shrink: 0;
+        }
+        
+        #advanced-navbar.scrolled .logo-image {
+            width: 48px;
+            height: 48px;
+        }
+        
+        .nav-logo:hover .logo-image {
+            transform: rotate(360deg);
+            filter: drop-shadow(0 4px 12px rgba(0, 120, 215, 0.4));
+        }
+        
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+            white-space: nowrap;
+        }
+        
+        .logo-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: #0078D7;
+            letter-spacing: -0.5px;
+        }
+        
+        .logo-subtitle {
+            font-size: 11px;
+            color: #666;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        /* Desktop Navigation */
+        
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            flex-shrink: 0;
+        }
+        
+        .nav-menu>li {
+            position: relative;
+        }
+        
+        .nav-menu>li>a {
+            display: flex;
+            align-items: center;
+            padding: 10px 18px;
+            color: #2c3e50;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        
+        .nav-menu>li>a::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #0078D7, #00BCF2);
+            transform: translateX(-50%);
+            transition: width 0.3s ease;
+            border-radius: 3px 3px 0 0;
+        }
+        
+        .nav-menu>li>a:hover,
+        .nav-menu>li.active>a {
+            color: #0078D7;
+            background: transparent;
+        }
+        
+        .nav-menu>li>a:hover::before,
+        .nav-menu>li.active>a::before {
+            width: 80%;
+        }
+        
+        .nav-menu>li>a i {
+            margin-left: 5px;
+            font-size: 11px;
+            transition: transform 0.3s ease;
+        }
+        /* Dropdown on hover AND click */
+        
+        .nav-menu>li.dropdown:hover>a i,
+        .nav-menu>li.dropdown.active>a i {
+            transform: rotate(180deg);
+        }
+        /* Dropdown Mega Menu - WORKING VERSION */
+        
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+            padding: 15px;
+            min-width: 280px;
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease, max-height 0.4s ease;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            z-index: 10000;
+            margin-top: 10px;
+            display: block !important;
+            pointer-events: none;
+        }
+        /* Show dropdown on hover OR when active class */
+        
+        .nav-menu>li.dropdown:hover .dropdown-menu,
+        .nav-menu>li.dropdown.active .dropdown-menu {
+            opacity: 1 !important;
+            visibility: visible !important;
+            max-height: 600px !important;
+            pointer-events: auto !important;
+        }
+        
+        .dropdown-menu li {
+            list-style: none;
+        }
+        
+        .dropdown-menu a {
+            display: flex;
+            align-items: center;
+            padding: 12px 15px;
+            color: #2c3e50;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            gap: 12px;
+        }
+        
+        .dropdown-menu a i {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f0f7ff;
+            border-radius: 8px;
+            color: #0078D7;
+            font-size: 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .dropdown-menu a:hover {
+            background: rgba(0, 120, 215, 0.06);
+            transform: translateX(3px);
+        }
+        
+        .dropdown-menu a:hover i {
+            background: #0078D7;
+            color: white;
+        }
+        /* Mobile Menu Toggle - VISIBLE BLUE BUTTON */
+        
+        .mobile-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: #0078D7;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            z-index: 10001;
+            width: 45px;
+            height: 40px;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .mobile-toggle:hover {
+            background: #005A9E;
+        }
+        
+        .mobile-toggle span {
+            width: 25px;
+            height: 3px;
+            background: white;
+            border-radius: 3px;
+            transition: all 0.3s ease;
+            display: block;
+        }
+        
+        .mobile-toggle.active span:nth-child(1) {
+            transform: rotate(45deg) translate(7px, 7px);
+        }
+        
+        .mobile-toggle.active span:nth-child(2) {
+            opacity: 0;
+            transform: translateX(20px);
+        }
+        
+        .mobile-toggle.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -7px);
+        }
+        /* Mobile Menu - FULLY WORKING */
+        
+        .mobile-menu {
+            position: fixed;
+            top: 80px;
+            left: 0;
+            width: 100%;
+            height: calc(100vh - 80px);
+            background: white;
+            transform: translateX(100%);
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow-y: auto;
+            overflow-x: hidden;
+            z-index: 10000;
+            padding: 20px;
+            box-shadow: -5px 0 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .mobile-menu.active {
+            transform: translateX(0) !important;
+        }
+        /* Mobile Menu Backdrop */
+        
+        .mobile-menu::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: -1;
+        }
+        
+        .mobile-menu.active::before {
+            opacity: 1;
+            visibility: visible;
+        }
+        /* Mobile Menu Header */
+        
+        .mobile-menu-header {
+            background: linear-gradient(135deg, #0078D7 0%, #005A9E 100%);
+            color: white;
+            padding: 20px;
+            margin: -20px -20px 20px -20px;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .mobile-menu-header h3 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .mobile-menu-header h3 i {
+            font-size: 24px;
+        }
+        
+        .mobile-menu-header p {
+            margin: 8px 0 0 0;
+            font-size: 13px;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-menu-header {
+                padding: 15px;
+                margin: -15px -15px 15px -15px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .mobile-menu-header {
+                padding: 12px;
+                margin: -12px -12px 12px -12px;
+            }
+            .mobile-menu-header h3 {
+                font-size: 18px;
+            }
+            .mobile-menu-header p {
+                font-size: 12px;
+            }
+        }
+        
+        .mobile-menu>ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .mobile-menu>ul>li {
+            margin-bottom: 8px;
+            clear: both;
+            width: 100%;
+            display: block;
+        }
+        
+        .mobile-menu>ul>li>a {
+            display: flex;
+            align-items: center;
+            padding: 16px 20px;
+            color: #2c3e50;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            gap: 15px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        
+        .mobile-menu>ul>li>a i {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #0078D7;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        
+        .mobile-menu>ul>li>a:hover,
+        .mobile-menu>ul>li.active>a {
+            background: linear-gradient(135deg, #0078D7 0%, #005A9E 100%);
+            color: white;
+            transform: translateX(5px);
+            box-shadow: 0 4px 15px rgba(0, 120, 215, 0.3);
+        }
+        
+        .mobile-menu>ul>li>a:hover i,
+        .mobile-menu>ul>li.active>a i {
+            color: white;
+            transform: scale(1.1);
+        }
+        /* Mobile Dropdown Styling */
+        
+        .mobile-menu .mobile-dropdown {
+            clear: both;
+            width: 100%;
+            display: block;
+        }
+        
+        .mobile-menu .mobile-dropdown>a {
+            position: relative;
+            padding-right: 50px;
+        }
+        
+        .mobile-menu .mobile-dropdown>a i.fa-chevron-down {
+            position: absolute;
+            right: 20px;
+            width: auto;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        
+        .mobile-menu .dropdown-menu {
+            position: static;
+            opacity: 1;
+            visibility: visible;
+            transform: none;
+            box-shadow: none;
+            padding: 12px 0 0 20px;
+            margin-top: 12px;
+            margin-bottom: 12px;
+            pointer-events: auto;
+            border: none;
+            border-left: 4px solid #0078D7;
+            display: none !important;
+            background: rgba(0, 120, 215, 0.03);
+            max-height: none !important;
+            overflow: visible !important;
+            border-radius: 0 12px 12px 0;
+            width: 100%;
+            clear: both;
+        }
+        
+        .mobile-menu .dropdown-menu.active {
+            display: block !important;
+            animation: slideDown 0.3s ease;
+        }
+        
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .mobile-menu .dropdown-menu::before {
+            display: none;
+        }
+        
+        .mobile-menu .dropdown-menu a {
+            display: flex;
+            align-items: center;
+            padding: 14px 18px;
+            margin-bottom: 8px;
+            margin-right: 10px;
+            background: white;
+            border-radius: 10px;
+            color: #2c3e50;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+            gap: 12px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+        }
+        
+        .mobile-menu .dropdown-menu a i {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #0078D7;
+            font-size: 14px;
+        }
+        
+        .mobile-menu .dropdown-menu a:hover {
+            background: #0078D7;
+            color: white;
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(0, 120, 215, 0.25);
+        }
+        
+        .mobile-menu .dropdown-menu a:hover i {
+            color: white;
+        }
+        
+        .mobile-cta {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 2px solid #e9ecef;
+        }
+        /* Responsive Design */
+        
+        @media (max-width: 1440px) {
+            .nav-menu {
+                gap: 8px;
+            }
+            .nav-menu>li>a {
+                padding: 10px 14px;
+                font-size: 13.5px;
+            }
+            .logo-title {
+                font-size: 20px;
+            }
+            .logo-subtitle {
+                font-size: 10px;
+            }
+        }
+        
+        @media (max-width: 1366px) {
+            .nav-menu {
+                gap: 5px;
+            }
+            .nav-menu>li>a {
+                padding: 10px 12px;
+                font-size: 13px;
+            }
+        }
+        
+        @media (max-width: 1280px) {
+            .nav-menu {
+                gap: 3px;
+            }
+            .nav-menu>li>a {
+                padding: 10px 10px;
+                font-size: 12.5px;
+            }
+        }
+        
+        @media (max-width: 1200px) {
+            .nav-menu {
+                gap: 2px;
+            }
+            .nav-menu>li>a {
+                padding: 10px 8px;
+                font-size: 12px;
+            }
+        }
+        
+        @media (max-width: 1100px) {
+            .nav-menu>li>a {
+                padding: 8px 6px;
+                font-size: 11.5px;
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .nav-menu {
+                display: none !important;
+            }
+            .mobile-toggle {
+                display: flex !important;
+            }
+            .nav-container {
+                padding: 0 20px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-container {
+                height: 70px;
+                padding: 0 15px;
+            }
+            .logo-image {
+                width: 48px;
+                height: 48px;
+            }
+            .logo-title {
+                font-size: 18px;
+            }
+            .logo-subtitle {
+                font-size: 10px;
+            }
+            .mobile-menu {
+                top: 70px;
+                height: calc(100vh - 70px);
+                padding: 15px;
+            }
+            .mobile-menu>ul>li {
+                margin-bottom: 6px;
+            }
+            .mobile-menu>ul>li>a {
+                padding: 14px 16px;
+                font-size: 15px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .nav-container {
+                height: 65px;
+                padding: 0 12px;
+            }
+            .logo-image {
+                width: 42px;
+                height: 42px;
+            }
+            .logo-title {
+                font-size: 16px;
+            }
+            .logo-subtitle {
+                font-size: 9px;
+            }
+            .mobile-menu {
+                top: 65px;
+                height: calc(100vh - 65px);
+                padding: 12px;
+            }
+            .mobile-menu>ul>li>a {
+                padding: 12px 14px;
+                font-size: 14px;
+                gap: 12px;
+            }
+            .mobile-toggle {
+                width: 42px;
+                height: 38px;
+            }
+        }
+        /* Smooth Scroll Padding */
+        
+        html {
+            scroll-padding-top: 85px;
+        }
+        /* Loading Animation */
+        
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        #advanced-navbar {
+            animation: fadeInDown 0.6s ease;
+        }
+        /* Hide old header */
+        
+        #header {
+            display: none !important;
+        }
+    </style>
+
+    <!-- Navigation HTML -->
+    <nav id="advanced-navbar">
+        <div class="nav-container">
+            <!-- Logo with Image -->
+            <a href="index.html#intro" class="nav-logo">
+                <img src="ICT Club Official Logo without Background.png" alt="ICT Club Logo" class="logo-image">
+                <div class="logo-text">
+                    <span class="logo-title">ICT Club</span>
+                    <span class="logo-subtitle">MNS UET Multan</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <ul class="nav-menu">
+                <li><a href="index.html#intro">Home</a></li>
+                <li><a href="index.html#about">Purpose</a></li>
+                <li><a href="index.html#objectives">Objectives</a></li>
+                <li><a href="index.html#vision">Vision</a></li>
+                <li><a href="index.html#activities">Activities</a></li>
+                <li class="dropdown">
+                    <a href="#">Explore <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="ictcluballiances.html"><i class="fas fa-handshake"></i> Alliances</a></li>
+                        <li><a href="verified.html"><i class="fas fa-certificate"></i> Certificate Verification</a></li>
+                        <li><a href="https://mnsuet.edu.pk/" target="_blank"><i class="fas fa-university"></i> MNS UET Multan</a></li>
+                        <li><a href="policy.html" class="active"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
+                        <li><a href="policy.html#terms"><i class="fas fa-file-contract"></i> Terms & Conditions</a></li>
+                    </ul>
+                </li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="mlsa.html">MSA MNS UET</a></li>
+            </ul>
+
+            <!-- Mobile Toggle -->
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-header">
+                <h3><i class="fas fa-bars"></i> Navigation Menu</h3>
+                <p>ICT Club MNS UET Multan</p>
+            </div>
+            <ul>
+                <li><a href="index.html#intro" class="mobile-link"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="index.html#about" class="mobile-link"><i class="fas fa-info-circle"></i> Purpose</a></li>
+                <li><a href="index.html#objectives" class="mobile-link"><i class="fas fa-bullseye"></i> Objectives</a></li>
+                <li><a href="index.html#vision" class="mobile-link"><i class="fas fa-eye"></i> Vision</a></li>
+                <li><a href="index.html#activities" class="mobile-link"><i class="fas fa-calendar-check"></i> Activities</a></li>
+                <li class="mobile-dropdown">
+                    <a href="#" id="mobileDropdownToggle">
+                        <i class="fas fa-compass"></i>
+                        <span>Explore</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu" id="mobileDropdownMenu">
+                        <li><a href="ictcluballiances.html" class="mobile-link"><i class="fas fa-handshake"></i> Alliances</a></li>
+                        <li><a href="verified.html" class="mobile-link"><i class="fas fa-certificate"></i> Certificate Verification</a></li>
+                        <li><a href="https://mnsuet.edu.pk/" target="_blank" class="mobile-link"><i class="fas fa-university"></i> MNS UET Multan</a></li>
+                        <li><a href="policy.html" class="mobile-link active"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
+                        <li><a href="policy.html#terms" class="mobile-link"><i class="fas fa-file-contract"></i> Terms & Conditions</a></li>
+                    </ul>
+                </li>
+                <li><a href="team.html" class="mobile-link"><i class="fas fa-users"></i> Our Team</a></li>
+                <li><a href="mlsa.html" class="mobile-link"><i class="fas fa-user-graduate"></i> MSA MNS UET</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <script>
+        // Advanced Navigation JavaScript
+        (function() {
+            const navbar = document.getElementById('advanced-navbar');
+            const mobileToggle = document.getElementById('mobileToggle');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const mobileDropdownToggle = document.getElementById('mobileDropdownToggle');
+            const mobileDropdownMenu = document.getElementById('mobileDropdownMenu');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+            const desktopDropdown = document.querySelector('.nav-menu .dropdown');
+
+            // Scroll Effect
+            window.addEventListener('scroll', () => {
+                const currentScroll = window.pageYOffset;
+
+                if (currentScroll > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+
+            // Desktop Dropdown Click Toggle
+            if (desktopDropdown) {
+                const dropdownLink = desktopDropdown.querySelector('a');
+                if (dropdownLink) {
+                    dropdownLink.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        desktopDropdown.classList.toggle('active');
+                    });
+                }
+
+                // Close dropdown when clicking outside
+                document.addEventListener('click', (e) => {
+                    if (!desktopDropdown.contains(e.target)) {
+                        desktopDropdown.classList.remove('active');
+                    }
+                });
+            }
+
+            // Mobile Toggle
+            if (mobileToggle && mobileMenu) {
+                mobileToggle.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    mobileToggle.classList.toggle('active');
+                    mobileMenu.classList.toggle('active');
+
+                    // Prevent body scroll when menu is open
+                    if (mobileMenu.classList.contains('active')) {
+                        document.body.style.overflow = 'hidden';
+                    } else {
+                        document.body.style.overflow = '';
+                    }
+                });
+            }
+
+            // Mobile Dropdown Toggle
+            if (mobileDropdownToggle && mobileDropdownMenu) {
+                mobileDropdownToggle.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    mobileDropdownMenu.classList.toggle('active');
+
+                    const icon = mobileDropdownToggle.querySelector('.fa-chevron-down');
+                    if (icon) {
+                        icon.style.transform = mobileDropdownMenu.classList.contains('active') ? 'rotate(180deg)' : 'rotate(0)';
+                        icon.style.transition = 'transform 0.3s ease';
+                    }
+                });
+            }
+
+            // Close mobile menu when any link is clicked
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (mobileToggle) mobileToggle.classList.remove('active');
+                    if (mobileMenu) mobileMenu.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            });
+
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', (e) => {
+                if (mobileMenu && mobileMenu.classList.contains('active')) {
+                    if (!mobileMenu.contains(e.target) && mobileToggle && !mobileToggle.contains(e.target)) {
+                        mobileToggle.classList.remove('active');
+                        mobileMenu.classList.remove('active');
+                        document.body.style.overflow = '';
+                    }
+                }
+            });
+        })();
+    </script>
+    <!-- ========== END ADVANCED NAVIGATION ========== -->
+
+
+
+
+    <!-- Professional Policy Hero Section -->
+    <section class="policy-hero-section">
+        <div class="policy-hero-container">
+            <!-- Logo Container with Advanced Animation -->
+            <div class="policy-logo-container">
+                <div class="policy-logo-wrapper">
+                    <div class="shield-icon-ring">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Content -->
+            <div class="policy-content-hero">
+                <h1 class="policy-title">Policies & Compliance</h1>
+                <p class="policy-subtitle">Transparency, Trust, and Professional Governance</p>
+                <p class="policy-description">
+                    The ICT Club of MNS-UET Multan maintains the highest standards of data protection, 
+                    professional conduct, and institutional accountability. Our comprehensive policies ensure 
+                    the security and confidentiality of all member information.
+                </p>
+            </div>
+
+            <!-- Enhanced Professional Stats Section -->
+            <div class="policy-stats-container">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Data Encryption</div>
+                        <div class="stat-description">End-to-end encrypted data storage and transmission protocols</div>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-file-shield"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Comprehensive Policies</div>
+                        <div class="stat-description">Privacy Policy, Terms & Conditions, and Disclaimer</div>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number">∞</div>
+                        <div class="stat-label">Continuous Compliance</div>
+                        <div class="stat-description">Ongoing adherence to institutional and regulatory standards</div>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number">Zero</div>
+                        <div class="stat-label">Third-Party Sharing</div>
+                        <div class="stat-description">Member data exclusively protected within institutional boundaries</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <main id="main" class="policy-main-content">
+            <style>
+                /* ========== PROFESSIONAL POLICY PAGE STYLING ========== */
+                
+                main {
+                    margin-top: 80px;
+                    min-height: calc(100vh - 80px);
+                }
+                
+                /* Policy Hero Section - Enterprise Design */
+                
+                .policy-hero-section {
+                    position: relative;
+                    background: linear-gradient(135deg, #2b2a95 0%, #1e3a8a 50%, #0078D7 100%);
+                    padding: 120px 0 100px 0;
+                    overflow: visible;
+                    color: white;
+                }
+                
+                .policy-hero-section::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%), 
+                                radial-gradient(circle at 80% 80%, rgba(0, 188, 242, 0.15) 0%, transparent 50%), 
+                                radial-gradient(circle at 40% 20%, rgba(255, 255, 255, 0.08) 0%, transparent 50%);
+                    animation: backgroundShift 15s ease-in-out infinite;
+                    z-index: 0;
+                }
+                
+                @keyframes backgroundShift {
+                    0%, 100% { transform: translate(0, 0) scale(1); }
+                    50% { transform: translate(-20px, 20px) scale(1.05); }
+                }
+                
+                .policy-hero-container {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    padding: 0 30px;
+                    position: relative;
+                    z-index: 2;
+                    text-align: center;
+                }
+                
+                .policy-logo-container {
+                    margin-bottom: 50px;
+                    animation: fadeInScale 1s ease-out;
+                    position: relative;
+                    z-index: 10;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                @keyframes fadeInScale {
+                    0% { opacity: 0; transform: scale(0.6) translateY(40px); }
+                    100% { opacity: 1; transform: scale(1) translateY(0); }
+                }
+                
+                .policy-logo-wrapper {
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    z-index: 10;
+                }
+                
+                .shield-icon-ring {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 140px;
+                    height: 140px;
+                    background: rgba(255, 255, 255, 0.15);
+                    border-radius: 35px;
+                    backdrop-filter: blur(10px);
+                    border: 3px solid rgba(255, 255, 255, 0.3);
+                    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3), 
+                                inset 0 1px 2px rgba(255, 255, 255, 0.2);
+                    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+                    position: relative;
+                    overflow: visible;
+                }
+                
+                .shield-icon-ring::before {
+                    content: '';
+                    position: absolute;
+                    top: -8px;
+                    left: -8px;
+                    right: -8px;
+                    bottom: -8px;
+                    background: linear-gradient(135deg, rgba(0, 188, 242, 0.3), rgba(255, 255, 255, 0.1));
+                    border-radius: 35px;
+                    z-index: -1;
+                    opacity: 0;
+                    transition: opacity 0.5s ease;
+                }
+                
+                .shield-icon-ring:hover {
+                    transform: translateY(-15px) scale(1.08);
+                    box-shadow: 0 35px 90px rgba(0, 0, 0, 0.4), 
+                                inset 0 1px 2px rgba(255, 255, 255, 0.3);
+                    background: rgba(255, 255, 255, 0.2);
+                    border-color: rgba(255, 255, 255, 0.4);
+                }
+                
+                .shield-icon-ring:hover::before {
+                    opacity: 1;
+                }
+                
+                .shield-icon-ring i {
+                    font-size: 70px;
+                    color: white;
+                    filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.3));
+                    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                    position: relative;
+                    z-index: 2;
+                }
+                
+                .policy-content-hero {
+                    position: relative;
+                    z-index: 2;
+                }
+                
+                .policy-title {
+                    font-size: 52px;
+                    font-weight: 800;
+                    margin-bottom: 15px;
+                    background: linear-gradient(135deg, #ffffff 0%, #00BCF2 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    letter-spacing: -1px;
+                    line-height: 1.2;
+                    animation: fadeInUp 1s ease-out 0.2s both;
+                }
+                
+                @keyframes fadeInUp {
+                    0% { opacity: 0; transform: translateY(40px); }
+                    100% { opacity: 1; transform: translateY(0); }
+                }
+                
+                .policy-subtitle {
+                    font-size: 24px;
+                    font-weight: 600;
+                    margin-bottom: 20px;
+                    color: rgba(255, 255, 255, 0.95);
+                    letter-spacing: 0.5px;
+                    animation: fadeInUp 1s ease-out 0.3s both;
+                }
+                
+                .policy-description {
+                    font-size: 16px;
+                    line-height: 1.9;
+                    color: rgba(255, 255, 255, 0.9);
+                    max-width: 850px;
+                    margin: 0 auto 60px;
+                    text-align: justify;
+                    animation: fadeInUp 1s ease-out 0.4s both;
+                }
+                
+                /* Enhanced Professional Stats Section */
+                
+                .policy-stats-container {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                    gap: 25px;
+                    position: relative;
+                    z-index: 2;
+                    animation: fadeInUp 1s ease-out 0.5s both;
+                }
+                
+                .stat-card {
+                    background: rgba(255, 255, 255, 0.12);
+                    backdrop-filter: blur(15px);
+                    border: 2px solid rgba(255, 255, 255, 0.25);
+                    border-radius: 20px;
+                    padding: 35px;
+                    text-align: center;
+                    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1), 
+                                inset 0 1px 2px rgba(255, 255, 255, 0.2);
+                    position: relative;
+                    overflow: hidden;
+                }
+                
+                .stat-card::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: -100%;
+                    width: 100%;
+                    height: 2px;
+                    background: linear-gradient(90deg, transparent, rgba(0, 188, 242, 0.8), transparent);
+                    transition: left 0.5s ease;
+                }
+                
+                .stat-card:hover {
+                    transform: translateY(-12px) scale(1.02);
+                    background: rgba(255, 255, 255, 0.18);
+                    border-color: rgba(0, 188, 242, 0.5);
+                    box-shadow: 0 20px 60px rgba(0, 188, 242, 0.2), 
+                                inset 0 1px 2px rgba(255, 255, 255, 0.3);
+                }
+                
+                .stat-card:hover::before {
+                    left: 100%;
+                }
+                
+                .stat-icon {
+                    width: 60px;
+                    height: 60px;
+                    background: linear-gradient(135deg, rgba(0, 188, 242, 0.3), rgba(0, 188, 242, 0.1));
+                    border-radius: 15px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 auto 20px;
+                    font-size: 28px;
+                    color: #00BCF2;
+                    transition: all 0.4s ease;
+                    box-shadow: 0 5px 20px rgba(0, 188, 242, 0.2);
+                }
+                
+                .stat-card:hover .stat-icon {
+                    background: linear-gradient(135deg, rgba(0, 188, 242, 0.5), rgba(0, 188, 242, 0.2));
+                    transform: scale(1.1) rotateY(360deg);
+                    box-shadow: 0 8px 30px rgba(0, 188, 242, 0.4);
+                }
+                
+                .stat-content {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                }
+                
+                .stat-number {
+                    font-size: 44px;
+                    font-weight: 900;
+                    color: #00BCF2;
+                    display: block;
+                    line-height: 1;
+                    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+                }
+                
+                .stat-label {
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: rgba(255, 255, 255, 0.95);
+                    text-transform: uppercase;
+                    letter-spacing: 1.2px;
+                    margin: 8px 0 0 0;
+                }
+                
+                .stat-description {
+                    font-size: 13px;
+                    font-weight: 500;
+                    color: rgba(255, 255, 255, 0.8);
+                    line-height: 1.5;
+                    margin-top: 8px;
+                    text-align: center;
+                }
+                
+                /* Policy Main Content Section */
+                
+                .policy-main-content {
+                    padding: 80px 0;
+                    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+                }
+                
+                .policies-container {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    padding: 0 30px;
+                }
+                
+                /* Professional Tab Navigation */
+                
+                .policy-tabs-wrapper {
+                    background: white;
+                    border-radius: 25px;
+                    box-shadow: 0 15px 50px rgba(43, 42, 149, 0.1);
+                    overflow: hidden;
+                    margin-bottom: 50px;
+                    border: 2px solid rgba(43, 42, 149, 0.08);
+                }
+                
+                .policy-tabs {
+                    display: flex;
+                    justify-content: center;
+                    gap: 0;
+                    margin: 0;
+                    border-bottom: 3px solid #f0f0f0;
+                }
+                
+                .policy-tabs button {
+                    flex: 1;
+                    padding: 20px 25px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    border: none;
+                    background: white;
+                    color: #495057;
+                    cursor: pointer;
+                    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                    position: relative;
+                    overflow: hidden;
+                    letter-spacing: 0.5px;
+                    text-transform: uppercase;
+                }
+                
+                .policy-tabs button::before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 0;
+                    height: 4px;
+                    background: linear-gradient(90deg, #2b2a95, #00BCF2);
+                    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                }
+                
+                .policy-tabs button:hover {
+                    background: rgba(43, 42, 149, 0.05);
+                    color: #2b2a95;
+                }
+                
+                .policy-tabs button:hover::before {
+                    width: 100%;
+                }
+                
+                .policy-tabs button.active {
+                    background: linear-gradient(135deg, #2b2a95, #1e3a8a);
+                    color: white;
+                }
+                
+                .policy-tabs button.active::before {
+                    width: 100%;
+                }
+                
+                /* Policy Content Sections - Card Style */
+                
+                .policy-content {
+                    display: none;
+                    animation: fadeIn 0.5s ease;
+                }
+                
+                .policy-content.active {
+                    display: block;
+                }
+                
+                @keyframes fadeIn {
+                    from { opacity: 0; transform: translateY(20px); }
+                    to { opacity: 1; transform: translateY(0); }
+                }
+                
+                /* Policy Content Card */
+                
+                .policy-card {
+                    background: white;
+                    border-radius: 25px;
+                    padding: 50px;
+                    box-shadow: 0 20px 60px rgba(43, 42, 149, 0.12);
+                    border: 2px solid rgba(43, 42, 149, 0.08);
+                    transition: all 0.4s ease;
+                }
+                
+                .policy-card:hover {
+                    box-shadow: 0 30px 80px rgba(43, 42, 149, 0.18);
+                    border-color: #00BCF2;
+                    transform: translateY(-5px);
+                }
+                
+                .policy-card h2 {
+                    font-size: 36px;
+                    font-weight: 800;
+                    color: #2b2a95;
+                    margin-bottom: 30px;
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    letter-spacing: -0.5px;
+                }
+                
+                .policy-card h2::before {
+                    content: '';
+                    display: inline-block;
+                    width: 6px;
+                    height: 36px;
+                    background: linear-gradient(180deg, #2b2a95, #00BCF2);
+                    border-radius: 3px;
+                }
+                
+                .policy-card h3 {
+                    font-size: 24px;
+                    font-weight: 700;
+                    color: #1e3a8a;
+                    margin-top: 30px;
+                    margin-bottom: 15px;
+                    letter-spacing: -0.3px;
+                }
+                
+                .policy-card h3:first-of-type {
+                    margin-top: 0;
+                }
+                
+                .policy-card p {
+                    font-size: 15px;
+                    line-height: 2;
+                    color: #495057;
+                    text-align: justify;
+                    margin-bottom: 20px;
+                    letter-spacing: 0.3px;
+                }
+                
+                .policy-card strong {
+                    color: #2b2a95;
+                    font-weight: 700;
+                }
+                
+                /* Policy Highlight Box */
+                
+                .policy-highlight-box {
+                    background: linear-gradient(135deg, rgba(43, 42, 149, 0.05), rgba(0, 188, 242, 0.05));
+                    border-left: 5px solid #00BCF2;
+                    padding: 25px 30px;
+                    border-radius: 15px;
+                    margin: 30px 0;
+                    box-shadow: 0 10px 30px rgba(43, 42, 149, 0.06);
+                }
+                
+                .policy-highlight-box p {
+                    margin: 0;
+                    color: #2c3e50;
+                    font-weight: 600;
+                }
+                
+                /* Section Divider */
+                
+                .policy-divider {
+                    height: 2px;
+                    background: linear-gradient(90deg, transparent, #dee2e6, transparent);
+                    margin: 40px 0;
+                }
+                
+                /* Responsive Design */
+                
+                @media (max-width: 992px) {
+                    .policy-hero-section {
+                        padding: 100px 0 80px 0;
+                    }
+                    
+                    .shield-icon-ring {
+                        width: 130px;
+                        height: 130px;
+                        border-radius: 32px;
+                    }
+                    
+                    .shield-icon-ring i {
+                        font-size: 65px;
+                    }
+                    
+                    .policy-title {
+                        font-size: 42px;
+                    }
+                    
+                    .policy-subtitle {
+                        font-size: 20px;
+                    }
+                    
+                    .policy-description {
+                        font-size: 15px;
+                        max-width: 750px;
+                        margin: 0 auto 50px;
+                    }
+                    
+                    .policy-stats-container {
+                        grid-template-columns: repeat(2, 1fr);
+                        gap: 20px;
+                    }
+                    
+                    .stat-card {
+                        padding: 30px;
+                    }
+                    
+                    .stat-number {
+                        font-size: 40px;
+                    }
+                    
+                    .stat-label {
+                        font-size: 15px;
+                    }
+                    
+                    .stat-description {
+                        font-size: 12px;
+                    }
+                }
+                
+                @media (max-width: 768px) {
+                    .policy-hero-section {
+                        padding: 80px 0 60px 0;
+                    }
+                    
+                    .policy-hero-container {
+                        padding: 0 20px;
+                    }
+                    
+                    .policy-logo-container {
+                        margin-bottom: 40px;
+                    }
+                    
+                    .shield-icon-ring {
+                        width: 120px;
+                        height: 120px;
+                        border-radius: 30px;
+                        padding: 20px;
+                    }
+                    
+                    .shield-icon-ring i {
+                        font-size: 60px;
+                    }
+                    
+                    .policy-title {
+                        font-size: 32px;
+                    }
+                    
+                    .policy-subtitle {
+                        font-size: 18px;
+                    }
+                    
+                    .policy-description {
+                        font-size: 14px;
+                        line-height: 1.8;
+                        margin: 0 auto 40px;
+                    }
+                    
+                    .policy-stats-container {
+                        grid-template-columns: 1fr;
+                        gap: 18px;
+                    }
+                    
+                    .stat-card {
+                        padding: 25px;
+                        border-radius: 18px;
+                    }
+                    
+                    .stat-icon {
+                        width: 55px;
+                        height: 55px;
+                        font-size: 26px;
+                        margin: 0 auto 18px;
+                    }
+                    
+                    .stat-number {
+                        font-size: 36px;
+                    }
+                    
+                    .stat-label {
+                        font-size: 14px;
+                        letter-spacing: 1px;
+                    }
+                    
+                    .stat-description {
+                        font-size: 12px;
+                        line-height: 1.4;
+                    }
+                }
+                
+                @media (max-width: 768px) {
+                    .policies-container {
+                        padding: 0 15px;
+                    }
+                    
+                    .policy-tabs-wrapper {
+                        border-radius: 20px;
+                        margin-bottom: 40px;
+                        box-shadow: 0 12px 40px rgba(43, 42, 149, 0.1);
+                    }
+                    
+                    .policy-tabs {
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        gap: 0;
+                        border-bottom: 2px solid #f0f0f0;
+                    }
+                    
+                    .policy-tabs button {
+                        padding: 16px 12px;
+                        font-size: 13px;
+                        font-weight: 600;
+                        word-wrap: break-word;
+                        text-transform: uppercase;
+                        letter-spacing: 0.5px;
+                        border-bottom: none;
+                        min-height: 70px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 6px;
+                    }
+                    
+                    .policy-tabs button i {
+                        font-size: 16px;
+                        margin: 0 !important;
+                    }
+                    
+                    .policy-tabs button::before {
+                        bottom: -2px;
+                        height: 3px;
+                    }
+                    
+                    .policy-card {
+                        padding: 35px;
+                        border-radius: 22px;
+                        box-shadow: 0 15px 50px rgba(43, 42, 149, 0.1);
+                    }
+                    
+                    .policy-card h2 {
+                        font-size: 26px;
+                        margin-bottom: 25px;
+                        gap: 12px;
+                    }
+                    
+                    .policy-card h2::before {
+                        height: 26px;
+                    }
+                    
+                    .policy-card h3 {
+                        font-size: 19px;
+                        margin-top: 25px;
+                        margin-bottom: 14px;
+                    }
+                    
+                    .policy-card p {
+                        font-size: 14px;
+                        line-height: 1.8;
+                        margin-bottom: 18px;
+                        text-align: justify;
+                    }
+                    
+                    .policy-highlight-box {
+                        padding: 22px 26px;
+                        margin: 28px 0;
+                        border-radius: 14px;
+                        border-left: 4px solid #00BCF2;
+                    }
+                    
+                    .policy-highlight-box p {
+                        font-size: 13px;
+                        line-height: 1.6;
+                        margin: 0;
+                    }
+                    
+                    .policy-main-content {
+                        padding: 60px 0;
+                    }
+                }
+                
+                @media (max-width: 480px) {
+                    .policy-hero-section {
+                        padding: 60px 0 50px 0;
+                    }
+                    
+                    .policy-hero-container {
+                        padding: 0 15px;
+                    }
+                    
+                    .policy-logo-container {
+                        margin-bottom: 35px;
+                    }
+                    
+                    .shield-icon-ring {
+                        width: 110px;
+                        height: 110px;
+                        border-radius: 28px;
+                        padding: 18px;
+                        border: 2px solid rgba(255, 255, 255, 0.25);
+                    }
+                    
+                    .shield-icon-ring i {
+                        font-size: 54px;
+                    }
+                    
+                    .policy-title {
+                        font-size: 26px;
+                        margin-bottom: 12px;
+                    }
+                    
+                    .policy-subtitle {
+                        font-size: 16px;
+                        margin-bottom: 15px;
+                    }
+                    
+                    .policy-description {
+                        font-size: 13px;
+                        line-height: 1.7;
+                        margin: 0 auto 35px;
+                        text-align: justify;
+                    }
+                    
+                    .policy-stats-container {
+                        grid-template-columns: 1fr;
+                        gap: 15px;
+                    }
+                    
+                    .stat-card {
+                        padding: 22px;
+                        border-radius: 16px;
+                        gap: 10px;
+                    }
+                    
+                    .stat-icon {
+                        width: 50px;
+                        height: 50px;
+                        font-size: 24px;
+                        margin: 0 auto 15px;
+                    }
+                    
+                    .stat-number {
+                        font-size: 32px;
+                        margin-bottom: 5px;
+                    }
+                    
+                    .stat-label {
+                        font-size: 13px;
+                        letter-spacing: 0.8px;
+                    }
+                    
+                    .stat-description {
+                        font-size: 11px;
+                        line-height: 1.4;
+                        margin-top: 6px;
+                    }
+                    
+                    .policies-container {
+                        padding: 0 12px;
+                    }
+                    
+                    .policy-tabs-wrapper {
+                        border-radius: 18px;
+                        margin-bottom: 35px;
+                        box-shadow: 0 10px 35px rgba(43, 42, 149, 0.1);
+                    }
+                    
+                    .policy-tabs {
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        gap: 0;
+                    }
+                    
+                    .policy-tabs button {
+                        padding: 14px 10px;
+                        font-size: 11px;
+                        font-weight: 700;
+                        word-wrap: break-word;
+                        text-transform: uppercase;
+                        letter-spacing: 0.4px;
+                        border-bottom: none;
+                        min-height: 65px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 5px;
+                        line-height: 1.1;
+                    }
+                    
+                    .policy-tabs button i {
+                        font-size: 14px;
+                        margin: 0 !important;
+                    }
+                    
+                    .policy-tabs button::before {
+                        bottom: -3px;
+                        height: 2px;
+                    }
+                    
+                    .policy-card {
+                        padding: 28px;
+                        border-radius: 20px;
+                        box-shadow: 0 12px 40px rgba(43, 42, 149, 0.1);
+                    }
+                    
+                    .policy-card h2 {
+                        font-size: 24px;
+                        margin-bottom: 22px;
+                        gap: 10px;
+                        flex-wrap: wrap;
+                    }
+                    
+                    .policy-card h2::before {
+                        width: 5px;
+                        height: 24px;
+                        min-width: 5px;
+                    }
+                    
+                    .policy-card h3 {
+                        font-size: 18px;
+                        margin-top: 22px;
+                        margin-bottom: 13px;
+                    }
+                    
+                    .policy-card h3:first-of-type {
+                        margin-top: 8px;
+                    }
+                    
+                    .policy-card p {
+                        font-size: 13px;
+                        line-height: 1.75;
+                        margin-bottom: 16px;
+                        text-align: justify;
+                        color: #495057;
+                    }
+                    
+                    .policy-highlight-box {
+                        padding: 20px 22px;
+                        margin: 25px 0;
+                        border-radius: 12px;
+                        border-left: 4px solid #00BCF2;
+                        background: linear-gradient(135deg, rgba(43, 42, 149, 0.06), rgba(0, 188, 242, 0.06));
+                    }
+                    
+                    .policy-highlight-box p {
+                        font-size: 12px;
+                        line-height: 1.5;
+                        margin: 0;
+                        color: #2c3e50;
+                    }
+                    
+                    .policy-main-content {
+                        padding: 50px 0;
+                    }
+                }
+                
+                @media (max-width: 360px) {
+                    .policy-hero-section {
+                        padding: 50px 0 40px 0;
+                    }
+                    
+                    .policy-hero-container {
+                        padding: 0 12px;
+                    }
+                    
+                    .shield-icon-ring {
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 25px;
+                        padding: 15px;
+                    }
+                    
+                    .shield-icon-ring i {
+                        font-size: 50px;
+                    }
+                    
+                    .policy-title {
+                        font-size: 24px;
+                    }
+                    
+                    .stat-number {
+                        font-size: 28px;
+                    }
+                    
+                    .policies-container {
+                        padding: 0 10px;
+                    }
+                    
+                    .policy-tabs-wrapper {
+                        border-radius: 16px;
+                    }
+                    
+                    .policy-tabs button {
+                        padding: 12px 8px;
+                        font-size: 10px;
+                        min-height: 60px;
+                    }
+                    
+                    .policy-tabs button i {
+                        font-size: 12px;
+                    }
+                    
+                    .policy-card {
+                        padding: 24px;
+                    }
+                    
+                    .policy-card h2 {
+                        font-size: 22px;
+                    }
+                    
+                    .policy-card h3 {
+                        font-size: 16px;
+                    }
+                    
+                    .policy-card p {
+                        font-size: 12px;
+                    }
+                    
+                    .policy-highlight-box {
+                        padding: 18px 20px;
+                        margin: 20px 0;
+                    }
+                    
+                    .policy-highlight-box p {
+                        font-size: 11px;
+                    }
+                }
+            </style>
+            </style>
+
+        <div class="policies-container">
+            <!-- Professional Tab Navigation -->
+            <div class="policy-tabs-wrapper">
+                <div class="policy-tabs">
+                    <button class="tab-btn active" data-target="privacy">
+                        <i class="fas fa-lock"></i>&nbsp;Privacy Policy
+                    </button>
+                    <button class="tab-btn" data-target="terms">
+                        <i class="fas fa-file-contract"></i>&nbsp;Terms & Conditions
+                    </button>
+                    <button class="tab-btn" data-target="disclaimer">
+                        <i class="fas fa-exclamation-circle"></i>&nbsp;Disclaimer
+                    </button>
+                </div>
+            </div>
+
+            <!-- Privacy Policy Content -->
+            <div id="privacy" class="policy-content active">
+                <div class="policy-card">
+                    <h2>Privacy Policy</h2>
+                    
+                    <p>
+                        The ICT Club of MNS-UET Multan, being an officially recognized student organization of the University, is fully committed to protecting the confidentiality, integrity, and responsible use of all personal and organizational data entrusted to it. This Privacy Policy outlines the principles and practices through which the ICT Club manages information relating to students, team members, office bearers, and societies that function under its umbrella. As an entity operating under the guidance of MNS-UET, the ICT Club adheres to the highest standards of academic professionalism, accountability, and institutional compliance.
+                    </p>
+
+                    <h3>Data Collection & Processing</h3>
+                    <p>
+                        The ICT Club may collect limited categories of student data in the course of its operations, including but not limited to names, roll numbers, university-issued email addresses, contact details voluntarily provided, academic information such as department, year of study, and participation history in events and programs. In addition, when students serve in leadership roles or participate in societies operating under the ICT Club, relevant data such as their role, responsibilities, and team assignments may be recorded for administrative and operational purposes. Furthermore, participation in bootcamps, hackathons, workshops, competitions, and official ICT Club activities may require students to share certain details which are necessary for registration, verification, and issuance of certificates or acknowledgments.
+                    </p>
+
+                    <h3>Authorized Use of Data</h3>
+                    <p>
+                        The ICT Club assures all stakeholders that student data collected will be used solely for legitimate academic and organizational purposes. This includes maintaining accurate membership records, verifying eligibility for events, issuing certifications, documenting achievements, facilitating alumni networking, preparing official reports for submission to MNS-UET authorities, and ensuring the efficient operation of the various sub-societies officially recognized under the ICT Club. At no point will student data be shared, sold, or disclosed to any third-party organization, company, or external body. The only exception to this rule is when the University itself requires student information for verification, official reporting, or compliance purposes. In such cases, data will be transmitted securely and exclusively to the competent authorities of MNS-UET.
+                    </p>
+
+                    <div class="policy-highlight-box">
+                        <p><strong><i class="fas fa-check-circle"></i> Security Guarantee:</strong> All member information is treated as confidential institutional property and remains exclusively within the control of the ICT Club and MNS-UET.</p>
+                    </div>
+
+                    <h3>Data Confidentiality</h3>
+                    <p>
+                        Confidentiality is central to the ICT Club's data policy. All information concerning student teams, societies, office bearers, and members is treated as highly sensitive and is managed with due care. Access to such information is restricted to authorized persons within the ICT Club leadership and faculty advisors, and every measure is taken to prevent unauthorized disclosure or misuse. Team data, membership rosters, and details of societies that operate under the ICT Club are regarded as confidential institutional property. They remain under the sole custody of the ICT Club and MNS-UET and cannot be shared outside this structure without explicit institutional approval.
+                    </p>
+
+                    <h3>Digital Security Measures</h3>
+                    <p>
+                        The ICT Club also recognizes its responsibility to protect digital records and communication. All data collected is stored in secure digital repositories or official university systems with limited access, and appropriate safeguards are applied to prevent breaches or unauthorized use. While the ICT Club takes all reasonable steps to maintain data security, members are also encouraged to exercise discretion when sharing information and to recognize that their engagement with the Club signifies consent to the responsible use of their data as described in this Policy.
+                    </p>
+
+                    <h3>Policy Acceptance & Updates</h3>
+                    <p>
+                        By becoming a member of the ICT Club, participating in its events, or serving in any leadership role within the Club or its associated societies, students acknowledge that their information may be collected and used in accordance with this Privacy Policy. The ICT Club reserves the right to update this Policy from time to time in order to comply with University directives, regulatory changes, or evolving operational needs. Any revisions will be communicated through official channels to ensure transparency and accountability. In summary, the ICT Club of MNS-UET operates with a strict, principled commitment to confidentiality and professionalism. All student data, whether related to membership, event participation, or society management, is considered confidential and is never shared with external organizations.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Terms & Conditions Content -->
+            <div id="terms" class="policy-content">
+                <div class="policy-card">
+                    <h2>Terms & Conditions</h2>
+                    
+                    <p>
+                        The ICT Club of MNS-UET Multan, approved as an official student organization of the University, operates as the umbrella body for all locally recognized societies functioning under its supervision. By becoming a member of the ICT Club, joining any of its affiliated societies, or participating in its events and activities, you agree to abide by the following Terms and Conditions, which are binding on all students, cabinet members, counselors, and teams associated with the Club.
+                    </p>
+
+                    <h3>1. Membership and Participation</h3>
+                    <p>
+                        Membership in the ICT Club and its affiliated societies is open to all currently enrolled students of MNS-UET. Members must provide accurate information during registration and agree that their data will be handled in accordance with the ICT Club Privacy Policy. Membership and participation are conditional on compliance with these Terms, and both the ICT Club leadership and University authorities reserve the right to withdraw privileges in the case of violations.
+                    </p>
+
+                    <h3>2. Authority and Governance</h3>
+                    <p>
+                        The ICT Club functions under the guidance of the <strong>Faculty Advisor</strong> appointed by the University and is officially recognized by the <strong>Vice Chancellor of MNS-UET</strong>. The Club acknowledges the permanent role of its <strong>Founder</strong> as an institutional figure and advisor, whose vision and leadership laid the foundation for its establishment. The <strong>President of the ICT Club</strong> serves as the highest-ranking student leader and, together with the Faculty Advisor, has the authority to oversee all decisions regarding ICT Club operations, affiliated societies, disciplinary actions, and resource usage. Any removal of a cabinet member, counselor, or participant from the ICT Club or its societies will require the joint agreement of both the President and the Faculty Advisor.
+                    </p>
+
+                    <h3>3. Roles and Responsibilities</h3>
+                    <p>
+                        Leaders, including cabinet members and society coordinators under the ICT Club, are entrusted with roles of trust and responsibility. They are required to act with integrity, uphold professionalism, and represent the values of the ICT Club and MNS-UET. Failure to perform responsibilities or any act of misconduct may result in disciplinary action, including removal from office, suspension of membership, or permanent exclusion from ICT Club activities.
+                    </p>
+
+                    <h3>4. Code of Conduct and Misbehavior Policy</h3>
+                    <p>
+                        All members are expected to maintain respect, professionalism, and integrity in their behavior, both online and offline. Any act of harassment, discrimination, dishonesty, misuse of ICT Club resources, or damage to its reputation will be treated as a serious violation. Misbehavior from ICT Club cabinet members, counselors, or members of societies functioning under ICT Club will result in disciplinary proceedings. If such a violation occurs, the <strong>President and Faculty Advisor, acting together</strong>, reserve the authority to immediately remove or suspend the responsible individual.
+                    </p>
+
+                    <div class="policy-highlight-box">
+                        <p><strong><i class="fas fa-shield-alt"></i> Enforcement Authority:</strong> Enforcement authority rests jointly with the ICT Club President and Faculty Advisor, with oversight from University administration where necessary.</p>
+                    </div>
+
+                    <h3>5. Use of ICT Club Name, Logo, and Resources</h3>
+                    <p>
+                        The ICT Club's name, brand identity, logos, banners, and other official resources are the intellectual property of the Club and MNS-UET. They may only be used for approved academic, cultural, and professional activities conducted under the official recognition of the ICT Club and with prior authorization from the President and Faculty Advisor. Unauthorized use of the ICT Club name, logo, or banners for personal, commercial, or unofficial purposes is strictly prohibited and may result in disciplinary measures, including removal of membership and referral to University authorities.
+                    </p>
+
+                    <h3>6. Events and Activities</h3>
+                    <p>
+                        All events, whether academic, cultural, or community-based, must be conducted with prior approval of the Faculty Advisor and in alignment with University policies. Members agree to comply with event-specific guidelines, registration procedures, and evaluation criteria. The ICT Club will not be liable for personal belongings, travel, or non-academic outcomes during such events.
+                    </p>
+
+                    <h3>7. Confidentiality and Records</h3>
+                    <p>
+                        Information regarding ICT Club operations, cabinet records, member rosters, and society details is confidential and may not be shared outside the Club or the University without proper authorization. Any breach of confidentiality will result in disciplinary action and may be escalated to University authorities.
+                    </p>
+
+                    <h3>8. Limitation of Liability</h3>
+                    <p>
+                        The ICT Club functions as a student-led organization under the supervision of MNS-UET. While the Club takes reasonable care to provide academic, professional, and cultural opportunities, it does not guarantee specific outcomes and will not be held responsible for academic, financial, or personal consequences arising from participation.
+                    </p>
+
+                    <h3>9. Amendments and Enforcement</h3>
+                    <p>
+                        These Terms and Conditions may be revised periodically to reflect University policies or evolving needs of the ICT Club. All amendments will be communicated through official channels, and participation after publication of such changes will signify acceptance. Enforcement authority rests jointly with the ICT Club President and Faculty Advisor, with oversight from University administration where necessary.
+                    </p>
+
+                    <h3>10. Acceptance of Terms</h3>
+                    <p>
+                        By joining the ICT Club, registering in its affiliated societies, or participating in its events, you agree that you have read and understood these Terms and Conditions, and you accept the authority of the ICT Club President and Faculty Advisor in all matters relating to governance, discipline, and operations.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Disclaimer Content -->
+            <div id="disclaimer" class="policy-content">
+                <div class="policy-card">
+                    <h2>Disclaimer</h2>
+                    
+                    <p>
+                        The ICT Club of MNS-UET provides this website and its resources for educational, academic, and community purposes only. While efforts are made to ensure accuracy, the Club makes no guarantees regarding the completeness or reliability of the information provided. Users are responsible for how they use the content, and the Club shall not be held liable for any academic, financial, or personal consequences resulting from its use.
+                    </p>
+
+                    <h3>External Links and Third-Party Resources</h3>
+                    <p>
+                        This website may include links to external sites or third-party resources. The ICT Club does not control, endorse, or take responsibility for the content, policies, or services of such external platforms. Engagement with third-party links is entirely at the user's discretion. The ICT Club establishes these links for informational purposes only and does not verify the accuracy or appropriateness of linked content.
+                    </p>
+
+                    <div class="policy-highlight-box">
+                        <p><strong><i class="fas fa-info-circle"></i> Important Notice:</strong> The ICT Club operates under the recognition of MNS-UET but remains a student-led body. Views, opinions, and materials shared through this website do not necessarily represent the official stance of the University.</p>
+                    </div>
+
+                    <h3>Limitation of Warranty</h3>
+                    <p>
+                        The information provided on this website and through ICT Club communications is provided on an "as-is" basis without any warranties of any kind, either express or implied. The ICT Club disclaims all warranties, including but not limited to warranties of merchantability, fitness for a particular purpose, and non-infringement of third-party rights. The Club does not warrant that the website will be uninterrupted, timely, or error-free.
+                    </p>
+
+                    <h3>User Responsibility</h3>
+                    <p>
+                        Users of this website and resources assume full responsibility for any consequences resulting from the use of information provided. The user agrees that they have read and understood all policies, terms, and conditions before accessing the website or participating in ICT Club activities. Users are responsible for maintaining the confidentiality of their login credentials and for all activities that occur under their accounts.
+                    </p>
+
+                    <h3>Changes to This Disclaimer</h3>
+                    <p>
+                        By using this website, you agree to this Disclaimer and accept full responsibility for the consequences of your actions. If you do not accept these terms, please discontinue use of the platform immediately. The ICT Club reserves the right to update this Disclaimer at any time without prior notice. Your continued use of the website following posting of changes constitutes your acceptance of the updated Disclaimer.
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <!-- End Policy Main Content -->
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <!-- Contact Form JavaScript File -->
+    <script src="contactform/contactform.js"></script>
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+
+    <script>
+        // Professional Tab Switching Logic
+        (function() {
+            const buttons = document.querySelectorAll('.tab-btn');
+            const contents = document.querySelectorAll('.policy-content');
+
+            function switchTab(targetId) {
+                // Remove all active classes smoothly
+                buttons.forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                contents.forEach(content => {
+                    content.classList.remove('active');
+                });
+
+                // Add active class to selected tab and content
+                const targetButton = document.querySelector(`[data-target="${targetId}"]`);
+                const targetContent = document.getElementById(targetId);
+
+                if (targetButton && targetContent) {
+                    targetButton.classList.add('active');
+                    targetContent.classList.add('active');
+                }
+            }
+
+            // Event listeners for tab buttons
+            buttons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    switchTab(btn.dataset.target);
+                });
+            });
+
+            // Check for hash in URL on page load
+            window.addEventListener('load', () => {
+                const hash = window.location.hash.substring(1);
+                if (hash && (hash === 'privacy' || hash === 'terms' || hash === 'disclaimer')) {
+                    switchTab(hash);
+                }
+            });
+
+            // Listen for hash changes when user clicks links
+            window.addEventListener('hashchange', () => {
+                const hash = window.location.hash.substring(1);
+                if (hash && (hash === 'privacy' || hash === 'terms' || hash === 'disclaimer')) {
+                    switchTab(hash);
+                }
+            });
+
+            // Handle direct clicks on hash links
+            document.addEventListener('click', (e) => {
+                const link = e.target.closest('a');
+                if (link && link.getAttribute('href')) {
+                    const href = link.getAttribute('href');
+
+                    if (href === 'policy.html#terms' || href === '#terms') {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        window.location.hash = 'terms';
+                        switchTab('terms');
+                        return false;
+                    }
+
+                    if (href === 'policy.html#privacy' || href === '#privacy') {
+                        e.preventDefault();
+                        window.location.hash = 'privacy';
+                        switchTab('privacy');
+                        return false;
+                    }
+
+                    if (href === 'policy.html#disclaimer' || href === '#disclaimer') {
+                        e.preventDefault();
+                        window.location.hash = 'disclaimer';
+                        switchTab('disclaimer');
+                        return false;
+                    }
+                }
+            });
+        })();
+
+        // Smooth scroll for back-to-top button
+        document.addEventListener('DOMContentLoaded', function() {
+            const backToTop = document.querySelector('.back-to-top');
+            
+            if (backToTop) {
+                window.addEventListener('scroll', function() {
+                    if (window.pageYOffset > 100) {
+                        backToTop.style.display = 'block';
+                    } else {
+                        backToTop.style.display = 'none';
+                    }
+                });
+
+                backToTop.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            }
+        });
+    </script>
+
+</body>
+
+</html>

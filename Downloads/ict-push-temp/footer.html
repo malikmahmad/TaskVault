@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT Club Footer</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Open Sans", sans-serif;
+            background: transparent;
+        }
+        /* ADVANCED WHITE FOOTER */
+        
+        .advanced-footer {
+            background: #ffffff;
+            color: #333333;
+            position: relative;
+            overflow: hidden;
+        }
+        /* TOP ACCENT LINE */
+        
+        .footer-accent {
+            height: 5px;
+            background: linear-gradient(90deg, #2b2a95 0%, #6c63ff 50%, #2b2a95 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .footer-accent::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            animation: shimmer 3s infinite;
+        }
+        
+        @keyframes shimmer {
+            0% {
+                left: -100%;
+            }
+            100% {
+                left: 100%;
+            }
+        }
+        /* BRANDING SECTION */
+        
+        .footer-branding {
+            background: #f8f9fa;
+            padding: 50px 0;
+            border-bottom: 2px solid #e9ecef;
+            text-align: center;
+        }
+        
+        .footer-brand-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+        
+        .brand-left {
+            width: 100%;
+        }
+        
+        .brand-logo-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .brand-logo {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+            transition: transform 0.3s ease;
+        }
+        
+        .brand-logo:hover {
+            transform: scale(1.1);
+        }
+        
+        .brand-text h2 {
+            font-size: 28px;
+            font-weight: 800;
+            background: linear-gradient(135deg, #2b2a95, #6c63ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 5px;
+            letter-spacing: -0.5px;
+        }
+        
+        .brand-text p {
+            font-size: 14px;
+            color: #6c757d;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+        }
+        
+        .brand-description {
+            color: #495057;
+            font-size: 14px;
+            line-height: 1.7;
+            max-width: 700px;
+            margin: 0 auto 20px auto;
+        }
+        
+        .brand-badges {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .brand-badge {
+            padding: 8px 20px;
+            background: white;
+            border: 2px solid #e9ecef;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #2b2a95;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .brand-badge:hover {
+            border-color: #6c63ff;
+            background: #f0f0ff;
+            transform: translateY(-2px);
+        }
+        
+        .brand-badge i {
+            color: #6c63ff;
+            font-size: 14px;
+        }
+        /* MAIN FOOTER CONTENT */
+        
+        .footer-main {
+            padding: 60px 0 40px 0;
+            background: #ffffff;
+        }
+        
+        .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 50px;
+            margin-bottom: 50px;
+        }
+        
+        .footer-column h3 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #2b2a95;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            position: relative;
+            padding-bottom: 12px;
+        }
+        
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: linear-gradient(90deg, #2b2a95, #6c63ff);
+            border-radius: 3px;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 14px;
+        }
+        
+        .footer-column ul li a {
+            color: #495057;
+            text-decoration: none;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .footer-column ul li a:hover {
+            color: #2b2a95;
+            transform: translateX(5px);
+        }
+        
+        .footer-column ul li a i {
+            font-size: 10px;
+            color: #6c63ff;
+            transition: transform 0.3s ease;
+        }
+        
+        .footer-column ul li a:hover i {
+            transform: translateX(3px);
+        }
+        /* CONTACT COLUMN */
+        
+        .contact-info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .contact-icon-box {
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(135deg, #f0f0ff, #e6e6ff);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2b2a95;
+            font-size: 18px;
+            flex-shrink: 0;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-info-item:hover .contact-icon-box {
+            background: linear-gradient(135deg, #6c63ff, #2b2a95);
+            color: white;
+            transform: scale(1.1);
+        }
+        
+        .contact-text h4 {
+            font-size: 13px;
+            font-weight: 700;
+            color: #2b2a95;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .contact-text p {
+            font-size: 14px;
+            color: #6c757d;
+            line-height: 1.6;
+        }
+        
+        .contact-text a {
+            color: #495057;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .contact-text a:hover {
+            color: #2b2a95;
+        }
+        /* SOCIAL SECTION */
+        
+        .footer-social {
+            background: #f8f9fa;
+            padding: 40px 0;
+            border-top: 2px solid #e9ecef;
+            border-bottom: 2px solid #e9ecef;
+        }
+        
+        .social-wrapper {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 30px;
+            text-align: center;
+        }
+        
+        .social-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #2b2a95;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .social-btn {
+            width: 55px;
+            height: 55px;
+            background: white;
+            border: 2px solid #e9ecef;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #495057;
+            font-size: 22px;
+            text-decoration: none;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        
+        .social-btn:hover {
+            transform: translateY(-8px) scale(1.1);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+        
+        .social-btn.linkedin:hover {
+            background: #0077b5;
+            border-color: #0077b5;
+            color: white;
+        }
+        
+        .social-btn.facebook:hover {
+            background: #1877f2;
+            border-color: #1877f2;
+            color: white;
+        }
+        
+        .social-btn.instagram:hover {
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+            border-color: #bc1888;
+            color: white;
+        }
+        
+        .social-btn.email:hover {
+            background: #ea4335;
+            border-color: #ea4335;
+            color: white;
+        }
+        
+        .social-btn.youtube:hover {
+            background: #ff0000;
+            border-color: #ff0000;
+            color: white;
+        }
+        
+        .social-btn.github:hover {
+            background: #333;
+            border-color: #333;
+            color: white;
+        }
+        /* FOOTER BOTTOM */
+        
+        .footer-bottom {
+            background: #ffffff;
+            padding: 30px 0;
+        }
+        
+        .footer-bottom-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .copyright-text {
+            color: #6c757d;
+            font-size: 14px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .copyright-text strong {
+            color: #2b2a95;
+            font-weight: 700;
+        }
+        
+        .heart-icon {
+            color: #000000;
+            font-size: 16px;
+            display: inline-block;
+            animation: heartBeat 1.3s infinite;
+        }
+        
+        @keyframes heartBeat {
+            0%,
+            100% {
+                transform: scale(1);
+            }
+            10%,
+            30% {
+                transform: scale(1.1);
+            }
+            20%,
+            40% {
+                transform: scale(1.3);
+            }
+        }
+        
+        .footer-bottom-links {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+        
+        .footer-bottom-links a {
+            color: #6c757d;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        
+        .footer-bottom-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #2b2a95;
+            transition: width 0.3s ease;
+        }
+        
+        .footer-bottom-links a:hover {
+            color: #2b2a95;
+        }
+        
+        .footer-bottom-links a:hover::after {
+            width: 100%;
+        }
+        /* RESPONSIVE */
+        
+        @media (max-width: 992px) {
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 40px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .footer-branding {
+                padding: 35px 0;
+            }
+            .brand-text h2 {
+                font-size: 24px;
+            }
+            .brand-logo {
+                width: 70px;
+                height: 70px;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+            .footer-main {
+                padding: 40px 0 30px 0;
+            }
+            .footer-bottom-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .footer-bottom-links {
+                justify-content: center;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .brand-logo {
+                width: 60px;
+                height: 60px;
+            }
+            .brand-text h2 {
+                font-size: 20px;
+            }
+            .brand-text p {
+                font-size: 12px;
+            }
+            .brand-description {
+                font-size: 13px;
+            }
+            .social-btn {
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <footer class="advanced-footer">
+        <!-- TOP ACCENT -->
+        <div class="footer-accent"></div>
+
+        <!-- BRANDING SECTION -->
+        <div class="footer-branding">
+            <div class="footer-brand-container">
+                <div class="brand-left">
+                    <div class="brand-logo-section">
+                        <img src="ICT Club Official Logo without Background.png" alt="ICT Club Logo" class="brand-logo">
+                        <div class="brand-text">
+                            <h2>ICT Club</h2>
+                            <p>MNS University of Engineering &amp; Technology</p>
+                        </div>
+                    </div>
+                    <div class="brand-description">
+                        An official student organization at MNS UET Multan, dedicated to empowering students through technology, innovation, and professional development in the field of Information and Communication Technology.
+                    </div>
+                    <div class="brand-badges">
+                        <div class="brand-badge">
+                            <i class="fas fa-check-circle"></i> Approved by MNS UET
+                        </div>
+                        <div class="brand-badge">
+                            <i class="fas fa-certificate"></i> Official Organization
+                        </div>
+                        <div class="brand-badge">
+                            <i class="fas fa-users"></i> Student Community
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MAIN FOOTER -->
+        <div class="footer-main">
+            <div class="footer-container">
+                <div class="footer-grid">
+
+                    <!-- QUICK LINKS -->
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html#about" target="_parent"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                            <li><a href="index.html#objectives" target="_parent"><i class="fas fa-chevron-right"></i> Our Objectives</a></li>
+                            <li><a href="index.html#vision" target="_parent"><i class="fas fa-chevron-right"></i> Vision &amp; Mission</a></li>
+                            <li><a href="index.html#activities" target="_parent"><i class="fas fa-chevron-right"></i> Activities</a></li>
+                            <li><a href="index.html#team" target="_parent"><i class="fas fa-chevron-right"></i> Our Team</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- RESOURCES -->
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="ictcluballiances.html" target="_parent"><i class="fas fa-chevron-right"></i> Alliances</a></li>
+                            <li><a href="alumni.html" target="_parent"><i class="fas fa-chevron-right"></i> CS Alumni</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- PORTALS -->
+                    <div class="footer-column">
+                        <h3>Portals</h3>
+                        <ul>
+                            <li><a href="verified.html" target="_parent"><i class="fas fa-chevron-right"></i> Certificate Verification</a></li>
+                            <li><a href="https://mnsuet.edu.pk/" target="_blank"><i class="fas fa-chevron-right"></i> MNS UET Multan</a></li>
+                            <li><a href="mlsa.html" target="_parent"><i class="fas fa-chevron-right"></i> MLSA Program</a></li>
+                            <li><a href="policy.html" target="_parent"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                            <li><a href="policy.html#terms" target="_parent"><i class="fas fa-chevron-right"></i> Terms of Service</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- CONTACT -->
+                    <div class="footer-column">
+                        <h3>Contact Us</h3>
+
+                        <div class="contact-info-item">
+                            <div class="contact-icon-box">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p><a href="mailto:ict.mnsuet@gmail.com">ict.mnsuet@gmail.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-icon-box">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <p>MNS UET Multan<br>Punjab, Pakistan</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-icon-box">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Website</h4>
+                                <p><a href="https://mnsuet.edu.pk/" target="_blank">mnsuet.edu.pk</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- SOCIAL SECTION -->
+        <div class="footer-social">
+            <div class="social-wrapper">
+                <div class="social-title">Connect With Us</div>
+                <div class="social-buttons">
+                    <a href="https://www.linkedin.com/company/ict-clubmns-uet-multan/" class="social-btn linkedin" target="_blank" title="LinkedIn" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://web.facebook.com/ictclubpk/" class="social-btn facebook" target="_blank" title="Facebook" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/ictclub_mnsuet?igsh=aHEwamdqcTU1bDEw" class="social-btn instagram" target="_blank" title="Instagram" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="mailto:ict.mnsuet@gmail.com" class="social-btn email" target="_blank" title="Email" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@ICTClubMNSUETMultan" class="social-btn youtube" target="_blank" title="YouTube" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://github.com/ictclub" class="social-btn github" target="_blank" title="GitHub" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER BOTTOM -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <div class="copyright-text">
+                    &copy; 2024 All Rights Reserved | <strong>ICT Club</strong> at MNS UET Multan | Made with <span class="heart-icon">&#9829;</span>
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="policy.html" target="_parent">Privacy Policy</a>
+                    <a href="policy.html#terms" target="_parent">Terms &amp; Conditions</a>
+                    <a href="index.html#contact" target="_parent">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
